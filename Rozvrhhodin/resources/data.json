@@ -1,0 +1,46 @@
+{
+    "pondeli": [
+            {
+            "zacatek": "08:00",
+            "konec": "08:45",
+            "predmet": "M",
+            "ucitel": "Nováková",
+            "ucebna": "101"
+            },
+            {
+            "zacatek": "08:55",
+            "konec": "09:40",
+            "predmet": "M",
+            "ucitel": "Beneš",
+            "ucebna": "204"
+            },
+            {
+            "zacatek": "09:50",
+            "konec": "10:35",
+            "predmet": "Aj",
+            "ucitel": "Svoboda",
+            "ucebna": "203"
+            },
+            {
+            "zacatek": "10:45",
+            "konec": "11:30",
+            "predmet": "Fy",
+            "ucitel": "Dvořák",
+            "ucebna": "305"
+            },
+            {
+            "zacatek": "11:40",
+            "konec": "12:25",
+            "predmet": "D",
+            "ucitel": "Černá",
+            "ucebna": "102"
+            },
+            {
+            "zacatek": "12:35",
+            "konec": "13:20",
+            "predmet": "Ch",
+            "ucitel": "Beneš",
+            "ucebna": "204"
+        }
+    ]
+}

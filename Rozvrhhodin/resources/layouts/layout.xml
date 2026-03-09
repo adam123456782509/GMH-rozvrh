@@ -1,0 +1,5 @@
+    <layout id="MainLayout">
+        <!--><bitmap id="id_logo" x="center" y="5" filename="../images/favicon-32x32.png"/><-->
+        <!--><label id="id_nadpis" x="center" y="15" font="Gfx.FONT_SMALL" text="Rozvrh hodin" justification="Gfx.TEXT_JUSTIFY_CENTER"/>
+        <label id="id_podnadpis" x="center" y="55" font="Gfx.FONT_SMALL" text="Následující hodina" justification="Gfx.TEXT_JUSTIFY_CENTER"/><-->
+    </layout>

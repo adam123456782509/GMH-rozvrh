@@ -1,0 +1,3076 @@
+[ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Graphics,1,14,22]; ]
+import Toybox.Graphics;
+[ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [WatchUi,2,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [System,3,14,20]; ]
+import Toybox.System;
+[ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [Application,4,14,25]; ]
+import Toybox.Application;
+[ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc"; @line = 5; @symbol_importdef<0> = [Toybox,5,7,13]; @symbol_importdef<1> = [Time,5,14,18]; ]
+import Toybox.Time;
+[ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc"; @line = 8; glance = true; @symbol_classdef = [RozvrhhodinGlanceView,8,6,27]; @symbol_extends<0> = [WatchUi,8,36,43]; @symbol_extends<1> = [GlanceView,8,44,54]; ]
+class RozvrhhodinGlanceView extends WatchUi.GlanceView {
+    [ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc"; @line = 8; ]
+    <init> {
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 10 8 ]
+        %tmp.2 = 10;
+        %tmp.1 = newa %tmp.2;
+        putv self :MondayExtractedSubject %tmp.1;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 11 8 ]
+        %tmp.4 = 10;
+        %tmp.3 = newa %tmp.4;
+        putv self :MondayExtractedTeacher %tmp.3;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 12 8 ]
+        %tmp.6 = 10;
+        %tmp.5 = newa %tmp.6;
+        putv self :MondayExtractedRoom %tmp.5;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 13 8 ]
+        %tmp.8 = 10;
+        %tmp.7 = newa %tmp.8;
+        putv self :TuesdayExtractedSubject %tmp.7;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 14 8 ]
+        %tmp.10 = 10;
+        %tmp.9 = newa %tmp.10;
+        putv self :TuesdayExtractedTeacher %tmp.9;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 15 8 ]
+        %tmp.12 = 10;
+        %tmp.11 = newa %tmp.12;
+        putv self :TuesdayExtractedRoom %tmp.11;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 16 8 ]
+        %tmp.14 = 10;
+        %tmp.13 = newa %tmp.14;
+        putv self :WednesdayExtractedSubject %tmp.13;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 17 8 ]
+        %tmp.16 = 10;
+        %tmp.15 = newa %tmp.16;
+        putv self :WednesdayExtractedTeacher %tmp.15;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 18 8 ]
+        %tmp.18 = 10;
+        %tmp.17 = newa %tmp.18;
+        putv self :WednesdayExtractedRoom %tmp.17;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 19 8 ]
+        %tmp.20 = 10;
+        %tmp.19 = newa %tmp.20;
+        putv self :ThursdayExtractedSubject %tmp.19;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 20 8 ]
+        %tmp.22 = 10;
+        %tmp.21 = newa %tmp.22;
+        putv self :ThursdayExtractedTeacher %tmp.21;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 21 8 ]
+        %tmp.24 = 10;
+        %tmp.23 = newa %tmp.24;
+        putv self :ThursdayExtractedRoom %tmp.23;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 22 8 ]
+        %tmp.26 = 10;
+        %tmp.25 = newa %tmp.26;
+        putv self :FridayExtractedSubject %tmp.25;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 23 8 ]
+        %tmp.28 = 10;
+        %tmp.27 = newa %tmp.28;
+        putv self :FridayExtractedTeacher %tmp.27;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 24 8 ]
+        %tmp.30 = 10;
+        %tmp.29 = newa %tmp.30;
+        putv self :FridayExtractedRoom %tmp.29;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 35 8 ]
+        %tmp.31 = newa 10;
+        %tmp.32 = "7:00 - 7:45";
+        %tmp.33 = dup %tmp.31;
+        %tmp.34 = aputv %tmp.33 0 %tmp.32;
+        %tmp.35 = "8:00 - 8:45";
+        %tmp.36 = dup %tmp.34;
+        %tmp.37 = aputv %tmp.36 1 %tmp.35;
+        %tmp.38 = "8:55 - 9:40";
+        %tmp.39 = dup %tmp.37;
+        %tmp.40 = aputv %tmp.39 2 %tmp.38;
+        %tmp.41 = "9:55 - 10:40";
+        %tmp.42 = dup %tmp.40;
+        %tmp.43 = aputv %tmp.42 3 %tmp.41;
+        %tmp.44 = "10:50 - 11:35";
+        %tmp.45 = dup %tmp.43;
+        %tmp.46 = aputv %tmp.45 4 %tmp.44;
+        %tmp.47 = "11:45 - 12:30";
+        %tmp.48 = dup %tmp.46;
+        %tmp.49 = aputv %tmp.48 5 %tmp.47;
+        %tmp.50 = "12:35 - 13:20";
+        %tmp.51 = dup %tmp.49;
+        %tmp.52 = aputv %tmp.51 6 %tmp.50;
+        %tmp.53 = "13:25 - 14:10";
+        %tmp.54 = dup %tmp.52;
+        %tmp.55 = aputv %tmp.54 7 %tmp.53;
+        %tmp.56 = "14:15 - 15:00";
+        %tmp.57 = dup %tmp.55;
+        %tmp.58 = aputv %tmp.57 8 %tmp.56;
+        %tmp.59 = "15:05 - 15:50";
+        %tmp.60 = dup %tmp.58;
+        %tmp.61 = aputv %tmp.60 9 %tmp.59;
+        putv self :classTimes %tmp.61;
+    }
+    [ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc"; @line = 8; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc"; @line = 10; @position = 8; @symbol_vardef = [MondayExtractedSubject,10,8,30]; ]
+    var MondayExtractedSubject;
+    [ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc"; @line = 11; @position = 8; @symbol_vardef = [MondayExtractedTeacher,11,8,30]; ]
+    var MondayExtractedTeacher;
+    [ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc"; @line = 12; @position = 8; @symbol_vardef = [MondayExtractedRoom,12,8,27]; ]
+    var MondayExtractedRoom;
+    [ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc"; @line = 13; @position = 8; @symbol_vardef = [TuesdayExtractedSubject,13,8,31]; ]
+    var TuesdayExtractedSubject;
+    [ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc"; @line = 14; @position = 8; @symbol_vardef = [TuesdayExtractedTeacher,14,8,31]; ]
+    var TuesdayExtractedTeacher;
+    [ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc"; @line = 15; @position = 8; @symbol_vardef = [TuesdayExtractedRoom,15,8,28]; ]
+    var TuesdayExtractedRoom;
+    [ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc"; @line = 16; @position = 8; @symbol_vardef = [WednesdayExtractedSubject,16,8,33]; ]
+    var WednesdayExtractedSubject;
+    [ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc"; @line = 17; @position = 8; @symbol_vardef = [WednesdayExtractedTeacher,17,8,33]; ]
+    var WednesdayExtractedTeacher;
+    [ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc"; @line = 18; @position = 8; @symbol_vardef = [WednesdayExtractedRoom,18,8,30]; ]
+    var WednesdayExtractedRoom;
+    [ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc"; @line = 19; @position = 8; @symbol_vardef = [ThursdayExtractedSubject,19,8,32]; ]
+    var ThursdayExtractedSubject;
+    [ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc"; @line = 20; @position = 8; @symbol_vardef = [ThursdayExtractedTeacher,20,8,32]; ]
+    var ThursdayExtractedTeacher;
+    [ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc"; @line = 21; @position = 8; @symbol_vardef = [ThursdayExtractedRoom,21,8,29]; ]
+    var ThursdayExtractedRoom;
+    [ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc"; @line = 22; @position = 8; @symbol_vardef = [FridayExtractedSubject,22,8,30]; ]
+    var FridayExtractedSubject;
+    [ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc"; @line = 23; @position = 8; @symbol_vardef = [FridayExtractedTeacher,23,8,30]; ]
+    var FridayExtractedTeacher;
+    [ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc"; @line = 24; @position = 8; @symbol_vardef = [FridayExtractedRoom,24,8,27]; ]
+    var FridayExtractedRoom;
+    [ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc"; @line = 26; @position = 8; @symbol_vardef = [ongoingHour,26,8,19]; ]
+    var ongoingHour;
+    [ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc"; @line = 27; @position = 8; @symbol_vardef = [time,27,8,12]; ]
+    var time;
+    [ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc"; @line = 28; @position = 8; @symbol_vardef = [date,28,8,12]; ]
+    var date;
+    [ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc"; @line = 29; @position = 8; @symbol_vardef = [savedDate,29,8,17]; ]
+    var savedDate;
+    [ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc"; @line = 31; @position = 8; @symbol_vardef = [app,31,8,11]; ]
+    var app;
+    [ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc"; @line = 33; @position = 8; @symbol_vardef = [loadActualData,33,8,22]; ]
+    var loadActualData;
+    [ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc"; @line = 35; @position = 8; @symbol_vardef = [classTimes,35,8,18]; ]
+    var classTimes;
+    [ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc"; @line = 49; @position = 8; @symbol_vardef = [loadedData,49,8,18]; ]
+    var loadedData;
+    [ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc"; @line = 51; @symbol_functiondef = [initialize,51,13,23]; ]
+    function initialize() as Void {
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_51_26_57_4_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 53 8 ]
+        symbol [ GlanceView %tmp.2 53 8 18 ];
+        %tmp.2 = getv ? :GlanceView;
+        symbol [ initialize %tmp.3 53 19 29 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 55 8 ]
+        symbol [ Toybox %tmp.5 55 14 20 ];
+        %tmp.5 = getv ? :Toybox;
+        symbol [ Application %tmp.6 55 21 32 ];
+        %tmp.6 = getv %tmp.5 :Application;
+        symbol [ getApp %tmp.7 55 33 39 ];
+        %tmp.7 = getv function %tmp.6 :getApp;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        symbol [ app ? 55 8 11 ];
+        putv self :app %tmp.8;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 56 8 ]
+        %tmp.9 = self;
+        symbol [ loadDataCheck %tmp.10 56 8 21 ];
+        %tmp.10 = getv function %tmp.9 :loadDataCheck;
+        invoke %tmp.9 %tmp.10();
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_51_26_57_4_stop:
+    }
+    [ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc"; @line = 59; @symbol_functiondef = [loadDataCheck,59,13,26]; ]
+    function loadDataCheck() as Void {
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_59_37_84_4_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 61 8 ]
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_61_8_83_8_if_stmt:
+        symbol [ app %tmp.2 61 12 15 ];
+        %tmp.2 = getv ? :app;
+        symbol [ getProperty %tmp.3 61 16 27 ];
+        %tmp.3 = getv function %tmp.2 :getProperty;
+        %tmp.4 = "saveDate";
+        %tmp.5 = invoke %tmp.2 %tmp.3(%tmp.4);
+        %tmp.6 = null;
+        %tmp.7 = ne %tmp.5 %tmp.6;
+        bf %tmp.7 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_61_8_83_8_if_else_false;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_61_8_83_8_if_true:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_61_49_80_8_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 63 12 ]
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_63_12_79_12_if_stmt:
+        symbol [ app %tmp.9 64 16 19 ];
+        %tmp.9 = getv ? :app;
+        symbol [ getProperty %tmp.10 64 20 31 ];
+        %tmp.10 = getv function %tmp.9 :getProperty;
+        %tmp.11 = "saveDate";
+        %tmp.12 = invoke %tmp.9 %tmp.10(%tmp.11);
+        symbol [ toNumber %tmp.13 64 44 52 ];
+        %tmp.13 = getv function %tmp.12 :toNumber;
+        %tmp.14 = invoke %tmp.12 %tmp.13();
+        symbol [ Time %tmp.15 66 20 24 ];
+        %tmp.15 = getm $.Toybox.Time;
+        symbol [ Gregorian %tmp.16 66 25 34 ];
+        %tmp.16 = getv %tmp.15 :Gregorian;
+        symbol [ info %tmp.17 66 35 39 ];
+        %tmp.17 = getv function %tmp.16 :info;
+        symbol [ Time %tmp.18 67 24 28 ];
+        %tmp.18 = getm $.Toybox.Time;
+        symbol [ now %tmp.19 67 29 32 ];
+        %tmp.19 = getv function %tmp.18 :now;
+        %tmp.20 = invoke %tmp.18 %tmp.19();
+        symbol [ Time %tmp.21 68 24 28 ];
+        %tmp.21 = getm $.Toybox.Time;
+        symbol [ FORMAT_SHORT %tmp.22 68 29 41 ];
+        %tmp.22 = getv %tmp.21 :FORMAT_SHORT;
+        %tmp.23 = invoke %tmp.16 %tmp.17(%tmp.20, %tmp.22);
+        symbol [ day_of_week %tmp.24 69 22 33 ];
+        %tmp.24 = getv %tmp.23 :day_of_week;
+        symbol [ toNumber %tmp.25 69 34 42 ];
+        %tmp.25 = getv function %tmp.24 :toNumber;
+        %tmp.26 = invoke %tmp.24 %tmp.25();
+        %tmp.27 = 2;
+        %tmp.28 = sub %tmp.26 %tmp.27;
+        symbol [ toNumber %tmp.29 70 18 26 ];
+        %tmp.29 = getv function %tmp.28 :toNumber;
+        %tmp.30 = invoke %tmp.28 %tmp.29();
+        %tmp.31 = eq %tmp.14 %tmp.30;
+        bf %tmp.31 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_63_12_79_12_if_else_false;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_63_12_79_12_if_true:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_71_14_75_12_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 72 16 ]
+        %tmp.32 = true;
+        symbol [ loadedData ? 72 16 26 ];
+        putv self :loadedData %tmp.32;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 73 16 ]
+        %tmp.33 = true;
+        symbol [ loadActualData ? 73 16 30 ];
+        putv self :loadActualData %tmp.33;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 74 16 ]
+        %tmp.34 = self;
+        symbol [ loadDataFromMemory %tmp.35 74 16 34 ];
+        %tmp.35 = getv function %tmp.34 :loadDataFromMemory;
+        invoke %tmp.34 %tmp.35();
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_71_14_75_12_stop:
+        goto @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_63_12_79_12_if_end;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_63_12_79_12_if_else_false:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_75_19_79_12_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 76 16 ]
+        %tmp.36 = true;
+        symbol [ loadedData ? 76 16 26 ];
+        putv self :loadedData %tmp.36;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 77 16 ]
+        %tmp.37 = false;
+        symbol [ loadActualData ? 77 16 30 ];
+        putv self :loadActualData %tmp.37;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 78 16 ]
+        %tmp.38 = self;
+        symbol [ loadDataFromMemory %tmp.39 78 16 34 ];
+        %tmp.39 = getv function %tmp.38 :loadDataFromMemory;
+        invoke %tmp.38 %tmp.39();
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_75_19_79_12_stop:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_63_12_79_12_if_end:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_61_49_80_8_stop:
+        goto @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_61_8_83_8_if_end;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_61_8_83_8_if_else_false:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_80_15_83_8_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 82 12 ]
+        %tmp.40 = false;
+        symbol [ loadedData ? 82 12 22 ];
+        putv self :loadedData %tmp.40;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_80_15_83_8_stop:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_61_8_83_8_if_end:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_59_37_84_4_stop:
+    }
+    [ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc"; @line = 86; @symbol_functiondef = [loadDataFromMemory,86,13,31]; ]
+    function loadDataFromMemory() as Void {
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_86_42_213_4_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 88 8 ]
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_88_8_212_8_if_stmt:
+        symbol [ loadActualData %tmp.2 88 12 26 ];
+        %tmp.2 = getv ? :loadActualData;
+        %tmp.3 = false;
+        %tmp.4 = eq %tmp.2 %tmp.3;
+        bf %tmp.4 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_88_8_212_8_if_else_false;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_88_8_212_8_if_true:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_88_37_105_8_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 90 12 ]
+        symbol [ app %tmp.6 90 37 40 ];
+        %tmp.6 = getv ? :app;
+        symbol [ getProperty %tmp.7 90 41 52 ];
+        %tmp.7 = getv function %tmp.6 :getProperty;
+        %tmp.8 = "MoExSubjPerm";
+        %tmp.9 = invoke %tmp.6 %tmp.7(%tmp.8);
+        symbol [ MondayExtractedSubject ? 90 12 34 ];
+        putv self :MondayExtractedSubject %tmp.9;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 91 12 ]
+        symbol [ app %tmp.11 91 37 40 ];
+        %tmp.11 = getv ? :app;
+        symbol [ getProperty %tmp.12 91 41 52 ];
+        %tmp.12 = getv function %tmp.11 :getProperty;
+        %tmp.13 = "MoExTeachPerm";
+        %tmp.14 = invoke %tmp.11 %tmp.12(%tmp.13);
+        symbol [ MondayExtractedTeacher ? 91 12 34 ];
+        putv self :MondayExtractedTeacher %tmp.14;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 92 12 ]
+        symbol [ app %tmp.16 92 34 37 ];
+        %tmp.16 = getv ? :app;
+        symbol [ getProperty %tmp.17 92 38 49 ];
+        %tmp.17 = getv function %tmp.16 :getProperty;
+        %tmp.18 = "MoExRoomPerm";
+        %tmp.19 = invoke %tmp.16 %tmp.17(%tmp.18);
+        symbol [ MondayExtractedRoom ? 92 12 31 ];
+        putv self :MondayExtractedRoom %tmp.19;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 93 12 ]
+        symbol [ app %tmp.21 93 38 41 ];
+        %tmp.21 = getv ? :app;
+        symbol [ getProperty %tmp.22 93 42 53 ];
+        %tmp.22 = getv function %tmp.21 :getProperty;
+        %tmp.23 = "TuExSubjPerm";
+        %tmp.24 = invoke %tmp.21 %tmp.22(%tmp.23);
+        symbol [ TuesdayExtractedSubject ? 93 12 35 ];
+        putv self :TuesdayExtractedSubject %tmp.24;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 94 12 ]
+        symbol [ app %tmp.26 94 38 41 ];
+        %tmp.26 = getv ? :app;
+        symbol [ getProperty %tmp.27 94 42 53 ];
+        %tmp.27 = getv function %tmp.26 :getProperty;
+        %tmp.28 = "TuExTeachPerm";
+        %tmp.29 = invoke %tmp.26 %tmp.27(%tmp.28);
+        symbol [ TuesdayExtractedTeacher ? 94 12 35 ];
+        putv self :TuesdayExtractedTeacher %tmp.29;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 95 12 ]
+        symbol [ app %tmp.31 95 35 38 ];
+        %tmp.31 = getv ? :app;
+        symbol [ getProperty %tmp.32 95 39 50 ];
+        %tmp.32 = getv function %tmp.31 :getProperty;
+        %tmp.33 = "TuExRoomPerm";
+        %tmp.34 = invoke %tmp.31 %tmp.32(%tmp.33);
+        symbol [ TuesdayExtractedRoom ? 95 12 32 ];
+        putv self :TuesdayExtractedRoom %tmp.34;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 96 12 ]
+        symbol [ app %tmp.36 96 40 43 ];
+        %tmp.36 = getv ? :app;
+        symbol [ getProperty %tmp.37 96 44 55 ];
+        %tmp.37 = getv function %tmp.36 :getProperty;
+        %tmp.38 = "WeExSubjPerm";
+        %tmp.39 = invoke %tmp.36 %tmp.37(%tmp.38);
+        symbol [ WednesdayExtractedSubject ? 96 12 37 ];
+        putv self :WednesdayExtractedSubject %tmp.39;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 97 12 ]
+        symbol [ app %tmp.41 97 40 43 ];
+        %tmp.41 = getv ? :app;
+        symbol [ getProperty %tmp.42 97 44 55 ];
+        %tmp.42 = getv function %tmp.41 :getProperty;
+        %tmp.43 = "WeExTeachPerm";
+        %tmp.44 = invoke %tmp.41 %tmp.42(%tmp.43);
+        symbol [ WednesdayExtractedTeacher ? 97 12 37 ];
+        putv self :WednesdayExtractedTeacher %tmp.44;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 98 12 ]
+        symbol [ app %tmp.46 98 37 40 ];
+        %tmp.46 = getv ? :app;
+        symbol [ getProperty %tmp.47 98 41 52 ];
+        %tmp.47 = getv function %tmp.46 :getProperty;
+        %tmp.48 = "WeExRoomPerm";
+        %tmp.49 = invoke %tmp.46 %tmp.47(%tmp.48);
+        symbol [ WednesdayExtractedRoom ? 98 12 34 ];
+        putv self :WednesdayExtractedRoom %tmp.49;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 99 12 ]
+        symbol [ app %tmp.51 99 39 42 ];
+        %tmp.51 = getv ? :app;
+        symbol [ getProperty %tmp.52 99 43 54 ];
+        %tmp.52 = getv function %tmp.51 :getProperty;
+        %tmp.53 = "ThExSubjPerm";
+        %tmp.54 = invoke %tmp.51 %tmp.52(%tmp.53);
+        symbol [ ThursdayExtractedSubject ? 99 12 36 ];
+        putv self :ThursdayExtractedSubject %tmp.54;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 100 12 ]
+        symbol [ app %tmp.56 100 39 42 ];
+        %tmp.56 = getv ? :app;
+        symbol [ getProperty %tmp.57 100 43 54 ];
+        %tmp.57 = getv function %tmp.56 :getProperty;
+        %tmp.58 = "ThExTeachPerm";
+        %tmp.59 = invoke %tmp.56 %tmp.57(%tmp.58);
+        symbol [ ThursdayExtractedTeacher ? 100 12 36 ];
+        putv self :ThursdayExtractedTeacher %tmp.59;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 101 12 ]
+        symbol [ app %tmp.61 101 36 39 ];
+        %tmp.61 = getv ? :app;
+        symbol [ getProperty %tmp.62 101 40 51 ];
+        %tmp.62 = getv function %tmp.61 :getProperty;
+        %tmp.63 = "ThExRoomPerm";
+        %tmp.64 = invoke %tmp.61 %tmp.62(%tmp.63);
+        symbol [ ThursdayExtractedRoom ? 101 12 33 ];
+        putv self :ThursdayExtractedRoom %tmp.64;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 102 12 ]
+        symbol [ app %tmp.66 102 37 40 ];
+        %tmp.66 = getv ? :app;
+        symbol [ getProperty %tmp.67 102 41 52 ];
+        %tmp.67 = getv function %tmp.66 :getProperty;
+        %tmp.68 = "FrExSubjPerm";
+        %tmp.69 = invoke %tmp.66 %tmp.67(%tmp.68);
+        symbol [ FridayExtractedSubject ? 102 12 34 ];
+        putv self :FridayExtractedSubject %tmp.69;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 103 12 ]
+        symbol [ app %tmp.71 103 37 40 ];
+        %tmp.71 = getv ? :app;
+        symbol [ getProperty %tmp.72 103 41 52 ];
+        %tmp.72 = getv function %tmp.71 :getProperty;
+        %tmp.73 = "FrExTeachPerm";
+        %tmp.74 = invoke %tmp.71 %tmp.72(%tmp.73);
+        symbol [ FridayExtractedTeacher ? 103 12 34 ];
+        putv self :FridayExtractedTeacher %tmp.74;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 104 12 ]
+        symbol [ app %tmp.76 104 34 37 ];
+        %tmp.76 = getv ? :app;
+        symbol [ getProperty %tmp.77 104 38 49 ];
+        %tmp.77 = getv function %tmp.76 :getProperty;
+        %tmp.78 = "FrExRoomPerm";
+        %tmp.79 = invoke %tmp.76 %tmp.77(%tmp.78);
+        symbol [ FridayExtractedRoom ? 104 12 31 ];
+        putv self :FridayExtractedRoom %tmp.79;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_88_37_105_8_stop:
+        goto @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_88_8_212_8_if_end;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_88_8_212_8_if_else_false:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_105_15_212_8_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 106 12 ]
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_106_12_196_12_if_stmt:
+        symbol [ app %tmp.81 107 16 19 ];
+        %tmp.81 = getv ? :app;
+        symbol [ getProperty %tmp.82 107 20 31 ];
+        %tmp.82 = getv function %tmp.81 :getProperty;
+        %tmp.83 = "saveDate";
+        %tmp.84 = invoke %tmp.81 %tmp.82(%tmp.83);
+        %tmp.85 = null;
+        %tmp.86 = ne %tmp.84 %tmp.85;
+        bf %tmp.86 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_106_12_196_12_if_end;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_106_12_196_12_if_true:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_109_12_196_12_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 110 16 ]
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_110_16_195_16_if_stmt:
+        symbol [ app %tmp.88 111 20 23 ];
+        %tmp.88 = getv ? :app;
+        symbol [ getProperty %tmp.89 111 24 35 ];
+        %tmp.89 = getv function %tmp.88 :getProperty;
+        %tmp.90 = "saveDate";
+        %tmp.91 = invoke %tmp.88 %tmp.89(%tmp.90);
+        symbol [ toNumber %tmp.92 111 48 56 ];
+        %tmp.92 = getv function %tmp.91 :toNumber;
+        %tmp.93 = invoke %tmp.91 %tmp.92();
+        symbol [ Time %tmp.94 113 24 28 ];
+        %tmp.94 = getm $.Toybox.Time;
+        symbol [ Gregorian %tmp.95 113 29 38 ];
+        %tmp.95 = getv %tmp.94 :Gregorian;
+        symbol [ info %tmp.96 113 39 43 ];
+        %tmp.96 = getv function %tmp.95 :info;
+        symbol [ Time %tmp.97 114 28 32 ];
+        %tmp.97 = getm $.Toybox.Time;
+        symbol [ now %tmp.98 114 33 36 ];
+        %tmp.98 = getv function %tmp.97 :now;
+        %tmp.99 = invoke %tmp.97 %tmp.98();
+        symbol [ Time %tmp.100 115 28 32 ];
+        %tmp.100 = getm $.Toybox.Time;
+        symbol [ FORMAT_SHORT %tmp.101 115 33 45 ];
+        %tmp.101 = getv %tmp.100 :FORMAT_SHORT;
+        %tmp.102 = invoke %tmp.95 %tmp.96(%tmp.99, %tmp.101);
+        symbol [ day_of_week %tmp.103 116 26 37 ];
+        %tmp.103 = getv %tmp.102 :day_of_week;
+        symbol [ toNumber %tmp.104 116 38 46 ];
+        %tmp.104 = getv function %tmp.103 :toNumber;
+        %tmp.105 = invoke %tmp.103 %tmp.104();
+        %tmp.106 = 2;
+        %tmp.107 = sub %tmp.105 %tmp.106;
+        symbol [ toNumber %tmp.108 117 22 30 ];
+        %tmp.108 = getv function %tmp.107 :toNumber;
+        %tmp.109 = invoke %tmp.107 %tmp.108();
+        %tmp.110 = eq %tmp.93 %tmp.109;
+        bf %tmp.110 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_110_16_195_16_if_end;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_110_16_195_16_if_true:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_118_18_195_16_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 119 20 ]
+        symbol [ app %tmp.112 120 24 27 ];
+        %tmp.112 = getv ? :app;
+        symbol [ getProperty %tmp.113 120 28 39 ];
+        %tmp.113 = getv function %tmp.112 :getProperty;
+        %tmp.114 = "saveDate";
+        %tmp.115 = invoke %tmp.112 %tmp.113(%tmp.114);
+        symbol [ toNumber %tmp.116 120 52 60 ];
+        %tmp.116 = getv function %tmp.115 :toNumber;
+        %tmp.117 = invoke %tmp.115 %tmp.116();
+        push %tmp.117;
+        switch %tmp.117 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_119_20_194_20_switchStmtEnd;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_119_20_194_20_switchStmtBegin:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 122 24 ]
+        %tmp.118 = dup %tmp.117;
+        %tmp.119 = 0;
+        %tmp.120 = getv function %tmp.118 :equals;
+        %tmp.121 = invoke %tmp.118 %tmp.120 (%tmp.119);
+        bt %tmp.121 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_122_24_135_33_switchCase;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 136 24 ]
+        %tmp.122 = dup %tmp.117;
+        %tmp.123 = 1;
+        %tmp.124 = getv function %tmp.122 :equals;
+        %tmp.125 = invoke %tmp.122 %tmp.124 (%tmp.123);
+        bt %tmp.125 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_136_24_149_33_switchCase;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 150 24 ]
+        %tmp.126 = dup %tmp.117;
+        %tmp.127 = 2;
+        %tmp.128 = getv function %tmp.126 :equals;
+        %tmp.129 = invoke %tmp.126 %tmp.128 (%tmp.127);
+        bt %tmp.129 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_150_24_163_33_switchCase;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 164 24 ]
+        %tmp.130 = dup %tmp.117;
+        %tmp.131 = 3;
+        %tmp.132 = getv function %tmp.130 :equals;
+        %tmp.133 = invoke %tmp.130 %tmp.132 (%tmp.131);
+        bt %tmp.133 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_164_24_177_33_switchCase;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 178 24 ]
+        %tmp.134 = dup %tmp.117;
+        %tmp.135 = 4;
+        %tmp.136 = getv function %tmp.134 :equals;
+        %tmp.137 = invoke %tmp.134 %tmp.136 (%tmp.135);
+        bt %tmp.137 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_178_24_191_33_switchCase;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 192 24 ]
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_119_20_194_20_switchStmtDefault:
+        goto @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_119_20_194_20_defaultCodeBegin;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_122_24_135_33_switchCase:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 123 28 ]
+        symbol [ app %tmp.139 123 28 31 ];
+        %tmp.139 = getv ? :app;
+        symbol [ setProperty %tmp.140 123 32 43 ];
+        %tmp.140 = getv function %tmp.139 :setProperty;
+        %tmp.141 = "TuExSubj";
+        %tmp.142 = null;
+        invoke %tmp.139 %tmp.140(%tmp.141, %tmp.142);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 124 28 ]
+        symbol [ app %tmp.144 124 28 31 ];
+        %tmp.144 = getv ? :app;
+        symbol [ setProperty %tmp.145 124 32 43 ];
+        %tmp.145 = getv function %tmp.144 :setProperty;
+        %tmp.146 = "TuExTeach";
+        %tmp.147 = null;
+        invoke %tmp.144 %tmp.145(%tmp.146, %tmp.147);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 125 28 ]
+        symbol [ app %tmp.149 125 28 31 ];
+        %tmp.149 = getv ? :app;
+        symbol [ setProperty %tmp.150 125 32 43 ];
+        %tmp.150 = getv function %tmp.149 :setProperty;
+        %tmp.151 = "TuExRoom";
+        %tmp.152 = null;
+        invoke %tmp.149 %tmp.150(%tmp.151, %tmp.152);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 126 28 ]
+        symbol [ app %tmp.154 126 28 31 ];
+        %tmp.154 = getv ? :app;
+        symbol [ setProperty %tmp.155 126 32 43 ];
+        %tmp.155 = getv function %tmp.154 :setProperty;
+        %tmp.156 = "WeExSubj";
+        %tmp.157 = null;
+        invoke %tmp.154 %tmp.155(%tmp.156, %tmp.157);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 127 28 ]
+        symbol [ app %tmp.159 127 28 31 ];
+        %tmp.159 = getv ? :app;
+        symbol [ setProperty %tmp.160 127 32 43 ];
+        %tmp.160 = getv function %tmp.159 :setProperty;
+        %tmp.161 = "WeExTeach";
+        %tmp.162 = null;
+        invoke %tmp.159 %tmp.160(%tmp.161, %tmp.162);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 128 28 ]
+        symbol [ app %tmp.164 128 28 31 ];
+        %tmp.164 = getv ? :app;
+        symbol [ setProperty %tmp.165 128 32 43 ];
+        %tmp.165 = getv function %tmp.164 :setProperty;
+        %tmp.166 = "WeExRoom";
+        %tmp.167 = null;
+        invoke %tmp.164 %tmp.165(%tmp.166, %tmp.167);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 129 28 ]
+        symbol [ app %tmp.169 129 28 31 ];
+        %tmp.169 = getv ? :app;
+        symbol [ setProperty %tmp.170 129 32 43 ];
+        %tmp.170 = getv function %tmp.169 :setProperty;
+        %tmp.171 = "ThExSubj";
+        %tmp.172 = null;
+        invoke %tmp.169 %tmp.170(%tmp.171, %tmp.172);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 130 28 ]
+        symbol [ app %tmp.174 130 28 31 ];
+        %tmp.174 = getv ? :app;
+        symbol [ setProperty %tmp.175 130 32 43 ];
+        %tmp.175 = getv function %tmp.174 :setProperty;
+        %tmp.176 = "ThExTeach";
+        %tmp.177 = null;
+        invoke %tmp.174 %tmp.175(%tmp.176, %tmp.177);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 131 28 ]
+        symbol [ app %tmp.179 131 28 31 ];
+        %tmp.179 = getv ? :app;
+        symbol [ setProperty %tmp.180 131 32 43 ];
+        %tmp.180 = getv function %tmp.179 :setProperty;
+        %tmp.181 = "ThExRoom";
+        %tmp.182 = null;
+        invoke %tmp.179 %tmp.180(%tmp.181, %tmp.182);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 132 28 ]
+        symbol [ app %tmp.184 132 28 31 ];
+        %tmp.184 = getv ? :app;
+        symbol [ setProperty %tmp.185 132 32 43 ];
+        %tmp.185 = getv function %tmp.184 :setProperty;
+        %tmp.186 = "FrExSubj";
+        %tmp.187 = null;
+        invoke %tmp.184 %tmp.185(%tmp.186, %tmp.187);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 133 28 ]
+        symbol [ app %tmp.189 133 28 31 ];
+        %tmp.189 = getv ? :app;
+        symbol [ setProperty %tmp.190 133 32 43 ];
+        %tmp.190 = getv function %tmp.189 :setProperty;
+        %tmp.191 = "FrExTeach";
+        %tmp.192 = null;
+        invoke %tmp.189 %tmp.190(%tmp.191, %tmp.192);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 134 28 ]
+        symbol [ app %tmp.194 134 28 31 ];
+        %tmp.194 = getv ? :app;
+        symbol [ setProperty %tmp.195 134 32 43 ];
+        %tmp.195 = getv function %tmp.194 :setProperty;
+        %tmp.196 = "FrExRoom";
+        %tmp.197 = null;
+        invoke %tmp.194 %tmp.195(%tmp.196, %tmp.197);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 135 28 ]
+        goto break @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_119_20_194_20_switchStmtEnd;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_136_24_149_33_switchCase:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 137 28 ]
+        symbol [ app %tmp.199 137 28 31 ];
+        %tmp.199 = getv ? :app;
+        symbol [ setProperty %tmp.200 137 32 43 ];
+        %tmp.200 = getv function %tmp.199 :setProperty;
+        %tmp.201 = "MoExSubj";
+        %tmp.202 = null;
+        invoke %tmp.199 %tmp.200(%tmp.201, %tmp.202);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 138 28 ]
+        symbol [ app %tmp.204 138 28 31 ];
+        %tmp.204 = getv ? :app;
+        symbol [ setProperty %tmp.205 138 32 43 ];
+        %tmp.205 = getv function %tmp.204 :setProperty;
+        %tmp.206 = "MoExTeach";
+        %tmp.207 = null;
+        invoke %tmp.204 %tmp.205(%tmp.206, %tmp.207);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 139 28 ]
+        symbol [ app %tmp.209 139 28 31 ];
+        %tmp.209 = getv ? :app;
+        symbol [ setProperty %tmp.210 139 32 43 ];
+        %tmp.210 = getv function %tmp.209 :setProperty;
+        %tmp.211 = "MoExRoom";
+        %tmp.212 = null;
+        invoke %tmp.209 %tmp.210(%tmp.211, %tmp.212);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 140 28 ]
+        symbol [ app %tmp.214 140 28 31 ];
+        %tmp.214 = getv ? :app;
+        symbol [ setProperty %tmp.215 140 32 43 ];
+        %tmp.215 = getv function %tmp.214 :setProperty;
+        %tmp.216 = "WeExSubj";
+        %tmp.217 = null;
+        invoke %tmp.214 %tmp.215(%tmp.216, %tmp.217);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 141 28 ]
+        symbol [ app %tmp.219 141 28 31 ];
+        %tmp.219 = getv ? :app;
+        symbol [ setProperty %tmp.220 141 32 43 ];
+        %tmp.220 = getv function %tmp.219 :setProperty;
+        %tmp.221 = "WeExTeach";
+        %tmp.222 = null;
+        invoke %tmp.219 %tmp.220(%tmp.221, %tmp.222);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 142 28 ]
+        symbol [ app %tmp.224 142 28 31 ];
+        %tmp.224 = getv ? :app;
+        symbol [ setProperty %tmp.225 142 32 43 ];
+        %tmp.225 = getv function %tmp.224 :setProperty;
+        %tmp.226 = "WeExRoom";
+        %tmp.227 = null;
+        invoke %tmp.224 %tmp.225(%tmp.226, %tmp.227);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 143 28 ]
+        symbol [ app %tmp.229 143 28 31 ];
+        %tmp.229 = getv ? :app;
+        symbol [ setProperty %tmp.230 143 32 43 ];
+        %tmp.230 = getv function %tmp.229 :setProperty;
+        %tmp.231 = "ThExSubj";
+        %tmp.232 = null;
+        invoke %tmp.229 %tmp.230(%tmp.231, %tmp.232);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 144 28 ]
+        symbol [ app %tmp.234 144 28 31 ];
+        %tmp.234 = getv ? :app;
+        symbol [ setProperty %tmp.235 144 32 43 ];
+        %tmp.235 = getv function %tmp.234 :setProperty;
+        %tmp.236 = "ThExTeach";
+        %tmp.237 = null;
+        invoke %tmp.234 %tmp.235(%tmp.236, %tmp.237);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 145 28 ]
+        symbol [ app %tmp.239 145 28 31 ];
+        %tmp.239 = getv ? :app;
+        symbol [ setProperty %tmp.240 145 32 43 ];
+        %tmp.240 = getv function %tmp.239 :setProperty;
+        %tmp.241 = "ThExRoom";
+        %tmp.242 = null;
+        invoke %tmp.239 %tmp.240(%tmp.241, %tmp.242);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 146 28 ]
+        symbol [ app %tmp.244 146 28 31 ];
+        %tmp.244 = getv ? :app;
+        symbol [ setProperty %tmp.245 146 32 43 ];
+        %tmp.245 = getv function %tmp.244 :setProperty;
+        %tmp.246 = "FrExSubj";
+        %tmp.247 = null;
+        invoke %tmp.244 %tmp.245(%tmp.246, %tmp.247);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 147 28 ]
+        symbol [ app %tmp.249 147 28 31 ];
+        %tmp.249 = getv ? :app;
+        symbol [ setProperty %tmp.250 147 32 43 ];
+        %tmp.250 = getv function %tmp.249 :setProperty;
+        %tmp.251 = "FrExTeach";
+        %tmp.252 = null;
+        invoke %tmp.249 %tmp.250(%tmp.251, %tmp.252);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 148 28 ]
+        symbol [ app %tmp.254 148 28 31 ];
+        %tmp.254 = getv ? :app;
+        symbol [ setProperty %tmp.255 148 32 43 ];
+        %tmp.255 = getv function %tmp.254 :setProperty;
+        %tmp.256 = "FrExRoom";
+        %tmp.257 = null;
+        invoke %tmp.254 %tmp.255(%tmp.256, %tmp.257);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 149 28 ]
+        goto break @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_119_20_194_20_switchStmtEnd;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_150_24_163_33_switchCase:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 151 28 ]
+        symbol [ app %tmp.259 151 28 31 ];
+        %tmp.259 = getv ? :app;
+        symbol [ setProperty %tmp.260 151 32 43 ];
+        %tmp.260 = getv function %tmp.259 :setProperty;
+        %tmp.261 = "MoExSubj";
+        %tmp.262 = null;
+        invoke %tmp.259 %tmp.260(%tmp.261, %tmp.262);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 152 28 ]
+        symbol [ app %tmp.264 152 28 31 ];
+        %tmp.264 = getv ? :app;
+        symbol [ setProperty %tmp.265 152 32 43 ];
+        %tmp.265 = getv function %tmp.264 :setProperty;
+        %tmp.266 = "MoExTeach";
+        %tmp.267 = null;
+        invoke %tmp.264 %tmp.265(%tmp.266, %tmp.267);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 153 28 ]
+        symbol [ app %tmp.269 153 28 31 ];
+        %tmp.269 = getv ? :app;
+        symbol [ setProperty %tmp.270 153 32 43 ];
+        %tmp.270 = getv function %tmp.269 :setProperty;
+        %tmp.271 = "MoExRoom";
+        %tmp.272 = null;
+        invoke %tmp.269 %tmp.270(%tmp.271, %tmp.272);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 154 28 ]
+        symbol [ app %tmp.274 154 28 31 ];
+        %tmp.274 = getv ? :app;
+        symbol [ setProperty %tmp.275 154 32 43 ];
+        %tmp.275 = getv function %tmp.274 :setProperty;
+        %tmp.276 = "TuExSubj";
+        %tmp.277 = null;
+        invoke %tmp.274 %tmp.275(%tmp.276, %tmp.277);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 155 28 ]
+        symbol [ app %tmp.279 155 28 31 ];
+        %tmp.279 = getv ? :app;
+        symbol [ setProperty %tmp.280 155 32 43 ];
+        %tmp.280 = getv function %tmp.279 :setProperty;
+        %tmp.281 = "TuExTeach";
+        %tmp.282 = null;
+        invoke %tmp.279 %tmp.280(%tmp.281, %tmp.282);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 156 28 ]
+        symbol [ app %tmp.284 156 28 31 ];
+        %tmp.284 = getv ? :app;
+        symbol [ setProperty %tmp.285 156 32 43 ];
+        %tmp.285 = getv function %tmp.284 :setProperty;
+        %tmp.286 = "TuExRoom";
+        %tmp.287 = null;
+        invoke %tmp.284 %tmp.285(%tmp.286, %tmp.287);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 157 28 ]
+        symbol [ app %tmp.289 157 28 31 ];
+        %tmp.289 = getv ? :app;
+        symbol [ setProperty %tmp.290 157 32 43 ];
+        %tmp.290 = getv function %tmp.289 :setProperty;
+        %tmp.291 = "ThExSubj";
+        %tmp.292 = null;
+        invoke %tmp.289 %tmp.290(%tmp.291, %tmp.292);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 158 28 ]
+        symbol [ app %tmp.294 158 28 31 ];
+        %tmp.294 = getv ? :app;
+        symbol [ setProperty %tmp.295 158 32 43 ];
+        %tmp.295 = getv function %tmp.294 :setProperty;
+        %tmp.296 = "ThExTeach";
+        %tmp.297 = null;
+        invoke %tmp.294 %tmp.295(%tmp.296, %tmp.297);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 159 28 ]
+        symbol [ app %tmp.299 159 28 31 ];
+        %tmp.299 = getv ? :app;
+        symbol [ setProperty %tmp.300 159 32 43 ];
+        %tmp.300 = getv function %tmp.299 :setProperty;
+        %tmp.301 = "ThExRoom";
+        %tmp.302 = null;
+        invoke %tmp.299 %tmp.300(%tmp.301, %tmp.302);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 160 28 ]
+        symbol [ app %tmp.304 160 28 31 ];
+        %tmp.304 = getv ? :app;
+        symbol [ setProperty %tmp.305 160 32 43 ];
+        %tmp.305 = getv function %tmp.304 :setProperty;
+        %tmp.306 = "FrExSubj";
+        %tmp.307 = null;
+        invoke %tmp.304 %tmp.305(%tmp.306, %tmp.307);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 161 28 ]
+        symbol [ app %tmp.309 161 28 31 ];
+        %tmp.309 = getv ? :app;
+        symbol [ setProperty %tmp.310 161 32 43 ];
+        %tmp.310 = getv function %tmp.309 :setProperty;
+        %tmp.311 = "FrExTeach";
+        %tmp.312 = null;
+        invoke %tmp.309 %tmp.310(%tmp.311, %tmp.312);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 162 28 ]
+        symbol [ app %tmp.314 162 28 31 ];
+        %tmp.314 = getv ? :app;
+        symbol [ setProperty %tmp.315 162 32 43 ];
+        %tmp.315 = getv function %tmp.314 :setProperty;
+        %tmp.316 = "FrExRoom";
+        %tmp.317 = null;
+        invoke %tmp.314 %tmp.315(%tmp.316, %tmp.317);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 163 28 ]
+        goto break @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_119_20_194_20_switchStmtEnd;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_164_24_177_33_switchCase:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 165 28 ]
+        symbol [ app %tmp.319 165 28 31 ];
+        %tmp.319 = getv ? :app;
+        symbol [ setProperty %tmp.320 165 32 43 ];
+        %tmp.320 = getv function %tmp.319 :setProperty;
+        %tmp.321 = "MoExSubj";
+        %tmp.322 = null;
+        invoke %tmp.319 %tmp.320(%tmp.321, %tmp.322);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 166 28 ]
+        symbol [ app %tmp.324 166 28 31 ];
+        %tmp.324 = getv ? :app;
+        symbol [ setProperty %tmp.325 166 32 43 ];
+        %tmp.325 = getv function %tmp.324 :setProperty;
+        %tmp.326 = "MoExTeach";
+        %tmp.327 = null;
+        invoke %tmp.324 %tmp.325(%tmp.326, %tmp.327);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 167 28 ]
+        symbol [ app %tmp.329 167 28 31 ];
+        %tmp.329 = getv ? :app;
+        symbol [ setProperty %tmp.330 167 32 43 ];
+        %tmp.330 = getv function %tmp.329 :setProperty;
+        %tmp.331 = "MoExRoom";
+        %tmp.332 = null;
+        invoke %tmp.329 %tmp.330(%tmp.331, %tmp.332);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 168 28 ]
+        symbol [ app %tmp.334 168 28 31 ];
+        %tmp.334 = getv ? :app;
+        symbol [ setProperty %tmp.335 168 32 43 ];
+        %tmp.335 = getv function %tmp.334 :setProperty;
+        %tmp.336 = "TuExSubj";
+        %tmp.337 = null;
+        invoke %tmp.334 %tmp.335(%tmp.336, %tmp.337);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 169 28 ]
+        symbol [ app %tmp.339 169 28 31 ];
+        %tmp.339 = getv ? :app;
+        symbol [ setProperty %tmp.340 169 32 43 ];
+        %tmp.340 = getv function %tmp.339 :setProperty;
+        %tmp.341 = "TuExTeach";
+        %tmp.342 = null;
+        invoke %tmp.339 %tmp.340(%tmp.341, %tmp.342);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 170 28 ]
+        symbol [ app %tmp.344 170 28 31 ];
+        %tmp.344 = getv ? :app;
+        symbol [ setProperty %tmp.345 170 32 43 ];
+        %tmp.345 = getv function %tmp.344 :setProperty;
+        %tmp.346 = "TuExRoom";
+        %tmp.347 = null;
+        invoke %tmp.344 %tmp.345(%tmp.346, %tmp.347);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 171 28 ]
+        symbol [ app %tmp.349 171 28 31 ];
+        %tmp.349 = getv ? :app;
+        symbol [ setProperty %tmp.350 171 32 43 ];
+        %tmp.350 = getv function %tmp.349 :setProperty;
+        %tmp.351 = "WeExSubj";
+        %tmp.352 = null;
+        invoke %tmp.349 %tmp.350(%tmp.351, %tmp.352);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 172 28 ]
+        symbol [ app %tmp.354 172 28 31 ];
+        %tmp.354 = getv ? :app;
+        symbol [ setProperty %tmp.355 172 32 43 ];
+        %tmp.355 = getv function %tmp.354 :setProperty;
+        %tmp.356 = "WeExTeach";
+        %tmp.357 = null;
+        invoke %tmp.354 %tmp.355(%tmp.356, %tmp.357);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 173 28 ]
+        symbol [ app %tmp.359 173 28 31 ];
+        %tmp.359 = getv ? :app;
+        symbol [ setProperty %tmp.360 173 32 43 ];
+        %tmp.360 = getv function %tmp.359 :setProperty;
+        %tmp.361 = "WeExRoom";
+        %tmp.362 = null;
+        invoke %tmp.359 %tmp.360(%tmp.361, %tmp.362);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 174 28 ]
+        symbol [ app %tmp.364 174 28 31 ];
+        %tmp.364 = getv ? :app;
+        symbol [ setProperty %tmp.365 174 32 43 ];
+        %tmp.365 = getv function %tmp.364 :setProperty;
+        %tmp.366 = "FrExSubj";
+        %tmp.367 = null;
+        invoke %tmp.364 %tmp.365(%tmp.366, %tmp.367);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 175 28 ]
+        symbol [ app %tmp.369 175 28 31 ];
+        %tmp.369 = getv ? :app;
+        symbol [ setProperty %tmp.370 175 32 43 ];
+        %tmp.370 = getv function %tmp.369 :setProperty;
+        %tmp.371 = "FrExTeach";
+        %tmp.372 = null;
+        invoke %tmp.369 %tmp.370(%tmp.371, %tmp.372);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 176 28 ]
+        symbol [ app %tmp.374 176 28 31 ];
+        %tmp.374 = getv ? :app;
+        symbol [ setProperty %tmp.375 176 32 43 ];
+        %tmp.375 = getv function %tmp.374 :setProperty;
+        %tmp.376 = "FrExRoom";
+        %tmp.377 = null;
+        invoke %tmp.374 %tmp.375(%tmp.376, %tmp.377);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 177 28 ]
+        goto break @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_119_20_194_20_switchStmtEnd;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_178_24_191_33_switchCase:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 179 28 ]
+        symbol [ app %tmp.379 179 28 31 ];
+        %tmp.379 = getv ? :app;
+        symbol [ setProperty %tmp.380 179 32 43 ];
+        %tmp.380 = getv function %tmp.379 :setProperty;
+        %tmp.381 = "MoExSubj";
+        %tmp.382 = null;
+        invoke %tmp.379 %tmp.380(%tmp.381, %tmp.382);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 180 28 ]
+        symbol [ app %tmp.384 180 28 31 ];
+        %tmp.384 = getv ? :app;
+        symbol [ setProperty %tmp.385 180 32 43 ];
+        %tmp.385 = getv function %tmp.384 :setProperty;
+        %tmp.386 = "MoExTeach";
+        %tmp.387 = null;
+        invoke %tmp.384 %tmp.385(%tmp.386, %tmp.387);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 181 28 ]
+        symbol [ app %tmp.389 181 28 31 ];
+        %tmp.389 = getv ? :app;
+        symbol [ setProperty %tmp.390 181 32 43 ];
+        %tmp.390 = getv function %tmp.389 :setProperty;
+        %tmp.391 = "MoExRoom";
+        %tmp.392 = null;
+        invoke %tmp.389 %tmp.390(%tmp.391, %tmp.392);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 182 28 ]
+        symbol [ app %tmp.394 182 28 31 ];
+        %tmp.394 = getv ? :app;
+        symbol [ setProperty %tmp.395 182 32 43 ];
+        %tmp.395 = getv function %tmp.394 :setProperty;
+        %tmp.396 = "TuExSubj";
+        %tmp.397 = null;
+        invoke %tmp.394 %tmp.395(%tmp.396, %tmp.397);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 183 28 ]
+        symbol [ app %tmp.399 183 28 31 ];
+        %tmp.399 = getv ? :app;
+        symbol [ setProperty %tmp.400 183 32 43 ];
+        %tmp.400 = getv function %tmp.399 :setProperty;
+        %tmp.401 = "TuExTeach";
+        %tmp.402 = null;
+        invoke %tmp.399 %tmp.400(%tmp.401, %tmp.402);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 184 28 ]
+        symbol [ app %tmp.404 184 28 31 ];
+        %tmp.404 = getv ? :app;
+        symbol [ setProperty %tmp.405 184 32 43 ];
+        %tmp.405 = getv function %tmp.404 :setProperty;
+        %tmp.406 = "TuExRoom";
+        %tmp.407 = null;
+        invoke %tmp.404 %tmp.405(%tmp.406, %tmp.407);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 185 28 ]
+        symbol [ app %tmp.409 185 28 31 ];
+        %tmp.409 = getv ? :app;
+        symbol [ setProperty %tmp.410 185 32 43 ];
+        %tmp.410 = getv function %tmp.409 :setProperty;
+        %tmp.411 = "WeExSubj";
+        %tmp.412 = null;
+        invoke %tmp.409 %tmp.410(%tmp.411, %tmp.412);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 186 28 ]
+        symbol [ app %tmp.414 186 28 31 ];
+        %tmp.414 = getv ? :app;
+        symbol [ setProperty %tmp.415 186 32 43 ];
+        %tmp.415 = getv function %tmp.414 :setProperty;
+        %tmp.416 = "WeExTeach";
+        %tmp.417 = null;
+        invoke %tmp.414 %tmp.415(%tmp.416, %tmp.417);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 187 28 ]
+        symbol [ app %tmp.419 187 28 31 ];
+        %tmp.419 = getv ? :app;
+        symbol [ setProperty %tmp.420 187 32 43 ];
+        %tmp.420 = getv function %tmp.419 :setProperty;
+        %tmp.421 = "WeExRoom";
+        %tmp.422 = null;
+        invoke %tmp.419 %tmp.420(%tmp.421, %tmp.422);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 188 28 ]
+        symbol [ app %tmp.424 188 28 31 ];
+        %tmp.424 = getv ? :app;
+        symbol [ setProperty %tmp.425 188 32 43 ];
+        %tmp.425 = getv function %tmp.424 :setProperty;
+        %tmp.426 = "ThExSubj";
+        %tmp.427 = null;
+        invoke %tmp.424 %tmp.425(%tmp.426, %tmp.427);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 189 28 ]
+        symbol [ app %tmp.429 189 28 31 ];
+        %tmp.429 = getv ? :app;
+        symbol [ setProperty %tmp.430 189 32 43 ];
+        %tmp.430 = getv function %tmp.429 :setProperty;
+        %tmp.431 = "ThExTeach";
+        %tmp.432 = null;
+        invoke %tmp.429 %tmp.430(%tmp.431, %tmp.432);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 190 28 ]
+        symbol [ app %tmp.434 190 28 31 ];
+        %tmp.434 = getv ? :app;
+        symbol [ setProperty %tmp.435 190 32 43 ];
+        %tmp.435 = getv function %tmp.434 :setProperty;
+        %tmp.436 = "ThExRoom";
+        %tmp.437 = null;
+        invoke %tmp.434 %tmp.435(%tmp.436, %tmp.437);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 191 28 ]
+        goto break @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_119_20_194_20_switchStmtEnd;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_192_24_193_33_switchCase:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_119_20_194_20_defaultCodeBegin:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 193 28 ]
+        goto break @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_119_20_194_20_switchStmtEnd;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_119_20_194_20_switchStmtEnd:
+        pop;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_118_18_195_16_stop:
+        goto @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_110_16_195_16_if_end;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_110_16_195_16_if_end:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_109_12_196_12_stop:
+        goto @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_106_12_196_12_if_end;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_106_12_196_12_if_end:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 197 12 ]
+        symbol [ app %tmp.439 197 37 40 ];
+        %tmp.439 = getv ? :app;
+        symbol [ getProperty %tmp.440 197 41 52 ];
+        %tmp.440 = getv function %tmp.439 :getProperty;
+        %tmp.441 = "MoExSubj";
+        %tmp.442 = invoke %tmp.439 %tmp.440(%tmp.441);
+        symbol [ MondayExtractedSubject ? 197 12 34 ];
+        putv self :MondayExtractedSubject %tmp.442;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 198 12 ]
+        symbol [ app %tmp.444 198 37 40 ];
+        %tmp.444 = getv ? :app;
+        symbol [ getProperty %tmp.445 198 41 52 ];
+        %tmp.445 = getv function %tmp.444 :getProperty;
+        %tmp.446 = "MoExTeach";
+        %tmp.447 = invoke %tmp.444 %tmp.445(%tmp.446);
+        symbol [ MondayExtractedTeacher ? 198 12 34 ];
+        putv self :MondayExtractedTeacher %tmp.447;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 199 12 ]
+        symbol [ app %tmp.449 199 34 37 ];
+        %tmp.449 = getv ? :app;
+        symbol [ getProperty %tmp.450 199 38 49 ];
+        %tmp.450 = getv function %tmp.449 :getProperty;
+        %tmp.451 = "MoExRoom";
+        %tmp.452 = invoke %tmp.449 %tmp.450(%tmp.451);
+        symbol [ MondayExtractedRoom ? 199 12 31 ];
+        putv self :MondayExtractedRoom %tmp.452;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 200 12 ]
+        symbol [ app %tmp.454 200 38 41 ];
+        %tmp.454 = getv ? :app;
+        symbol [ getProperty %tmp.455 200 42 53 ];
+        %tmp.455 = getv function %tmp.454 :getProperty;
+        %tmp.456 = "TuExSubj";
+        %tmp.457 = invoke %tmp.454 %tmp.455(%tmp.456);
+        symbol [ TuesdayExtractedSubject ? 200 12 35 ];
+        putv self :TuesdayExtractedSubject %tmp.457;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 201 12 ]
+        symbol [ app %tmp.459 201 38 41 ];
+        %tmp.459 = getv ? :app;
+        symbol [ getProperty %tmp.460 201 42 53 ];
+        %tmp.460 = getv function %tmp.459 :getProperty;
+        %tmp.461 = "TuExTeach";
+        %tmp.462 = invoke %tmp.459 %tmp.460(%tmp.461);
+        symbol [ TuesdayExtractedTeacher ? 201 12 35 ];
+        putv self :TuesdayExtractedTeacher %tmp.462;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 202 12 ]
+        symbol [ app %tmp.464 202 35 38 ];
+        %tmp.464 = getv ? :app;
+        symbol [ getProperty %tmp.465 202 39 50 ];
+        %tmp.465 = getv function %tmp.464 :getProperty;
+        %tmp.466 = "TuExRoom";
+        %tmp.467 = invoke %tmp.464 %tmp.465(%tmp.466);
+        symbol [ TuesdayExtractedRoom ? 202 12 32 ];
+        putv self :TuesdayExtractedRoom %tmp.467;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 203 12 ]
+        symbol [ app %tmp.469 203 40 43 ];
+        %tmp.469 = getv ? :app;
+        symbol [ getProperty %tmp.470 203 44 55 ];
+        %tmp.470 = getv function %tmp.469 :getProperty;
+        %tmp.471 = "WeExSubj";
+        %tmp.472 = invoke %tmp.469 %tmp.470(%tmp.471);
+        symbol [ WednesdayExtractedSubject ? 203 12 37 ];
+        putv self :WednesdayExtractedSubject %tmp.472;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 204 12 ]
+        symbol [ app %tmp.474 204 40 43 ];
+        %tmp.474 = getv ? :app;
+        symbol [ getProperty %tmp.475 204 44 55 ];
+        %tmp.475 = getv function %tmp.474 :getProperty;
+        %tmp.476 = "WeExTeach";
+        %tmp.477 = invoke %tmp.474 %tmp.475(%tmp.476);
+        symbol [ WednesdayExtractedTeacher ? 204 12 37 ];
+        putv self :WednesdayExtractedTeacher %tmp.477;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 205 12 ]
+        symbol [ app %tmp.479 205 37 40 ];
+        %tmp.479 = getv ? :app;
+        symbol [ getProperty %tmp.480 205 41 52 ];
+        %tmp.480 = getv function %tmp.479 :getProperty;
+        %tmp.481 = "WeExRoom";
+        %tmp.482 = invoke %tmp.479 %tmp.480(%tmp.481);
+        symbol [ WednesdayExtractedRoom ? 205 12 34 ];
+        putv self :WednesdayExtractedRoom %tmp.482;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 206 12 ]
+        symbol [ app %tmp.484 206 39 42 ];
+        %tmp.484 = getv ? :app;
+        symbol [ getProperty %tmp.485 206 43 54 ];
+        %tmp.485 = getv function %tmp.484 :getProperty;
+        %tmp.486 = "ThExSubj";
+        %tmp.487 = invoke %tmp.484 %tmp.485(%tmp.486);
+        symbol [ ThursdayExtractedSubject ? 206 12 36 ];
+        putv self :ThursdayExtractedSubject %tmp.487;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 207 12 ]
+        symbol [ app %tmp.489 207 39 42 ];
+        %tmp.489 = getv ? :app;
+        symbol [ getProperty %tmp.490 207 43 54 ];
+        %tmp.490 = getv function %tmp.489 :getProperty;
+        %tmp.491 = "ThExTeach";
+        %tmp.492 = invoke %tmp.489 %tmp.490(%tmp.491);
+        symbol [ ThursdayExtractedTeacher ? 207 12 36 ];
+        putv self :ThursdayExtractedTeacher %tmp.492;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 208 12 ]
+        symbol [ app %tmp.494 208 36 39 ];
+        %tmp.494 = getv ? :app;
+        symbol [ getProperty %tmp.495 208 40 51 ];
+        %tmp.495 = getv function %tmp.494 :getProperty;
+        %tmp.496 = "ThExRoom";
+        %tmp.497 = invoke %tmp.494 %tmp.495(%tmp.496);
+        symbol [ ThursdayExtractedRoom ? 208 12 33 ];
+        putv self :ThursdayExtractedRoom %tmp.497;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 209 12 ]
+        symbol [ app %tmp.499 209 37 40 ];
+        %tmp.499 = getv ? :app;
+        symbol [ getProperty %tmp.500 209 41 52 ];
+        %tmp.500 = getv function %tmp.499 :getProperty;
+        %tmp.501 = "FrExSubj";
+        %tmp.502 = invoke %tmp.499 %tmp.500(%tmp.501);
+        symbol [ FridayExtractedSubject ? 209 12 34 ];
+        putv self :FridayExtractedSubject %tmp.502;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 210 12 ]
+        symbol [ app %tmp.504 210 37 40 ];
+        %tmp.504 = getv ? :app;
+        symbol [ getProperty %tmp.505 210 41 52 ];
+        %tmp.505 = getv function %tmp.504 :getProperty;
+        %tmp.506 = "FrExTeach";
+        %tmp.507 = invoke %tmp.504 %tmp.505(%tmp.506);
+        symbol [ FridayExtractedTeacher ? 210 12 34 ];
+        putv self :FridayExtractedTeacher %tmp.507;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 211 12 ]
+        symbol [ app %tmp.509 211 34 37 ];
+        %tmp.509 = getv ? :app;
+        symbol [ getProperty %tmp.510 211 38 49 ];
+        %tmp.510 = getv function %tmp.509 :getProperty;
+        %tmp.511 = "FrExRoom";
+        %tmp.512 = invoke %tmp.509 %tmp.510(%tmp.511);
+        symbol [ FridayExtractedRoom ? 211 12 31 ];
+        putv self :FridayExtractedRoom %tmp.512;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_105_15_212_8_stop:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_88_8_212_8_if_end:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_86_42_213_4_stop:
+    }
+    [ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc"; @line = 215; @symbol_functiondef = [onUpdate,215,13,21]; @symbol_param<0> = [dc,215,22,24]; ]
+    function onUpdate(dc) {
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_215_26_608_4_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 217 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 217 8 10 ];
+        symbol [ setColor %tmp.2 217 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        symbol [ Graphics %tmp.3 217 20 28 ];
+        %tmp.3 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.4 217 29 40 ];
+        %tmp.4 = getv %tmp.3 :COLOR_WHITE;
+        symbol [ Graphics %tmp.5 217 42 50 ];
+        %tmp.5 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.6 217 51 68 ];
+        %tmp.6 = getv %tmp.5 :COLOR_TRANSPARENT;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 219 8 ]
+        symbol [ System %tmp.7 219 15 21 ];
+        %tmp.7 = getm $.Toybox.System;
+        symbol [ getClockTime %tmp.8 219 22 34 ];
+        %tmp.8 = getv function %tmp.7 :getClockTime;
+        %tmp.9 = invoke %tmp.7 %tmp.8();
+        symbol [ hour %tmp.10 219 37 41 ];
+        %tmp.10 = getv %tmp.9 :hour;
+        %tmp.11 = 60;
+        %tmp.12 = mul %tmp.10 %tmp.11;
+        symbol [ System %tmp.13 219 49 55 ];
+        %tmp.13 = getm $.Toybox.System;
+        symbol [ getClockTime %tmp.14 219 56 68 ];
+        %tmp.14 = getv function %tmp.13 :getClockTime;
+        %tmp.15 = invoke %tmp.13 %tmp.14();
+        symbol [ min %tmp.16 219 71 74 ];
+        %tmp.16 = getv %tmp.15 :min;
+        %tmp.17 = add %tmp.12 %tmp.16;
+        symbol [ time ? 219 8 12 ];
+        putv self :time %tmp.17;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 221 8 ]
+        symbol [ Time %tmp.18 222 12 16 ];
+        %tmp.18 = getm $.Toybox.Time;
+        symbol [ Gregorian %tmp.19 222 17 26 ];
+        %tmp.19 = getv %tmp.18 :Gregorian;
+        symbol [ info %tmp.20 222 27 31 ];
+        %tmp.20 = getv function %tmp.19 :info;
+        symbol [ Time %tmp.21 223 16 20 ];
+        %tmp.21 = getm $.Toybox.Time;
+        symbol [ now %tmp.22 223 21 24 ];
+        %tmp.22 = getv function %tmp.21 :now;
+        %tmp.23 = invoke %tmp.21 %tmp.22();
+        symbol [ Time %tmp.24 224 16 20 ];
+        %tmp.24 = getm $.Toybox.Time;
+        symbol [ FORMAT_SHORT %tmp.25 224 21 33 ];
+        %tmp.25 = getv %tmp.24 :FORMAT_SHORT;
+        %tmp.26 = invoke %tmp.19 %tmp.20(%tmp.23, %tmp.25);
+        symbol [ day_of_week %tmp.27 225 14 25 ];
+        %tmp.27 = getv %tmp.26 :day_of_week;
+        symbol [ toNumber %tmp.28 225 26 34 ];
+        %tmp.28 = getv function %tmp.27 :toNumber;
+        %tmp.29 = invoke %tmp.27 %tmp.28();
+        %tmp.30 = 2;
+        %tmp.31 = sub %tmp.29 %tmp.30;
+        symbol [ date ? 221 8 12 ];
+        putv self :date %tmp.31;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 227 8 ]
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_227_8_254_8_if_stmt:
+        symbol [ time %tmp.33 228 12 16 ];
+        %tmp.33 = getv ? :time;
+        %tmp.34 = 7;
+        %tmp.35 = 60;
+        %tmp.36 = mul %tmp.34 %tmp.35;
+        %tmp.37 = 45;
+        %tmp.38 = add %tmp.36 %tmp.37;
+        %tmp.39 = lt %tmp.33 %tmp.38;
+        bf %tmp.39 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_227_8_254_8_if_false;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_227_8_254_8_if_true:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_231_8_233_8_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 232 12 ]
+        %tmp.40 = 0;
+        symbol [ ongoingHour ? 232 12 23 ];
+        putv self :ongoingHour %tmp.40;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_231_8_233_8_stop:
+        goto @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_227_8_254_8_if_end;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_227_8_254_8_if_false:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 233 15 ]
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_233_15_254_8_if_stmt:
+        symbol [ time %tmp.42 233 19 23 ];
+        %tmp.42 = getv ? :time;
+        %tmp.43 = 8;
+        %tmp.44 = 60;
+        %tmp.45 = mul %tmp.43 %tmp.44;
+        %tmp.46 = 45;
+        %tmp.47 = add %tmp.45 %tmp.46;
+        %tmp.48 = lt %tmp.42 %tmp.47;
+        bf %tmp.48 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_233_15_254_8_if_false;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_233_15_254_8_if_true:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_233_39_235_8_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 234 12 ]
+        %tmp.49 = 1;
+        symbol [ ongoingHour ? 234 12 23 ];
+        putv self :ongoingHour %tmp.49;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_233_39_235_8_stop:
+        goto @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_233_15_254_8_if_end;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_233_15_254_8_if_false:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 235 15 ]
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_235_15_254_8_if_stmt:
+        symbol [ time %tmp.51 235 19 23 ];
+        %tmp.51 = getv ? :time;
+        %tmp.52 = 9;
+        %tmp.53 = 60;
+        %tmp.54 = mul %tmp.52 %tmp.53;
+        %tmp.55 = 40;
+        %tmp.56 = add %tmp.54 %tmp.55;
+        %tmp.57 = lt %tmp.51 %tmp.56;
+        bf %tmp.57 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_235_15_254_8_if_false;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_235_15_254_8_if_true:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_235_39_237_8_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 236 12 ]
+        %tmp.58 = 2;
+        symbol [ ongoingHour ? 236 12 23 ];
+        putv self :ongoingHour %tmp.58;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_235_39_237_8_stop:
+        goto @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_235_15_254_8_if_end;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_235_15_254_8_if_false:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 237 15 ]
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_237_15_254_8_if_stmt:
+        symbol [ time %tmp.60 237 19 23 ];
+        %tmp.60 = getv ? :time;
+        %tmp.61 = 10;
+        %tmp.62 = 60;
+        %tmp.63 = mul %tmp.61 %tmp.62;
+        %tmp.64 = 40;
+        %tmp.65 = add %tmp.63 %tmp.64;
+        %tmp.66 = lt %tmp.60 %tmp.65;
+        bf %tmp.66 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_237_15_254_8_if_false;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_237_15_254_8_if_true:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_237_40_239_8_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 238 12 ]
+        %tmp.67 = 3;
+        symbol [ ongoingHour ? 238 12 23 ];
+        putv self :ongoingHour %tmp.67;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_237_40_239_8_stop:
+        goto @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_237_15_254_8_if_end;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_237_15_254_8_if_false:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 239 15 ]
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_239_15_254_8_if_stmt:
+        symbol [ time %tmp.69 239 19 23 ];
+        %tmp.69 = getv ? :time;
+        %tmp.70 = 11;
+        %tmp.71 = 60;
+        %tmp.72 = mul %tmp.70 %tmp.71;
+        %tmp.73 = 35;
+        %tmp.74 = add %tmp.72 %tmp.73;
+        %tmp.75 = lt %tmp.69 %tmp.74;
+        bf %tmp.75 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_239_15_254_8_if_false;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_239_15_254_8_if_true:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_239_40_241_8_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 240 12 ]
+        %tmp.76 = 4;
+        symbol [ ongoingHour ? 240 12 23 ];
+        putv self :ongoingHour %tmp.76;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_239_40_241_8_stop:
+        goto @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_239_15_254_8_if_end;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_239_15_254_8_if_false:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 241 15 ]
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_241_15_254_8_if_stmt:
+        symbol [ time %tmp.78 241 19 23 ];
+        %tmp.78 = getv ? :time;
+        %tmp.79 = 12;
+        %tmp.80 = 60;
+        %tmp.81 = mul %tmp.79 %tmp.80;
+        %tmp.82 = 30;
+        %tmp.83 = add %tmp.81 %tmp.82;
+        %tmp.84 = lt %tmp.78 %tmp.83;
+        bf %tmp.84 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_241_15_254_8_if_false;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_241_15_254_8_if_true:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_241_40_243_8_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 242 12 ]
+        %tmp.85 = 5;
+        symbol [ ongoingHour ? 242 12 23 ];
+        putv self :ongoingHour %tmp.85;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_241_40_243_8_stop:
+        goto @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_241_15_254_8_if_end;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_241_15_254_8_if_false:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 243 15 ]
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_243_15_254_8_if_stmt:
+        symbol [ time %tmp.87 243 19 23 ];
+        %tmp.87 = getv ? :time;
+        %tmp.88 = 13;
+        %tmp.89 = 60;
+        %tmp.90 = mul %tmp.88 %tmp.89;
+        %tmp.91 = 20;
+        %tmp.92 = add %tmp.90 %tmp.91;
+        %tmp.93 = lt %tmp.87 %tmp.92;
+        bf %tmp.93 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_243_15_254_8_if_false;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_243_15_254_8_if_true:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_243_40_245_8_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 244 12 ]
+        %tmp.94 = 6;
+        symbol [ ongoingHour ? 244 12 23 ];
+        putv self :ongoingHour %tmp.94;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_243_40_245_8_stop:
+        goto @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_243_15_254_8_if_end;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_243_15_254_8_if_false:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 245 15 ]
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_245_15_254_8_if_stmt:
+        symbol [ time %tmp.96 245 19 23 ];
+        %tmp.96 = getv ? :time;
+        %tmp.97 = 14;
+        %tmp.98 = 60;
+        %tmp.99 = mul %tmp.97 %tmp.98;
+        %tmp.100 = 10;
+        %tmp.101 = add %tmp.99 %tmp.100;
+        %tmp.102 = lt %tmp.96 %tmp.101;
+        bf %tmp.102 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_245_15_254_8_if_false;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_245_15_254_8_if_true:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_245_40_247_8_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 246 12 ]
+        %tmp.103 = 7;
+        symbol [ ongoingHour ? 246 12 23 ];
+        putv self :ongoingHour %tmp.103;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_245_40_247_8_stop:
+        goto @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_245_15_254_8_if_end;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_245_15_254_8_if_false:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 247 15 ]
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_247_15_254_8_if_stmt:
+        symbol [ time %tmp.105 247 19 23 ];
+        %tmp.105 = getv ? :time;
+        %tmp.106 = 15;
+        %tmp.107 = 60;
+        %tmp.108 = mul %tmp.106 %tmp.107;
+        %tmp.109 = 0;
+        %tmp.110 = add %tmp.108 %tmp.109;
+        %tmp.111 = lt %tmp.105 %tmp.110;
+        bf %tmp.111 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_247_15_254_8_if_false;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_247_15_254_8_if_true:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_247_39_249_8_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 248 12 ]
+        %tmp.112 = 8;
+        symbol [ ongoingHour ? 248 12 23 ];
+        putv self :ongoingHour %tmp.112;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_247_39_249_8_stop:
+        goto @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_247_15_254_8_if_end;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_247_15_254_8_if_false:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 249 15 ]
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_249_15_254_8_if_stmt:
+        symbol [ time %tmp.114 249 19 23 ];
+        %tmp.114 = getv ? :time;
+        %tmp.115 = 15;
+        %tmp.116 = 60;
+        %tmp.117 = mul %tmp.115 %tmp.116;
+        %tmp.118 = 50;
+        %tmp.119 = add %tmp.117 %tmp.118;
+        %tmp.120 = lt %tmp.114 %tmp.119;
+        bf %tmp.120 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_249_15_254_8_if_false;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_249_15_254_8_if_true:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_249_40_251_8_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 250 12 ]
+        %tmp.121 = 9;
+        symbol [ ongoingHour ? 250 12 23 ];
+        putv self :ongoingHour %tmp.121;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_249_40_251_8_stop:
+        goto @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_249_15_254_8_if_end;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_249_15_254_8_if_false:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 251 15 ]
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_251_15_254_8_if_stmt:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_251_19_251_41_begin:
+        symbol [ date %tmp.123 251 19 23 ];
+        %tmp.123 = getv ? :date;
+        %tmp.124 = 5;
+        %tmp.125 = ne %tmp.123 %tmp.124;
+        bf %tmp.125 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_251_15_254_8_if_end;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_251_32_251_41_true:
+        symbol [ date %tmp.127 251 32 36 ];
+        %tmp.127 = getv ? :date;
+        %tmp.128 = -1;
+        %tmp.129 = ne %tmp.127 %tmp.128;
+        push %tmp.129;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_251_32_251_41_end:
+        %tmp.130 = phi [%tmp.125 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_251_19_251_41_begin] [%tmp.129 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_251_32_251_41_true] [%tmp.130 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_251_32_251_41_end];
+        bf %tmp.130 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_251_15_254_8_if_end;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_251_15_254_8_if_true:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_251_44_254_8_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 252 12 ]
+        %tmp.131 = 0;
+        symbol [ ongoingHour ? 252 12 23 ];
+        putv self :ongoingHour %tmp.131;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 253 12 ]
+        %tmp.132 = 10;
+        symbol [ date ? 253 12 16 ];
+        putv self :date %tmp.132;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_251_44_254_8_stop:
+        goto @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_251_15_254_8_if_end;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_251_15_254_8_if_end:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_249_15_254_8_if_end:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_247_15_254_8_if_end:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_245_15_254_8_if_end:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_243_15_254_8_if_end:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_241_15_254_8_if_end:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_239_15_254_8_if_end:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_237_15_254_8_if_end:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_235_15_254_8_if_end:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_233_15_254_8_if_end:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_227_8_254_8_if_end:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 256 8 ]
+        %tmp.133 = lgetv %dc;
+        symbol [ dc %tmp.133 256 8 10 ];
+        symbol [ setColor %tmp.134 256 11 19 ];
+        %tmp.134 = getv function %tmp.133 :setColor;
+        symbol [ Graphics %tmp.135 256 20 28 ];
+        %tmp.135 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.136 256 29 40 ];
+        %tmp.136 = getv %tmp.135 :COLOR_WHITE;
+        symbol [ Graphics %tmp.137 256 42 50 ];
+        %tmp.137 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.138 256 51 68 ];
+        %tmp.138 = getv %tmp.137 :COLOR_TRANSPARENT;
+        invoke %tmp.133 %tmp.134(%tmp.136, %tmp.138);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 257 8 ]
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_257_8_607_8_if_stmt:
+        symbol [ loadedData %tmp.140 258 12 22 ];
+        %tmp.140 = getv ? :loadedData;
+        %tmp.141 = true;
+        %tmp.142 = eq %tmp.140 %tmp.141;
+        bf %tmp.142 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_257_8_607_8_if_false;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_257_8_607_8_if_true:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_260_8_596_8_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 261 12 ]
+        symbol [ date %tmp.144 261 20 24 ];
+        %tmp.144 = getv ? :date;
+        push %tmp.144;
+        switch %tmp.144 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_261_12_595_12_switchStmtEnd;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_261_12_595_12_switchStmtBegin:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 262 16 ]
+        %tmp.145 = dup %tmp.144;
+        %tmp.146 = 0;
+        %tmp.147 = getv function %tmp.145 :equals;
+        %tmp.148 = invoke %tmp.145 %tmp.147 (%tmp.146);
+        bt %tmp.148 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_262_16_322_25_switchCase;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 323 16 ]
+        %tmp.149 = dup %tmp.144;
+        %tmp.150 = 1;
+        %tmp.151 = getv function %tmp.149 :equals;
+        %tmp.152 = invoke %tmp.149 %tmp.151 (%tmp.150);
+        bt %tmp.152 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_323_16_385_25_switchCase;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 386 16 ]
+        %tmp.153 = dup %tmp.144;
+        %tmp.154 = 2;
+        %tmp.155 = getv function %tmp.153 :equals;
+        %tmp.156 = invoke %tmp.153 %tmp.155 (%tmp.154);
+        bt %tmp.156 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_386_16_449_25_switchCase;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 450 16 ]
+        %tmp.157 = dup %tmp.144;
+        %tmp.158 = 3;
+        %tmp.159 = getv function %tmp.157 :equals;
+        %tmp.160 = invoke %tmp.157 %tmp.159 (%tmp.158);
+        bt %tmp.160 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_450_16_513_25_switchCase;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 514 16 ]
+        %tmp.161 = dup %tmp.144;
+        %tmp.162 = 4;
+        %tmp.163 = getv function %tmp.161 :equals;
+        %tmp.164 = invoke %tmp.161 %tmp.163 (%tmp.162);
+        bt %tmp.164 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_514_16_574_25_switchCase;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 575 16 ]
+        %tmp.165 = dup %tmp.144;
+        %tmp.166 = 10;
+        %tmp.167 = getv function %tmp.165 :equals;
+        %tmp.168 = invoke %tmp.165 %tmp.167 (%tmp.166);
+        bt %tmp.168 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_575_16_584_25_switchCase;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 585 16 ]
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_261_12_595_12_switchStmtDefault:
+        goto @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_261_12_595_12_defaultCodeBegin;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_262_16_322_25_switchCase:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 263 20 ]
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_263_20_321_20_if_stmt:
+        symbol [ MondayExtractedRoom %tmp.170 263 24 43 ];
+        %tmp.170 = getv ? :MondayExtractedRoom;
+        %tmp.171 = null;
+        %tmp.172 = ne %tmp.170 %tmp.171;
+        bf %tmp.172 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_263_20_321_20_if_else_false;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_263_20_321_20_if_true:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_263_53_311_20_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 265 24 ]
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_265_24_310_24_if_stmt:
+        symbol [ MondayExtractedRoom %tmp.174 266 28 47 ];
+        %tmp.174 = getv ? :MondayExtractedRoom;
+        %tmp.175 = as %tmp.174 { (!Null) };
+        symbol [ ongoingHour %tmp.177 266 48 59 ];
+        %tmp.177 = getv ? :ongoingHour;
+        symbol [ toNumber %tmp.178 266 60 68 ];
+        %tmp.178 = getv function %tmp.177 :toNumber;
+        %tmp.179 = invoke %tmp.177 %tmp.178();
+        %tmp.180 = agetv %tmp.175 %tmp.179;
+        %tmp.181 = null;
+        %tmp.182 = eq %tmp.180 %tmp.181;
+        bf %tmp.182 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_265_24_310_24_if_else_false;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_265_24_310_24_if_true:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_267_26_283_24_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 269 28 ]
+        %tmp.183 = lgetv %dc;
+        symbol [ dc %tmp.183 269 28 30 ];
+        symbol [ drawText %tmp.184 269 31 39 ];
+        %tmp.184 = getv function %tmp.183 :drawText;
+        %tmp.185 = lgetv %dc;
+        symbol [ dc %tmp.185 270 32 34 ];
+        symbol [ getWidth %tmp.186 270 35 43 ];
+        %tmp.186 = getv function %tmp.185 :getWidth;
+        %tmp.187 = invoke %tmp.185 %tmp.186();
+        %tmp.188 = 2;
+        %tmp.189 = div %tmp.187 %tmp.188;
+        %tmp.190 = lgetv %dc;
+        symbol [ dc %tmp.190 271 33 35 ];
+        symbol [ getHeight %tmp.191 271 36 45 ];
+        %tmp.191 = getv function %tmp.190 :getHeight;
+        %tmp.192 = invoke %tmp.190 %tmp.191();
+        %tmp.193 = 15;
+        %tmp.194 = mul %tmp.192 %tmp.193;
+        %tmp.195 = 100;
+        %tmp.196 = div %tmp.194 %tmp.195;
+        symbol [ Graphics %tmp.197 272 32 40 ];
+        %tmp.197 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.198 272 41 51 ];
+        %tmp.198 = getv %tmp.197 :FONT_SMALL;
+        %tmp.199 = "Volná hodina";
+        symbol [ Graphics %tmp.200 274 32 40 ];
+        %tmp.200 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.201 274 41 60 ];
+        %tmp.201 = getv %tmp.200 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.183 %tmp.184(%tmp.189, %tmp.196, %tmp.198, %tmp.199, %tmp.201);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 276 28 ]
+        %tmp.202 = lgetv %dc;
+        symbol [ dc %tmp.202 276 28 30 ];
+        symbol [ drawText %tmp.203 276 31 39 ];
+        %tmp.203 = getv function %tmp.202 :drawText;
+        %tmp.204 = lgetv %dc;
+        symbol [ dc %tmp.204 277 32 34 ];
+        symbol [ getWidth %tmp.205 277 35 43 ];
+        %tmp.205 = getv function %tmp.204 :getWidth;
+        %tmp.206 = invoke %tmp.204 %tmp.205();
+        %tmp.207 = 2;
+        %tmp.208 = div %tmp.206 %tmp.207;
+        %tmp.209 = lgetv %dc;
+        symbol [ dc %tmp.209 278 33 35 ];
+        symbol [ getHeight %tmp.210 278 36 45 ];
+        %tmp.210 = getv function %tmp.209 :getHeight;
+        %tmp.211 = invoke %tmp.209 %tmp.210();
+        %tmp.212 = 55;
+        %tmp.213 = mul %tmp.211 %tmp.212;
+        %tmp.214 = 100;
+        %tmp.215 = div %tmp.213 %tmp.214;
+        symbol [ Graphics %tmp.216 279 32 40 ];
+        %tmp.216 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.217 279 41 51 ];
+        %tmp.217 = getv %tmp.216 :FONT_SMALL;
+        symbol [ classTimes %tmp.219 280 32 42 ];
+        %tmp.219 = getv ? :classTimes;
+        symbol [ ongoingHour %tmp.221 280 43 54 ];
+        %tmp.221 = getv ? :ongoingHour;
+        symbol [ toNumber %tmp.222 280 55 63 ];
+        %tmp.222 = getv function %tmp.221 :toNumber;
+        %tmp.223 = invoke %tmp.221 %tmp.222();
+        %tmp.224 = agetv %tmp.219 %tmp.223;
+        symbol [ Graphics %tmp.225 281 32 40 ];
+        %tmp.225 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.226 281 41 60 ];
+        %tmp.226 = getv %tmp.225 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.202 %tmp.203(%tmp.208, %tmp.215, %tmp.217, %tmp.224, %tmp.226);
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_267_26_283_24_stop:
+        goto @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_265_24_310_24_if_end;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_265_24_310_24_if_else_false:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_283_31_310_24_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 285 28 ]
+        %tmp.227 = lgetv %dc;
+        symbol [ dc %tmp.227 285 28 30 ];
+        symbol [ drawText %tmp.228 285 31 39 ];
+        %tmp.228 = getv function %tmp.227 :drawText;
+        %tmp.229 = lgetv %dc;
+        symbol [ dc %tmp.229 286 32 34 ];
+        symbol [ getWidth %tmp.230 286 35 43 ];
+        %tmp.230 = getv function %tmp.229 :getWidth;
+        %tmp.231 = invoke %tmp.229 %tmp.230();
+        %tmp.232 = 2;
+        %tmp.233 = div %tmp.231 %tmp.232;
+        %tmp.234 = lgetv %dc;
+        symbol [ dc %tmp.234 287 33 35 ];
+        symbol [ getHeight %tmp.235 287 36 45 ];
+        %tmp.235 = getv function %tmp.234 :getHeight;
+        %tmp.236 = invoke %tmp.234 %tmp.235();
+        %tmp.237 = 5;
+        %tmp.238 = mul %tmp.236 %tmp.237;
+        %tmp.239 = 100;
+        %tmp.240 = div %tmp.238 %tmp.239;
+        symbol [ Graphics %tmp.241 288 32 40 ];
+        %tmp.241 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.242 288 41 51 ];
+        %tmp.242 = getv %tmp.241 :FONT_SMALL;
+        symbol [ MondayExtractedRoom %tmp.244 289 32 51 ];
+        %tmp.244 = getv ? :MondayExtractedRoom;
+        symbol [ ongoingHour %tmp.246 289 52 63 ];
+        %tmp.246 = getv ? :ongoingHour;
+        symbol [ toNumber %tmp.247 289 64 72 ];
+        %tmp.247 = getv function %tmp.246 :toNumber;
+        %tmp.248 = invoke %tmp.246 %tmp.247();
+        %tmp.249 = agetv %tmp.244 %tmp.248;
+        symbol [ Graphics %tmp.250 290 32 40 ];
+        %tmp.250 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.251 290 41 60 ];
+        %tmp.251 = getv %tmp.250 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.227 %tmp.228(%tmp.233, %tmp.240, %tmp.242, %tmp.249, %tmp.251);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 292 28 ]
+        %tmp.252 = lgetv %dc;
+        symbol [ dc %tmp.252 292 28 30 ];
+        symbol [ drawText %tmp.253 292 31 39 ];
+        %tmp.253 = getv function %tmp.252 :drawText;
+        %tmp.254 = lgetv %dc;
+        symbol [ dc %tmp.254 293 32 34 ];
+        symbol [ getWidth %tmp.255 293 35 43 ];
+        %tmp.255 = getv function %tmp.254 :getWidth;
+        %tmp.256 = invoke %tmp.254 %tmp.255();
+        %tmp.257 = 2;
+        %tmp.258 = div %tmp.256 %tmp.257;
+        %tmp.259 = lgetv %dc;
+        symbol [ dc %tmp.259 294 33 35 ];
+        symbol [ getHeight %tmp.260 294 36 45 ];
+        %tmp.260 = getv function %tmp.259 :getHeight;
+        %tmp.261 = invoke %tmp.259 %tmp.260();
+        %tmp.262 = 35;
+        %tmp.263 = mul %tmp.261 %tmp.262;
+        %tmp.264 = 100;
+        %tmp.265 = div %tmp.263 %tmp.264;
+        symbol [ Graphics %tmp.266 295 32 40 ];
+        %tmp.266 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.267 295 41 51 ];
+        %tmp.267 = getv %tmp.266 :FONT_SMALL;
+        symbol [ MondayExtractedSubject %tmp.269 296 32 54 ];
+        %tmp.269 = getv ? :MondayExtractedSubject;
+        symbol [ ongoingHour %tmp.271 296 55 66 ];
+        %tmp.271 = getv ? :ongoingHour;
+        symbol [ toNumber %tmp.272 296 67 75 ];
+        %tmp.272 = getv function %tmp.271 :toNumber;
+        %tmp.273 = invoke %tmp.271 %tmp.272();
+        %tmp.274 = agetv %tmp.269 %tmp.273;
+        %tmp.275 = " - ";
+        %tmp.276 = add %tmp.274 %tmp.275;
+        symbol [ MondayExtractedTeacher %tmp.278 298 36 58 ];
+        %tmp.278 = getv ? :MondayExtractedTeacher;
+        symbol [ ongoingHour %tmp.280 299 40 51 ];
+        %tmp.280 = getv ? :ongoingHour;
+        symbol [ toNumber %tmp.281 299 52 60 ];
+        %tmp.281 = getv function %tmp.280 :toNumber;
+        %tmp.282 = invoke %tmp.280 %tmp.281();
+        %tmp.283 = agetv %tmp.278 %tmp.282;
+        %tmp.284 = add %tmp.276 %tmp.283;
+        symbol [ Graphics %tmp.285 301 32 40 ];
+        %tmp.285 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.286 301 41 60 ];
+        %tmp.286 = getv %tmp.285 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.252 %tmp.253(%tmp.258, %tmp.265, %tmp.267, %tmp.284, %tmp.286);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 303 28 ]
+        %tmp.287 = lgetv %dc;
+        symbol [ dc %tmp.287 303 28 30 ];
+        symbol [ drawText %tmp.288 303 31 39 ];
+        %tmp.288 = getv function %tmp.287 :drawText;
+        %tmp.289 = lgetv %dc;
+        symbol [ dc %tmp.289 304 32 34 ];
+        symbol [ getWidth %tmp.290 304 35 43 ];
+        %tmp.290 = getv function %tmp.289 :getWidth;
+        %tmp.291 = invoke %tmp.289 %tmp.290();
+        %tmp.292 = 2;
+        %tmp.293 = div %tmp.291 %tmp.292;
+        %tmp.294 = lgetv %dc;
+        symbol [ dc %tmp.294 305 33 35 ];
+        symbol [ getHeight %tmp.295 305 36 45 ];
+        %tmp.295 = getv function %tmp.294 :getHeight;
+        %tmp.296 = invoke %tmp.294 %tmp.295();
+        %tmp.297 = 65;
+        %tmp.298 = mul %tmp.296 %tmp.297;
+        %tmp.299 = 100;
+        %tmp.300 = div %tmp.298 %tmp.299;
+        symbol [ Graphics %tmp.301 306 32 40 ];
+        %tmp.301 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.302 306 41 51 ];
+        %tmp.302 = getv %tmp.301 :FONT_SMALL;
+        symbol [ classTimes %tmp.304 307 32 42 ];
+        %tmp.304 = getv ? :classTimes;
+        symbol [ ongoingHour %tmp.306 307 43 54 ];
+        %tmp.306 = getv ? :ongoingHour;
+        symbol [ toNumber %tmp.307 307 55 63 ];
+        %tmp.307 = getv function %tmp.306 :toNumber;
+        %tmp.308 = invoke %tmp.306 %tmp.307();
+        %tmp.309 = agetv %tmp.304 %tmp.308;
+        symbol [ Graphics %tmp.310 308 32 40 ];
+        %tmp.310 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.311 308 41 60 ];
+        %tmp.311 = getv %tmp.310 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.287 %tmp.288(%tmp.293, %tmp.300, %tmp.302, %tmp.309, %tmp.311);
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_283_31_310_24_stop:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_265_24_310_24_if_end:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_263_53_311_20_stop:
+        goto @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_263_20_321_20_if_end;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_263_20_321_20_if_else_false:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_311_27_321_20_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 313 24 ]
+        %tmp.312 = lgetv %dc;
+        symbol [ dc %tmp.312 313 24 26 ];
+        symbol [ drawText %tmp.313 313 27 35 ];
+        %tmp.313 = getv function %tmp.312 :drawText;
+        %tmp.314 = lgetv %dc;
+        symbol [ dc %tmp.314 314 28 30 ];
+        symbol [ getWidth %tmp.315 314 31 39 ];
+        %tmp.315 = getv function %tmp.314 :getWidth;
+        %tmp.316 = invoke %tmp.314 %tmp.315();
+        %tmp.317 = 2;
+        %tmp.318 = div %tmp.316 %tmp.317;
+        %tmp.319 = lgetv %dc;
+        symbol [ dc %tmp.319 315 28 30 ];
+        symbol [ getHeight %tmp.320 315 31 40 ];
+        %tmp.320 = getv function %tmp.319 :getHeight;
+        %tmp.321 = invoke %tmp.319 %tmp.320();
+        %tmp.322 = 2;
+        %tmp.323 = div %tmp.321 %tmp.322;
+        %tmp.324 = lgetv %dc;
+        symbol [ dc %tmp.324 316 32 34 ];
+        symbol [ getFontHeight %tmp.325 316 35 48 ];
+        %tmp.325 = getv function %tmp.324 :getFontHeight;
+        symbol [ Graphics %tmp.326 316 49 57 ];
+        %tmp.326 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.327 316 58 68 ];
+        %tmp.327 = getv %tmp.326 :FONT_SMALL;
+        %tmp.328 = invoke %tmp.324 %tmp.325(%tmp.327);
+        %tmp.329 = 2;
+        %tmp.330 = div %tmp.328 %tmp.329;
+        %tmp.331 = sub %tmp.323 %tmp.330;
+        symbol [ Graphics %tmp.332 317 28 36 ];
+        %tmp.332 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.333 317 37 47 ];
+        %tmp.333 = getv %tmp.332 :FONT_SMALL;
+        %tmp.334 = "Nepodařilo se\nnačíst data.";
+        symbol [ Graphics %tmp.335 319 28 36 ];
+        %tmp.335 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.336 319 37 56 ];
+        %tmp.336 = getv %tmp.335 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.312 %tmp.313(%tmp.318, %tmp.331, %tmp.333, %tmp.334, %tmp.336);
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_311_27_321_20_stop:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_263_20_321_20_if_end:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 322 20 ]
+        goto break @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_261_12_595_12_switchStmtEnd;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_323_16_385_25_switchCase:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 324 20 ]
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_324_20_384_20_if_stmt:
+        symbol [ TuesdayExtractedRoom %tmp.338 324 24 44 ];
+        %tmp.338 = getv ? :TuesdayExtractedRoom;
+        %tmp.339 = null;
+        %tmp.340 = ne %tmp.338 %tmp.339;
+        bf %tmp.340 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_324_20_384_20_if_else_false;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_324_20_384_20_if_true:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_324_54_374_20_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 326 24 ]
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_326_24_373_24_if_stmt:
+        symbol [ TuesdayExtractedRoom %tmp.342 327 28 48 ];
+        %tmp.342 = getv ? :TuesdayExtractedRoom;
+        %tmp.343 = as %tmp.342 { (!Null) };
+        symbol [ ongoingHour %tmp.345 327 49 60 ];
+        %tmp.345 = getv ? :ongoingHour;
+        symbol [ toNumber %tmp.346 327 61 69 ];
+        %tmp.346 = getv function %tmp.345 :toNumber;
+        %tmp.347 = invoke %tmp.345 %tmp.346();
+        %tmp.348 = agetv %tmp.343 %tmp.347;
+        %tmp.349 = null;
+        %tmp.350 = eq %tmp.348 %tmp.349;
+        bf %tmp.350 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_326_24_373_24_if_else_false;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_326_24_373_24_if_true:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_328_26_344_24_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 330 28 ]
+        %tmp.351 = lgetv %dc;
+        symbol [ dc %tmp.351 330 28 30 ];
+        symbol [ drawText %tmp.352 330 31 39 ];
+        %tmp.352 = getv function %tmp.351 :drawText;
+        %tmp.353 = lgetv %dc;
+        symbol [ dc %tmp.353 331 32 34 ];
+        symbol [ getWidth %tmp.354 331 35 43 ];
+        %tmp.354 = getv function %tmp.353 :getWidth;
+        %tmp.355 = invoke %tmp.353 %tmp.354();
+        %tmp.356 = 2;
+        %tmp.357 = div %tmp.355 %tmp.356;
+        %tmp.358 = lgetv %dc;
+        symbol [ dc %tmp.358 332 33 35 ];
+        symbol [ getHeight %tmp.359 332 36 45 ];
+        %tmp.359 = getv function %tmp.358 :getHeight;
+        %tmp.360 = invoke %tmp.358 %tmp.359();
+        %tmp.361 = 15;
+        %tmp.362 = mul %tmp.360 %tmp.361;
+        %tmp.363 = 100;
+        %tmp.364 = div %tmp.362 %tmp.363;
+        symbol [ Graphics %tmp.365 333 32 40 ];
+        %tmp.365 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.366 333 41 51 ];
+        %tmp.366 = getv %tmp.365 :FONT_SMALL;
+        %tmp.367 = "Volná hodina";
+        symbol [ Graphics %tmp.368 335 32 40 ];
+        %tmp.368 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.369 335 41 60 ];
+        %tmp.369 = getv %tmp.368 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.351 %tmp.352(%tmp.357, %tmp.364, %tmp.366, %tmp.367, %tmp.369);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 337 28 ]
+        %tmp.370 = lgetv %dc;
+        symbol [ dc %tmp.370 337 28 30 ];
+        symbol [ drawText %tmp.371 337 31 39 ];
+        %tmp.371 = getv function %tmp.370 :drawText;
+        %tmp.372 = lgetv %dc;
+        symbol [ dc %tmp.372 338 32 34 ];
+        symbol [ getWidth %tmp.373 338 35 43 ];
+        %tmp.373 = getv function %tmp.372 :getWidth;
+        %tmp.374 = invoke %tmp.372 %tmp.373();
+        %tmp.375 = 2;
+        %tmp.376 = div %tmp.374 %tmp.375;
+        %tmp.377 = lgetv %dc;
+        symbol [ dc %tmp.377 339 33 35 ];
+        symbol [ getHeight %tmp.378 339 36 45 ];
+        %tmp.378 = getv function %tmp.377 :getHeight;
+        %tmp.379 = invoke %tmp.377 %tmp.378();
+        %tmp.380 = 55;
+        %tmp.381 = mul %tmp.379 %tmp.380;
+        %tmp.382 = 100;
+        %tmp.383 = div %tmp.381 %tmp.382;
+        symbol [ Graphics %tmp.384 340 32 40 ];
+        %tmp.384 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.385 340 41 51 ];
+        %tmp.385 = getv %tmp.384 :FONT_SMALL;
+        symbol [ classTimes %tmp.387 341 32 42 ];
+        %tmp.387 = getv ? :classTimes;
+        symbol [ ongoingHour %tmp.389 341 43 54 ];
+        %tmp.389 = getv ? :ongoingHour;
+        symbol [ toNumber %tmp.390 341 55 63 ];
+        %tmp.390 = getv function %tmp.389 :toNumber;
+        %tmp.391 = invoke %tmp.389 %tmp.390();
+        %tmp.392 = agetv %tmp.387 %tmp.391;
+        symbol [ Graphics %tmp.393 342 32 40 ];
+        %tmp.393 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.394 342 41 60 ];
+        %tmp.394 = getv %tmp.393 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.370 %tmp.371(%tmp.376, %tmp.383, %tmp.385, %tmp.392, %tmp.394);
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_328_26_344_24_stop:
+        goto @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_326_24_373_24_if_end;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_326_24_373_24_if_else_false:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_344_31_373_24_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 346 28 ]
+        %tmp.395 = lgetv %dc;
+        symbol [ dc %tmp.395 346 28 30 ];
+        symbol [ drawText %tmp.396 346 31 39 ];
+        %tmp.396 = getv function %tmp.395 :drawText;
+        %tmp.397 = lgetv %dc;
+        symbol [ dc %tmp.397 347 32 34 ];
+        symbol [ getWidth %tmp.398 347 35 43 ];
+        %tmp.398 = getv function %tmp.397 :getWidth;
+        %tmp.399 = invoke %tmp.397 %tmp.398();
+        %tmp.400 = 2;
+        %tmp.401 = div %tmp.399 %tmp.400;
+        %tmp.402 = lgetv %dc;
+        symbol [ dc %tmp.402 348 33 35 ];
+        symbol [ getHeight %tmp.403 348 36 45 ];
+        %tmp.403 = getv function %tmp.402 :getHeight;
+        %tmp.404 = invoke %tmp.402 %tmp.403();
+        %tmp.405 = 5;
+        %tmp.406 = mul %tmp.404 %tmp.405;
+        %tmp.407 = 100;
+        %tmp.408 = div %tmp.406 %tmp.407;
+        symbol [ Graphics %tmp.409 349 32 40 ];
+        %tmp.409 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.410 349 41 51 ];
+        %tmp.410 = getv %tmp.409 :FONT_SMALL;
+        symbol [ TuesdayExtractedRoom %tmp.412 350 32 52 ];
+        %tmp.412 = getv ? :TuesdayExtractedRoom;
+        symbol [ ongoingHour %tmp.414 350 53 64 ];
+        %tmp.414 = getv ? :ongoingHour;
+        symbol [ toNumber %tmp.415 350 65 73 ];
+        %tmp.415 = getv function %tmp.414 :toNumber;
+        %tmp.416 = invoke %tmp.414 %tmp.415();
+        %tmp.417 = agetv %tmp.412 %tmp.416;
+        symbol [ Graphics %tmp.418 351 32 40 ];
+        %tmp.418 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.419 351 41 60 ];
+        %tmp.419 = getv %tmp.418 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.395 %tmp.396(%tmp.401, %tmp.408, %tmp.410, %tmp.417, %tmp.419);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 353 28 ]
+        %tmp.420 = lgetv %dc;
+        symbol [ dc %tmp.420 353 28 30 ];
+        symbol [ drawText %tmp.421 353 31 39 ];
+        %tmp.421 = getv function %tmp.420 :drawText;
+        %tmp.422 = lgetv %dc;
+        symbol [ dc %tmp.422 354 32 34 ];
+        symbol [ getWidth %tmp.423 354 35 43 ];
+        %tmp.423 = getv function %tmp.422 :getWidth;
+        %tmp.424 = invoke %tmp.422 %tmp.423();
+        %tmp.425 = 2;
+        %tmp.426 = div %tmp.424 %tmp.425;
+        %tmp.427 = lgetv %dc;
+        symbol [ dc %tmp.427 355 33 35 ];
+        symbol [ getHeight %tmp.428 355 36 45 ];
+        %tmp.428 = getv function %tmp.427 :getHeight;
+        %tmp.429 = invoke %tmp.427 %tmp.428();
+        %tmp.430 = 35;
+        %tmp.431 = mul %tmp.429 %tmp.430;
+        %tmp.432 = 100;
+        %tmp.433 = div %tmp.431 %tmp.432;
+        symbol [ Graphics %tmp.434 356 32 40 ];
+        %tmp.434 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.435 356 41 51 ];
+        %tmp.435 = getv %tmp.434 :FONT_SMALL;
+        symbol [ TuesdayExtractedSubject %tmp.437 357 32 55 ];
+        %tmp.437 = getv ? :TuesdayExtractedSubject;
+        symbol [ ongoingHour %tmp.439 358 36 47 ];
+        %tmp.439 = getv ? :ongoingHour;
+        symbol [ toNumber %tmp.440 358 48 56 ];
+        %tmp.440 = getv function %tmp.439 :toNumber;
+        %tmp.441 = invoke %tmp.439 %tmp.440();
+        %tmp.442 = agetv %tmp.437 %tmp.441;
+        %tmp.443 = " - ";
+        %tmp.444 = add %tmp.442 %tmp.443;
+        symbol [ TuesdayExtractedTeacher %tmp.446 361 36 59 ];
+        %tmp.446 = getv ? :TuesdayExtractedTeacher;
+        symbol [ ongoingHour %tmp.448 362 40 51 ];
+        %tmp.448 = getv ? :ongoingHour;
+        symbol [ toNumber %tmp.449 362 52 60 ];
+        %tmp.449 = getv function %tmp.448 :toNumber;
+        %tmp.450 = invoke %tmp.448 %tmp.449();
+        %tmp.451 = agetv %tmp.446 %tmp.450;
+        %tmp.452 = add %tmp.444 %tmp.451;
+        symbol [ Graphics %tmp.453 364 32 40 ];
+        %tmp.453 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.454 364 41 60 ];
+        %tmp.454 = getv %tmp.453 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.420 %tmp.421(%tmp.426, %tmp.433, %tmp.435, %tmp.452, %tmp.454);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 366 28 ]
+        %tmp.455 = lgetv %dc;
+        symbol [ dc %tmp.455 366 28 30 ];
+        symbol [ drawText %tmp.456 366 31 39 ];
+        %tmp.456 = getv function %tmp.455 :drawText;
+        %tmp.457 = lgetv %dc;
+        symbol [ dc %tmp.457 367 32 34 ];
+        symbol [ getWidth %tmp.458 367 35 43 ];
+        %tmp.458 = getv function %tmp.457 :getWidth;
+        %tmp.459 = invoke %tmp.457 %tmp.458();
+        %tmp.460 = 2;
+        %tmp.461 = div %tmp.459 %tmp.460;
+        %tmp.462 = lgetv %dc;
+        symbol [ dc %tmp.462 368 33 35 ];
+        symbol [ getHeight %tmp.463 368 36 45 ];
+        %tmp.463 = getv function %tmp.462 :getHeight;
+        %tmp.464 = invoke %tmp.462 %tmp.463();
+        %tmp.465 = 65;
+        %tmp.466 = mul %tmp.464 %tmp.465;
+        %tmp.467 = 100;
+        %tmp.468 = div %tmp.466 %tmp.467;
+        symbol [ Graphics %tmp.469 369 32 40 ];
+        %tmp.469 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.470 369 41 51 ];
+        %tmp.470 = getv %tmp.469 :FONT_SMALL;
+        symbol [ classTimes %tmp.472 370 32 42 ];
+        %tmp.472 = getv ? :classTimes;
+        symbol [ ongoingHour %tmp.474 370 43 54 ];
+        %tmp.474 = getv ? :ongoingHour;
+        symbol [ toNumber %tmp.475 370 55 63 ];
+        %tmp.475 = getv function %tmp.474 :toNumber;
+        %tmp.476 = invoke %tmp.474 %tmp.475();
+        %tmp.477 = agetv %tmp.472 %tmp.476;
+        symbol [ Graphics %tmp.478 371 32 40 ];
+        %tmp.478 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.479 371 41 60 ];
+        %tmp.479 = getv %tmp.478 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.455 %tmp.456(%tmp.461, %tmp.468, %tmp.470, %tmp.477, %tmp.479);
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_344_31_373_24_stop:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_326_24_373_24_if_end:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_324_54_374_20_stop:
+        goto @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_324_20_384_20_if_end;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_324_20_384_20_if_else_false:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_374_27_384_20_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 376 24 ]
+        %tmp.480 = lgetv %dc;
+        symbol [ dc %tmp.480 376 24 26 ];
+        symbol [ drawText %tmp.481 376 27 35 ];
+        %tmp.481 = getv function %tmp.480 :drawText;
+        %tmp.482 = lgetv %dc;
+        symbol [ dc %tmp.482 377 28 30 ];
+        symbol [ getWidth %tmp.483 377 31 39 ];
+        %tmp.483 = getv function %tmp.482 :getWidth;
+        %tmp.484 = invoke %tmp.482 %tmp.483();
+        %tmp.485 = 2;
+        %tmp.486 = div %tmp.484 %tmp.485;
+        %tmp.487 = lgetv %dc;
+        symbol [ dc %tmp.487 378 28 30 ];
+        symbol [ getHeight %tmp.488 378 31 40 ];
+        %tmp.488 = getv function %tmp.487 :getHeight;
+        %tmp.489 = invoke %tmp.487 %tmp.488();
+        %tmp.490 = 2;
+        %tmp.491 = div %tmp.489 %tmp.490;
+        %tmp.492 = lgetv %dc;
+        symbol [ dc %tmp.492 379 32 34 ];
+        symbol [ getFontHeight %tmp.493 379 35 48 ];
+        %tmp.493 = getv function %tmp.492 :getFontHeight;
+        symbol [ Graphics %tmp.494 379 49 57 ];
+        %tmp.494 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.495 379 58 68 ];
+        %tmp.495 = getv %tmp.494 :FONT_SMALL;
+        %tmp.496 = invoke %tmp.492 %tmp.493(%tmp.495);
+        %tmp.497 = 2;
+        %tmp.498 = div %tmp.496 %tmp.497;
+        %tmp.499 = sub %tmp.491 %tmp.498;
+        symbol [ Graphics %tmp.500 380 28 36 ];
+        %tmp.500 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.501 380 37 47 ];
+        %tmp.501 = getv %tmp.500 :FONT_SMALL;
+        %tmp.502 = "Nepodařilo se\nnačíst data.";
+        symbol [ Graphics %tmp.503 382 28 36 ];
+        %tmp.503 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.504 382 37 56 ];
+        %tmp.504 = getv %tmp.503 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.480 %tmp.481(%tmp.486, %tmp.499, %tmp.501, %tmp.502, %tmp.504);
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_374_27_384_20_stop:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_324_20_384_20_if_end:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 385 20 ]
+        goto break @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_261_12_595_12_switchStmtEnd;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_386_16_449_25_switchCase:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 387 20 ]
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_387_20_448_20_if_stmt:
+        symbol [ WednesdayExtractedRoom %tmp.506 387 24 46 ];
+        %tmp.506 = getv ? :WednesdayExtractedRoom;
+        %tmp.507 = null;
+        %tmp.508 = ne %tmp.506 %tmp.507;
+        bf %tmp.508 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_387_20_448_20_if_else_false;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_387_20_448_20_if_true:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_387_56_438_20_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 389 24 ]
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_389_24_437_24_if_stmt:
+        symbol [ WednesdayExtractedRoom %tmp.510 390 28 50 ];
+        %tmp.510 = getv ? :WednesdayExtractedRoom;
+        %tmp.511 = as %tmp.510 { (!Null) };
+        symbol [ ongoingHour %tmp.513 390 51 62 ];
+        %tmp.513 = getv ? :ongoingHour;
+        symbol [ toNumber %tmp.514 390 63 71 ];
+        %tmp.514 = getv function %tmp.513 :toNumber;
+        %tmp.515 = invoke %tmp.513 %tmp.514();
+        %tmp.516 = agetv %tmp.511 %tmp.515;
+        %tmp.517 = null;
+        %tmp.518 = eq %tmp.516 %tmp.517;
+        bf %tmp.518 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_389_24_437_24_if_else_false;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_389_24_437_24_if_true:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_392_26_408_24_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 394 28 ]
+        %tmp.519 = lgetv %dc;
+        symbol [ dc %tmp.519 394 28 30 ];
+        symbol [ drawText %tmp.520 394 31 39 ];
+        %tmp.520 = getv function %tmp.519 :drawText;
+        %tmp.521 = lgetv %dc;
+        symbol [ dc %tmp.521 395 32 34 ];
+        symbol [ getWidth %tmp.522 395 35 43 ];
+        %tmp.522 = getv function %tmp.521 :getWidth;
+        %tmp.523 = invoke %tmp.521 %tmp.522();
+        %tmp.524 = 2;
+        %tmp.525 = div %tmp.523 %tmp.524;
+        %tmp.526 = lgetv %dc;
+        symbol [ dc %tmp.526 396 33 35 ];
+        symbol [ getHeight %tmp.527 396 36 45 ];
+        %tmp.527 = getv function %tmp.526 :getHeight;
+        %tmp.528 = invoke %tmp.526 %tmp.527();
+        %tmp.529 = 15;
+        %tmp.530 = mul %tmp.528 %tmp.529;
+        %tmp.531 = 100;
+        %tmp.532 = div %tmp.530 %tmp.531;
+        symbol [ Graphics %tmp.533 397 32 40 ];
+        %tmp.533 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.534 397 41 51 ];
+        %tmp.534 = getv %tmp.533 :FONT_SMALL;
+        %tmp.535 = "Volná hodina";
+        symbol [ Graphics %tmp.536 399 32 40 ];
+        %tmp.536 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.537 399 41 60 ];
+        %tmp.537 = getv %tmp.536 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.519 %tmp.520(%tmp.525, %tmp.532, %tmp.534, %tmp.535, %tmp.537);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 401 28 ]
+        %tmp.538 = lgetv %dc;
+        symbol [ dc %tmp.538 401 28 30 ];
+        symbol [ drawText %tmp.539 401 31 39 ];
+        %tmp.539 = getv function %tmp.538 :drawText;
+        %tmp.540 = lgetv %dc;
+        symbol [ dc %tmp.540 402 32 34 ];
+        symbol [ getWidth %tmp.541 402 35 43 ];
+        %tmp.541 = getv function %tmp.540 :getWidth;
+        %tmp.542 = invoke %tmp.540 %tmp.541();
+        %tmp.543 = 2;
+        %tmp.544 = div %tmp.542 %tmp.543;
+        %tmp.545 = lgetv %dc;
+        symbol [ dc %tmp.545 403 33 35 ];
+        symbol [ getHeight %tmp.546 403 36 45 ];
+        %tmp.546 = getv function %tmp.545 :getHeight;
+        %tmp.547 = invoke %tmp.545 %tmp.546();
+        %tmp.548 = 55;
+        %tmp.549 = mul %tmp.547 %tmp.548;
+        %tmp.550 = 100;
+        %tmp.551 = div %tmp.549 %tmp.550;
+        symbol [ Graphics %tmp.552 404 32 40 ];
+        %tmp.552 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.553 404 41 51 ];
+        %tmp.553 = getv %tmp.552 :FONT_SMALL;
+        symbol [ classTimes %tmp.555 405 32 42 ];
+        %tmp.555 = getv ? :classTimes;
+        symbol [ ongoingHour %tmp.557 405 43 54 ];
+        %tmp.557 = getv ? :ongoingHour;
+        symbol [ toNumber %tmp.558 405 55 63 ];
+        %tmp.558 = getv function %tmp.557 :toNumber;
+        %tmp.559 = invoke %tmp.557 %tmp.558();
+        %tmp.560 = agetv %tmp.555 %tmp.559;
+        symbol [ Graphics %tmp.561 406 32 40 ];
+        %tmp.561 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.562 406 41 60 ];
+        %tmp.562 = getv %tmp.561 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.538 %tmp.539(%tmp.544, %tmp.551, %tmp.553, %tmp.560, %tmp.562);
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_392_26_408_24_stop:
+        goto @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_389_24_437_24_if_end;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_389_24_437_24_if_else_false:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_408_31_437_24_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 410 28 ]
+        %tmp.563 = lgetv %dc;
+        symbol [ dc %tmp.563 410 28 30 ];
+        symbol [ drawText %tmp.564 410 31 39 ];
+        %tmp.564 = getv function %tmp.563 :drawText;
+        %tmp.565 = lgetv %dc;
+        symbol [ dc %tmp.565 411 32 34 ];
+        symbol [ getWidth %tmp.566 411 35 43 ];
+        %tmp.566 = getv function %tmp.565 :getWidth;
+        %tmp.567 = invoke %tmp.565 %tmp.566();
+        %tmp.568 = 2;
+        %tmp.569 = div %tmp.567 %tmp.568;
+        %tmp.570 = lgetv %dc;
+        symbol [ dc %tmp.570 412 33 35 ];
+        symbol [ getHeight %tmp.571 412 36 45 ];
+        %tmp.571 = getv function %tmp.570 :getHeight;
+        %tmp.572 = invoke %tmp.570 %tmp.571();
+        %tmp.573 = 5;
+        %tmp.574 = mul %tmp.572 %tmp.573;
+        %tmp.575 = 100;
+        %tmp.576 = div %tmp.574 %tmp.575;
+        symbol [ Graphics %tmp.577 413 32 40 ];
+        %tmp.577 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.578 413 41 51 ];
+        %tmp.578 = getv %tmp.577 :FONT_SMALL;
+        symbol [ WednesdayExtractedRoom %tmp.580 414 32 54 ];
+        %tmp.580 = getv ? :WednesdayExtractedRoom;
+        symbol [ ongoingHour %tmp.582 414 55 66 ];
+        %tmp.582 = getv ? :ongoingHour;
+        symbol [ toNumber %tmp.583 414 67 75 ];
+        %tmp.583 = getv function %tmp.582 :toNumber;
+        %tmp.584 = invoke %tmp.582 %tmp.583();
+        %tmp.585 = agetv %tmp.580 %tmp.584;
+        symbol [ Graphics %tmp.586 415 32 40 ];
+        %tmp.586 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.587 415 41 60 ];
+        %tmp.587 = getv %tmp.586 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.563 %tmp.564(%tmp.569, %tmp.576, %tmp.578, %tmp.585, %tmp.587);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 417 28 ]
+        %tmp.588 = lgetv %dc;
+        symbol [ dc %tmp.588 417 28 30 ];
+        symbol [ drawText %tmp.589 417 31 39 ];
+        %tmp.589 = getv function %tmp.588 :drawText;
+        %tmp.590 = lgetv %dc;
+        symbol [ dc %tmp.590 418 32 34 ];
+        symbol [ getWidth %tmp.591 418 35 43 ];
+        %tmp.591 = getv function %tmp.590 :getWidth;
+        %tmp.592 = invoke %tmp.590 %tmp.591();
+        %tmp.593 = 2;
+        %tmp.594 = div %tmp.592 %tmp.593;
+        %tmp.595 = lgetv %dc;
+        symbol [ dc %tmp.595 419 33 35 ];
+        symbol [ getHeight %tmp.596 419 36 45 ];
+        %tmp.596 = getv function %tmp.595 :getHeight;
+        %tmp.597 = invoke %tmp.595 %tmp.596();
+        %tmp.598 = 35;
+        %tmp.599 = mul %tmp.597 %tmp.598;
+        %tmp.600 = 100;
+        %tmp.601 = div %tmp.599 %tmp.600;
+        symbol [ Graphics %tmp.602 420 32 40 ];
+        %tmp.602 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.603 420 41 51 ];
+        %tmp.603 = getv %tmp.602 :FONT_SMALL;
+        symbol [ WednesdayExtractedSubject %tmp.605 421 32 57 ];
+        %tmp.605 = getv ? :WednesdayExtractedSubject;
+        symbol [ ongoingHour %tmp.607 422 36 47 ];
+        %tmp.607 = getv ? :ongoingHour;
+        symbol [ toNumber %tmp.608 422 48 56 ];
+        %tmp.608 = getv function %tmp.607 :toNumber;
+        %tmp.609 = invoke %tmp.607 %tmp.608();
+        %tmp.610 = agetv %tmp.605 %tmp.609;
+        %tmp.611 = " - ";
+        %tmp.612 = add %tmp.610 %tmp.611;
+        symbol [ WednesdayExtractedTeacher %tmp.614 425 36 61 ];
+        %tmp.614 = getv ? :WednesdayExtractedTeacher;
+        symbol [ ongoingHour %tmp.616 426 40 51 ];
+        %tmp.616 = getv ? :ongoingHour;
+        symbol [ toNumber %tmp.617 426 52 60 ];
+        %tmp.617 = getv function %tmp.616 :toNumber;
+        %tmp.618 = invoke %tmp.616 %tmp.617();
+        %tmp.619 = agetv %tmp.614 %tmp.618;
+        %tmp.620 = add %tmp.612 %tmp.619;
+        symbol [ Graphics %tmp.621 428 32 40 ];
+        %tmp.621 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.622 428 41 60 ];
+        %tmp.622 = getv %tmp.621 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.588 %tmp.589(%tmp.594, %tmp.601, %tmp.603, %tmp.620, %tmp.622);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 430 28 ]
+        %tmp.623 = lgetv %dc;
+        symbol [ dc %tmp.623 430 28 30 ];
+        symbol [ drawText %tmp.624 430 31 39 ];
+        %tmp.624 = getv function %tmp.623 :drawText;
+        %tmp.625 = lgetv %dc;
+        symbol [ dc %tmp.625 431 32 34 ];
+        symbol [ getWidth %tmp.626 431 35 43 ];
+        %tmp.626 = getv function %tmp.625 :getWidth;
+        %tmp.627 = invoke %tmp.625 %tmp.626();
+        %tmp.628 = 2;
+        %tmp.629 = div %tmp.627 %tmp.628;
+        %tmp.630 = lgetv %dc;
+        symbol [ dc %tmp.630 432 33 35 ];
+        symbol [ getHeight %tmp.631 432 36 45 ];
+        %tmp.631 = getv function %tmp.630 :getHeight;
+        %tmp.632 = invoke %tmp.630 %tmp.631();
+        %tmp.633 = 65;
+        %tmp.634 = mul %tmp.632 %tmp.633;
+        %tmp.635 = 100;
+        %tmp.636 = div %tmp.634 %tmp.635;
+        symbol [ Graphics %tmp.637 433 32 40 ];
+        %tmp.637 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.638 433 41 51 ];
+        %tmp.638 = getv %tmp.637 :FONT_SMALL;
+        symbol [ classTimes %tmp.640 434 32 42 ];
+        %tmp.640 = getv ? :classTimes;
+        symbol [ ongoingHour %tmp.642 434 43 54 ];
+        %tmp.642 = getv ? :ongoingHour;
+        symbol [ toNumber %tmp.643 434 55 63 ];
+        %tmp.643 = getv function %tmp.642 :toNumber;
+        %tmp.644 = invoke %tmp.642 %tmp.643();
+        %tmp.645 = agetv %tmp.640 %tmp.644;
+        symbol [ Graphics %tmp.646 435 32 40 ];
+        %tmp.646 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.647 435 41 60 ];
+        %tmp.647 = getv %tmp.646 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.623 %tmp.624(%tmp.629, %tmp.636, %tmp.638, %tmp.645, %tmp.647);
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_408_31_437_24_stop:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_389_24_437_24_if_end:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_387_56_438_20_stop:
+        goto @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_387_20_448_20_if_end;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_387_20_448_20_if_else_false:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_438_27_448_20_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 440 24 ]
+        %tmp.648 = lgetv %dc;
+        symbol [ dc %tmp.648 440 24 26 ];
+        symbol [ drawText %tmp.649 440 27 35 ];
+        %tmp.649 = getv function %tmp.648 :drawText;
+        %tmp.650 = lgetv %dc;
+        symbol [ dc %tmp.650 441 28 30 ];
+        symbol [ getWidth %tmp.651 441 31 39 ];
+        %tmp.651 = getv function %tmp.650 :getWidth;
+        %tmp.652 = invoke %tmp.650 %tmp.651();
+        %tmp.653 = 2;
+        %tmp.654 = div %tmp.652 %tmp.653;
+        %tmp.655 = lgetv %dc;
+        symbol [ dc %tmp.655 442 28 30 ];
+        symbol [ getHeight %tmp.656 442 31 40 ];
+        %tmp.656 = getv function %tmp.655 :getHeight;
+        %tmp.657 = invoke %tmp.655 %tmp.656();
+        %tmp.658 = 2;
+        %tmp.659 = div %tmp.657 %tmp.658;
+        %tmp.660 = lgetv %dc;
+        symbol [ dc %tmp.660 443 32 34 ];
+        symbol [ getFontHeight %tmp.661 443 35 48 ];
+        %tmp.661 = getv function %tmp.660 :getFontHeight;
+        symbol [ Graphics %tmp.662 443 49 57 ];
+        %tmp.662 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.663 443 58 68 ];
+        %tmp.663 = getv %tmp.662 :FONT_SMALL;
+        %tmp.664 = invoke %tmp.660 %tmp.661(%tmp.663);
+        %tmp.665 = 2;
+        %tmp.666 = div %tmp.664 %tmp.665;
+        %tmp.667 = sub %tmp.659 %tmp.666;
+        symbol [ Graphics %tmp.668 444 28 36 ];
+        %tmp.668 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.669 444 37 47 ];
+        %tmp.669 = getv %tmp.668 :FONT_SMALL;
+        %tmp.670 = "Nepodařilo se\nnačíst data.";
+        symbol [ Graphics %tmp.671 446 28 36 ];
+        %tmp.671 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.672 446 37 56 ];
+        %tmp.672 = getv %tmp.671 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.648 %tmp.649(%tmp.654, %tmp.667, %tmp.669, %tmp.670, %tmp.672);
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_438_27_448_20_stop:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_387_20_448_20_if_end:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 449 20 ]
+        goto break @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_261_12_595_12_switchStmtEnd;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_450_16_513_25_switchCase:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 451 20 ]
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_451_20_512_20_if_stmt:
+        symbol [ ThursdayExtractedRoom %tmp.674 451 24 45 ];
+        %tmp.674 = getv ? :ThursdayExtractedRoom;
+        %tmp.675 = null;
+        %tmp.676 = ne %tmp.674 %tmp.675;
+        bf %tmp.676 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_451_20_512_20_if_else_false;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_451_20_512_20_if_true:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_451_55_502_20_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 453 24 ]
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_453_24_501_24_if_stmt:
+        symbol [ ThursdayExtractedRoom %tmp.678 454 28 49 ];
+        %tmp.678 = getv ? :ThursdayExtractedRoom;
+        %tmp.679 = as %tmp.678 { (!Null) };
+        symbol [ ongoingHour %tmp.681 454 50 61 ];
+        %tmp.681 = getv ? :ongoingHour;
+        symbol [ toNumber %tmp.682 454 62 70 ];
+        %tmp.682 = getv function %tmp.681 :toNumber;
+        %tmp.683 = invoke %tmp.681 %tmp.682();
+        %tmp.684 = agetv %tmp.679 %tmp.683;
+        %tmp.685 = null;
+        %tmp.686 = eq %tmp.684 %tmp.685;
+        bf %tmp.686 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_453_24_501_24_if_else_false;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_453_24_501_24_if_true:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_456_26_472_24_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 458 28 ]
+        %tmp.687 = lgetv %dc;
+        symbol [ dc %tmp.687 458 28 30 ];
+        symbol [ drawText %tmp.688 458 31 39 ];
+        %tmp.688 = getv function %tmp.687 :drawText;
+        %tmp.689 = lgetv %dc;
+        symbol [ dc %tmp.689 459 32 34 ];
+        symbol [ getWidth %tmp.690 459 35 43 ];
+        %tmp.690 = getv function %tmp.689 :getWidth;
+        %tmp.691 = invoke %tmp.689 %tmp.690();
+        %tmp.692 = 2;
+        %tmp.693 = div %tmp.691 %tmp.692;
+        %tmp.694 = lgetv %dc;
+        symbol [ dc %tmp.694 460 33 35 ];
+        symbol [ getHeight %tmp.695 460 36 45 ];
+        %tmp.695 = getv function %tmp.694 :getHeight;
+        %tmp.696 = invoke %tmp.694 %tmp.695();
+        %tmp.697 = 15;
+        %tmp.698 = mul %tmp.696 %tmp.697;
+        %tmp.699 = 100;
+        %tmp.700 = div %tmp.698 %tmp.699;
+        symbol [ Graphics %tmp.701 461 32 40 ];
+        %tmp.701 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.702 461 41 51 ];
+        %tmp.702 = getv %tmp.701 :FONT_SMALL;
+        %tmp.703 = "Volná hodina";
+        symbol [ Graphics %tmp.704 463 32 40 ];
+        %tmp.704 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.705 463 41 60 ];
+        %tmp.705 = getv %tmp.704 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.687 %tmp.688(%tmp.693, %tmp.700, %tmp.702, %tmp.703, %tmp.705);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 465 28 ]
+        %tmp.706 = lgetv %dc;
+        symbol [ dc %tmp.706 465 28 30 ];
+        symbol [ drawText %tmp.707 465 31 39 ];
+        %tmp.707 = getv function %tmp.706 :drawText;
+        %tmp.708 = lgetv %dc;
+        symbol [ dc %tmp.708 466 32 34 ];
+        symbol [ getWidth %tmp.709 466 35 43 ];
+        %tmp.709 = getv function %tmp.708 :getWidth;
+        %tmp.710 = invoke %tmp.708 %tmp.709();
+        %tmp.711 = 2;
+        %tmp.712 = div %tmp.710 %tmp.711;
+        %tmp.713 = lgetv %dc;
+        symbol [ dc %tmp.713 467 33 35 ];
+        symbol [ getHeight %tmp.714 467 36 45 ];
+        %tmp.714 = getv function %tmp.713 :getHeight;
+        %tmp.715 = invoke %tmp.713 %tmp.714();
+        %tmp.716 = 55;
+        %tmp.717 = mul %tmp.715 %tmp.716;
+        %tmp.718 = 100;
+        %tmp.719 = div %tmp.717 %tmp.718;
+        symbol [ Graphics %tmp.720 468 32 40 ];
+        %tmp.720 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.721 468 41 51 ];
+        %tmp.721 = getv %tmp.720 :FONT_SMALL;
+        symbol [ classTimes %tmp.723 469 32 42 ];
+        %tmp.723 = getv ? :classTimes;
+        symbol [ ongoingHour %tmp.725 469 43 54 ];
+        %tmp.725 = getv ? :ongoingHour;
+        symbol [ toNumber %tmp.726 469 55 63 ];
+        %tmp.726 = getv function %tmp.725 :toNumber;
+        %tmp.727 = invoke %tmp.725 %tmp.726();
+        %tmp.728 = agetv %tmp.723 %tmp.727;
+        symbol [ Graphics %tmp.729 470 32 40 ];
+        %tmp.729 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.730 470 41 60 ];
+        %tmp.730 = getv %tmp.729 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.706 %tmp.707(%tmp.712, %tmp.719, %tmp.721, %tmp.728, %tmp.730);
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_456_26_472_24_stop:
+        goto @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_453_24_501_24_if_end;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_453_24_501_24_if_else_false:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_472_31_501_24_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 474 28 ]
+        %tmp.731 = lgetv %dc;
+        symbol [ dc %tmp.731 474 28 30 ];
+        symbol [ drawText %tmp.732 474 31 39 ];
+        %tmp.732 = getv function %tmp.731 :drawText;
+        %tmp.733 = lgetv %dc;
+        symbol [ dc %tmp.733 475 32 34 ];
+        symbol [ getWidth %tmp.734 475 35 43 ];
+        %tmp.734 = getv function %tmp.733 :getWidth;
+        %tmp.735 = invoke %tmp.733 %tmp.734();
+        %tmp.736 = 2;
+        %tmp.737 = div %tmp.735 %tmp.736;
+        %tmp.738 = lgetv %dc;
+        symbol [ dc %tmp.738 476 33 35 ];
+        symbol [ getHeight %tmp.739 476 36 45 ];
+        %tmp.739 = getv function %tmp.738 :getHeight;
+        %tmp.740 = invoke %tmp.738 %tmp.739();
+        %tmp.741 = 5;
+        %tmp.742 = mul %tmp.740 %tmp.741;
+        %tmp.743 = 100;
+        %tmp.744 = div %tmp.742 %tmp.743;
+        symbol [ Graphics %tmp.745 477 32 40 ];
+        %tmp.745 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.746 477 41 51 ];
+        %tmp.746 = getv %tmp.745 :FONT_SMALL;
+        symbol [ ThursdayExtractedRoom %tmp.748 478 32 53 ];
+        %tmp.748 = getv ? :ThursdayExtractedRoom;
+        symbol [ ongoingHour %tmp.750 478 54 65 ];
+        %tmp.750 = getv ? :ongoingHour;
+        symbol [ toNumber %tmp.751 478 66 74 ];
+        %tmp.751 = getv function %tmp.750 :toNumber;
+        %tmp.752 = invoke %tmp.750 %tmp.751();
+        %tmp.753 = agetv %tmp.748 %tmp.752;
+        symbol [ Graphics %tmp.754 479 32 40 ];
+        %tmp.754 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.755 479 41 60 ];
+        %tmp.755 = getv %tmp.754 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.731 %tmp.732(%tmp.737, %tmp.744, %tmp.746, %tmp.753, %tmp.755);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 481 28 ]
+        %tmp.756 = lgetv %dc;
+        symbol [ dc %tmp.756 481 28 30 ];
+        symbol [ drawText %tmp.757 481 31 39 ];
+        %tmp.757 = getv function %tmp.756 :drawText;
+        %tmp.758 = lgetv %dc;
+        symbol [ dc %tmp.758 482 32 34 ];
+        symbol [ getWidth %tmp.759 482 35 43 ];
+        %tmp.759 = getv function %tmp.758 :getWidth;
+        %tmp.760 = invoke %tmp.758 %tmp.759();
+        %tmp.761 = 2;
+        %tmp.762 = div %tmp.760 %tmp.761;
+        %tmp.763 = lgetv %dc;
+        symbol [ dc %tmp.763 483 33 35 ];
+        symbol [ getHeight %tmp.764 483 36 45 ];
+        %tmp.764 = getv function %tmp.763 :getHeight;
+        %tmp.765 = invoke %tmp.763 %tmp.764();
+        %tmp.766 = 35;
+        %tmp.767 = mul %tmp.765 %tmp.766;
+        %tmp.768 = 100;
+        %tmp.769 = div %tmp.767 %tmp.768;
+        symbol [ Graphics %tmp.770 484 32 40 ];
+        %tmp.770 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.771 484 41 51 ];
+        %tmp.771 = getv %tmp.770 :FONT_SMALL;
+        symbol [ ThursdayExtractedSubject %tmp.773 485 32 56 ];
+        %tmp.773 = getv ? :ThursdayExtractedSubject;
+        symbol [ ongoingHour %tmp.775 486 36 47 ];
+        %tmp.775 = getv ? :ongoingHour;
+        symbol [ toNumber %tmp.776 486 48 56 ];
+        %tmp.776 = getv function %tmp.775 :toNumber;
+        %tmp.777 = invoke %tmp.775 %tmp.776();
+        %tmp.778 = agetv %tmp.773 %tmp.777;
+        %tmp.779 = " - ";
+        %tmp.780 = add %tmp.778 %tmp.779;
+        symbol [ ThursdayExtractedTeacher %tmp.782 489 36 60 ];
+        %tmp.782 = getv ? :ThursdayExtractedTeacher;
+        symbol [ ongoingHour %tmp.784 490 40 51 ];
+        %tmp.784 = getv ? :ongoingHour;
+        symbol [ toNumber %tmp.785 490 52 60 ];
+        %tmp.785 = getv function %tmp.784 :toNumber;
+        %tmp.786 = invoke %tmp.784 %tmp.785();
+        %tmp.787 = agetv %tmp.782 %tmp.786;
+        %tmp.788 = add %tmp.780 %tmp.787;
+        symbol [ Graphics %tmp.789 492 32 40 ];
+        %tmp.789 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.790 492 41 60 ];
+        %tmp.790 = getv %tmp.789 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.756 %tmp.757(%tmp.762, %tmp.769, %tmp.771, %tmp.788, %tmp.790);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 494 28 ]
+        %tmp.791 = lgetv %dc;
+        symbol [ dc %tmp.791 494 28 30 ];
+        symbol [ drawText %tmp.792 494 31 39 ];
+        %tmp.792 = getv function %tmp.791 :drawText;
+        %tmp.793 = lgetv %dc;
+        symbol [ dc %tmp.793 495 32 34 ];
+        symbol [ getWidth %tmp.794 495 35 43 ];
+        %tmp.794 = getv function %tmp.793 :getWidth;
+        %tmp.795 = invoke %tmp.793 %tmp.794();
+        %tmp.796 = 2;
+        %tmp.797 = div %tmp.795 %tmp.796;
+        %tmp.798 = lgetv %dc;
+        symbol [ dc %tmp.798 496 33 35 ];
+        symbol [ getHeight %tmp.799 496 36 45 ];
+        %tmp.799 = getv function %tmp.798 :getHeight;
+        %tmp.800 = invoke %tmp.798 %tmp.799();
+        %tmp.801 = 65;
+        %tmp.802 = mul %tmp.800 %tmp.801;
+        %tmp.803 = 100;
+        %tmp.804 = div %tmp.802 %tmp.803;
+        symbol [ Graphics %tmp.805 497 32 40 ];
+        %tmp.805 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.806 497 41 51 ];
+        %tmp.806 = getv %tmp.805 :FONT_SMALL;
+        symbol [ classTimes %tmp.808 498 32 42 ];
+        %tmp.808 = getv ? :classTimes;
+        symbol [ ongoingHour %tmp.810 498 43 54 ];
+        %tmp.810 = getv ? :ongoingHour;
+        symbol [ toNumber %tmp.811 498 55 63 ];
+        %tmp.811 = getv function %tmp.810 :toNumber;
+        %tmp.812 = invoke %tmp.810 %tmp.811();
+        %tmp.813 = agetv %tmp.808 %tmp.812;
+        symbol [ Graphics %tmp.814 499 32 40 ];
+        %tmp.814 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.815 499 41 60 ];
+        %tmp.815 = getv %tmp.814 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.791 %tmp.792(%tmp.797, %tmp.804, %tmp.806, %tmp.813, %tmp.815);
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_472_31_501_24_stop:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_453_24_501_24_if_end:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_451_55_502_20_stop:
+        goto @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_451_20_512_20_if_end;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_451_20_512_20_if_else_false:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_502_27_512_20_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 504 24 ]
+        %tmp.816 = lgetv %dc;
+        symbol [ dc %tmp.816 504 24 26 ];
+        symbol [ drawText %tmp.817 504 27 35 ];
+        %tmp.817 = getv function %tmp.816 :drawText;
+        %tmp.818 = lgetv %dc;
+        symbol [ dc %tmp.818 505 28 30 ];
+        symbol [ getWidth %tmp.819 505 31 39 ];
+        %tmp.819 = getv function %tmp.818 :getWidth;
+        %tmp.820 = invoke %tmp.818 %tmp.819();
+        %tmp.821 = 2;
+        %tmp.822 = div %tmp.820 %tmp.821;
+        %tmp.823 = lgetv %dc;
+        symbol [ dc %tmp.823 506 28 30 ];
+        symbol [ getHeight %tmp.824 506 31 40 ];
+        %tmp.824 = getv function %tmp.823 :getHeight;
+        %tmp.825 = invoke %tmp.823 %tmp.824();
+        %tmp.826 = 2;
+        %tmp.827 = div %tmp.825 %tmp.826;
+        %tmp.828 = lgetv %dc;
+        symbol [ dc %tmp.828 507 32 34 ];
+        symbol [ getFontHeight %tmp.829 507 35 48 ];
+        %tmp.829 = getv function %tmp.828 :getFontHeight;
+        symbol [ Graphics %tmp.830 507 49 57 ];
+        %tmp.830 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.831 507 58 68 ];
+        %tmp.831 = getv %tmp.830 :FONT_SMALL;
+        %tmp.832 = invoke %tmp.828 %tmp.829(%tmp.831);
+        %tmp.833 = 2;
+        %tmp.834 = div %tmp.832 %tmp.833;
+        %tmp.835 = sub %tmp.827 %tmp.834;
+        symbol [ Graphics %tmp.836 508 28 36 ];
+        %tmp.836 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.837 508 37 47 ];
+        %tmp.837 = getv %tmp.836 :FONT_SMALL;
+        %tmp.838 = "Nepodařilo se\nnačíst data.";
+        symbol [ Graphics %tmp.839 510 28 36 ];
+        %tmp.839 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.840 510 37 56 ];
+        %tmp.840 = getv %tmp.839 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.816 %tmp.817(%tmp.822, %tmp.835, %tmp.837, %tmp.838, %tmp.840);
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_502_27_512_20_stop:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_451_20_512_20_if_end:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 513 20 ]
+        goto break @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_261_12_595_12_switchStmtEnd;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_514_16_574_25_switchCase:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 515 20 ]
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_515_20_573_20_if_stmt:
+        symbol [ FridayExtractedRoom %tmp.842 515 24 43 ];
+        %tmp.842 = getv ? :FridayExtractedRoom;
+        %tmp.843 = null;
+        %tmp.844 = ne %tmp.842 %tmp.843;
+        bf %tmp.844 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_515_20_573_20_if_else_false;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_515_20_573_20_if_true:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_515_53_563_20_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 517 24 ]
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_517_24_562_24_if_stmt:
+        symbol [ FridayExtractedRoom %tmp.846 518 28 47 ];
+        %tmp.846 = getv ? :FridayExtractedRoom;
+        %tmp.847 = as %tmp.846 { (!Null) };
+        symbol [ ongoingHour %tmp.849 518 48 59 ];
+        %tmp.849 = getv ? :ongoingHour;
+        symbol [ toNumber %tmp.850 518 60 68 ];
+        %tmp.850 = getv function %tmp.849 :toNumber;
+        %tmp.851 = invoke %tmp.849 %tmp.850();
+        %tmp.852 = agetv %tmp.847 %tmp.851;
+        %tmp.853 = null;
+        %tmp.854 = eq %tmp.852 %tmp.853;
+        bf %tmp.854 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_517_24_562_24_if_else_false;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_517_24_562_24_if_true:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_519_26_535_24_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 521 28 ]
+        %tmp.855 = lgetv %dc;
+        symbol [ dc %tmp.855 521 28 30 ];
+        symbol [ drawText %tmp.856 521 31 39 ];
+        %tmp.856 = getv function %tmp.855 :drawText;
+        %tmp.857 = lgetv %dc;
+        symbol [ dc %tmp.857 522 32 34 ];
+        symbol [ getWidth %tmp.858 522 35 43 ];
+        %tmp.858 = getv function %tmp.857 :getWidth;
+        %tmp.859 = invoke %tmp.857 %tmp.858();
+        %tmp.860 = 2;
+        %tmp.861 = div %tmp.859 %tmp.860;
+        %tmp.862 = lgetv %dc;
+        symbol [ dc %tmp.862 523 33 35 ];
+        symbol [ getHeight %tmp.863 523 36 45 ];
+        %tmp.863 = getv function %tmp.862 :getHeight;
+        %tmp.864 = invoke %tmp.862 %tmp.863();
+        %tmp.865 = 15;
+        %tmp.866 = mul %tmp.864 %tmp.865;
+        %tmp.867 = 100;
+        %tmp.868 = div %tmp.866 %tmp.867;
+        symbol [ Graphics %tmp.869 524 32 40 ];
+        %tmp.869 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.870 524 41 51 ];
+        %tmp.870 = getv %tmp.869 :FONT_SMALL;
+        %tmp.871 = "Volná hodina";
+        symbol [ Graphics %tmp.872 526 32 40 ];
+        %tmp.872 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.873 526 41 60 ];
+        %tmp.873 = getv %tmp.872 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.855 %tmp.856(%tmp.861, %tmp.868, %tmp.870, %tmp.871, %tmp.873);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 528 28 ]
+        %tmp.874 = lgetv %dc;
+        symbol [ dc %tmp.874 528 28 30 ];
+        symbol [ drawText %tmp.875 528 31 39 ];
+        %tmp.875 = getv function %tmp.874 :drawText;
+        %tmp.876 = lgetv %dc;
+        symbol [ dc %tmp.876 529 32 34 ];
+        symbol [ getWidth %tmp.877 529 35 43 ];
+        %tmp.877 = getv function %tmp.876 :getWidth;
+        %tmp.878 = invoke %tmp.876 %tmp.877();
+        %tmp.879 = 2;
+        %tmp.880 = div %tmp.878 %tmp.879;
+        %tmp.881 = lgetv %dc;
+        symbol [ dc %tmp.881 530 33 35 ];
+        symbol [ getHeight %tmp.882 530 36 45 ];
+        %tmp.882 = getv function %tmp.881 :getHeight;
+        %tmp.883 = invoke %tmp.881 %tmp.882();
+        %tmp.884 = 55;
+        %tmp.885 = mul %tmp.883 %tmp.884;
+        %tmp.886 = 100;
+        %tmp.887 = div %tmp.885 %tmp.886;
+        symbol [ Graphics %tmp.888 531 32 40 ];
+        %tmp.888 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.889 531 41 51 ];
+        %tmp.889 = getv %tmp.888 :FONT_SMALL;
+        symbol [ classTimes %tmp.891 532 32 42 ];
+        %tmp.891 = getv ? :classTimes;
+        symbol [ ongoingHour %tmp.893 532 43 54 ];
+        %tmp.893 = getv ? :ongoingHour;
+        symbol [ toNumber %tmp.894 532 55 63 ];
+        %tmp.894 = getv function %tmp.893 :toNumber;
+        %tmp.895 = invoke %tmp.893 %tmp.894();
+        %tmp.896 = agetv %tmp.891 %tmp.895;
+        symbol [ Graphics %tmp.897 533 32 40 ];
+        %tmp.897 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.898 533 41 60 ];
+        %tmp.898 = getv %tmp.897 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.874 %tmp.875(%tmp.880, %tmp.887, %tmp.889, %tmp.896, %tmp.898);
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_519_26_535_24_stop:
+        goto @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_517_24_562_24_if_end;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_517_24_562_24_if_else_false:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_535_31_562_24_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 537 28 ]
+        %tmp.899 = lgetv %dc;
+        symbol [ dc %tmp.899 537 28 30 ];
+        symbol [ drawText %tmp.900 537 31 39 ];
+        %tmp.900 = getv function %tmp.899 :drawText;
+        %tmp.901 = lgetv %dc;
+        symbol [ dc %tmp.901 538 32 34 ];
+        symbol [ getWidth %tmp.902 538 35 43 ];
+        %tmp.902 = getv function %tmp.901 :getWidth;
+        %tmp.903 = invoke %tmp.901 %tmp.902();
+        %tmp.904 = 2;
+        %tmp.905 = div %tmp.903 %tmp.904;
+        %tmp.906 = lgetv %dc;
+        symbol [ dc %tmp.906 539 33 35 ];
+        symbol [ getHeight %tmp.907 539 36 45 ];
+        %tmp.907 = getv function %tmp.906 :getHeight;
+        %tmp.908 = invoke %tmp.906 %tmp.907();
+        %tmp.909 = 5;
+        %tmp.910 = mul %tmp.908 %tmp.909;
+        %tmp.911 = 100;
+        %tmp.912 = div %tmp.910 %tmp.911;
+        symbol [ Graphics %tmp.913 540 32 40 ];
+        %tmp.913 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.914 540 41 51 ];
+        %tmp.914 = getv %tmp.913 :FONT_SMALL;
+        symbol [ FridayExtractedRoom %tmp.916 541 32 51 ];
+        %tmp.916 = getv ? :FridayExtractedRoom;
+        symbol [ ongoingHour %tmp.918 541 52 63 ];
+        %tmp.918 = getv ? :ongoingHour;
+        symbol [ toNumber %tmp.919 541 64 72 ];
+        %tmp.919 = getv function %tmp.918 :toNumber;
+        %tmp.920 = invoke %tmp.918 %tmp.919();
+        %tmp.921 = agetv %tmp.916 %tmp.920;
+        symbol [ Graphics %tmp.922 542 32 40 ];
+        %tmp.922 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.923 542 41 60 ];
+        %tmp.923 = getv %tmp.922 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.899 %tmp.900(%tmp.905, %tmp.912, %tmp.914, %tmp.921, %tmp.923);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 544 28 ]
+        %tmp.924 = lgetv %dc;
+        symbol [ dc %tmp.924 544 28 30 ];
+        symbol [ drawText %tmp.925 544 31 39 ];
+        %tmp.925 = getv function %tmp.924 :drawText;
+        %tmp.926 = lgetv %dc;
+        symbol [ dc %tmp.926 545 32 34 ];
+        symbol [ getWidth %tmp.927 545 35 43 ];
+        %tmp.927 = getv function %tmp.926 :getWidth;
+        %tmp.928 = invoke %tmp.926 %tmp.927();
+        %tmp.929 = 2;
+        %tmp.930 = div %tmp.928 %tmp.929;
+        %tmp.931 = lgetv %dc;
+        symbol [ dc %tmp.931 546 33 35 ];
+        symbol [ getHeight %tmp.932 546 36 45 ];
+        %tmp.932 = getv function %tmp.931 :getHeight;
+        %tmp.933 = invoke %tmp.931 %tmp.932();
+        %tmp.934 = 35;
+        %tmp.935 = mul %tmp.933 %tmp.934;
+        %tmp.936 = 100;
+        %tmp.937 = div %tmp.935 %tmp.936;
+        symbol [ Graphics %tmp.938 547 32 40 ];
+        %tmp.938 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.939 547 41 51 ];
+        %tmp.939 = getv %tmp.938 :FONT_SMALL;
+        symbol [ FridayExtractedSubject %tmp.941 548 32 54 ];
+        %tmp.941 = getv ? :FridayExtractedSubject;
+        symbol [ ongoingHour %tmp.943 548 55 66 ];
+        %tmp.943 = getv ? :ongoingHour;
+        symbol [ toNumber %tmp.944 548 67 75 ];
+        %tmp.944 = getv function %tmp.943 :toNumber;
+        %tmp.945 = invoke %tmp.943 %tmp.944();
+        %tmp.946 = agetv %tmp.941 %tmp.945;
+        %tmp.947 = " - ";
+        %tmp.948 = add %tmp.946 %tmp.947;
+        symbol [ FridayExtractedTeacher %tmp.950 550 36 58 ];
+        %tmp.950 = getv ? :FridayExtractedTeacher;
+        symbol [ ongoingHour %tmp.952 551 40 51 ];
+        %tmp.952 = getv ? :ongoingHour;
+        symbol [ toNumber %tmp.953 551 52 60 ];
+        %tmp.953 = getv function %tmp.952 :toNumber;
+        %tmp.954 = invoke %tmp.952 %tmp.953();
+        %tmp.955 = agetv %tmp.950 %tmp.954;
+        %tmp.956 = add %tmp.948 %tmp.955;
+        symbol [ Graphics %tmp.957 553 32 40 ];
+        %tmp.957 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.958 553 41 60 ];
+        %tmp.958 = getv %tmp.957 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.924 %tmp.925(%tmp.930, %tmp.937, %tmp.939, %tmp.956, %tmp.958);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 555 28 ]
+        %tmp.959 = lgetv %dc;
+        symbol [ dc %tmp.959 555 28 30 ];
+        symbol [ drawText %tmp.960 555 31 39 ];
+        %tmp.960 = getv function %tmp.959 :drawText;
+        %tmp.961 = lgetv %dc;
+        symbol [ dc %tmp.961 556 32 34 ];
+        symbol [ getWidth %tmp.962 556 35 43 ];
+        %tmp.962 = getv function %tmp.961 :getWidth;
+        %tmp.963 = invoke %tmp.961 %tmp.962();
+        %tmp.964 = 2;
+        %tmp.965 = div %tmp.963 %tmp.964;
+        %tmp.966 = lgetv %dc;
+        symbol [ dc %tmp.966 557 33 35 ];
+        symbol [ getHeight %tmp.967 557 36 45 ];
+        %tmp.967 = getv function %tmp.966 :getHeight;
+        %tmp.968 = invoke %tmp.966 %tmp.967();
+        %tmp.969 = 65;
+        %tmp.970 = mul %tmp.968 %tmp.969;
+        %tmp.971 = 100;
+        %tmp.972 = div %tmp.970 %tmp.971;
+        symbol [ Graphics %tmp.973 558 32 40 ];
+        %tmp.973 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.974 558 41 51 ];
+        %tmp.974 = getv %tmp.973 :FONT_SMALL;
+        symbol [ classTimes %tmp.976 559 32 42 ];
+        %tmp.976 = getv ? :classTimes;
+        symbol [ ongoingHour %tmp.978 559 43 54 ];
+        %tmp.978 = getv ? :ongoingHour;
+        symbol [ toNumber %tmp.979 559 55 63 ];
+        %tmp.979 = getv function %tmp.978 :toNumber;
+        %tmp.980 = invoke %tmp.978 %tmp.979();
+        %tmp.981 = agetv %tmp.976 %tmp.980;
+        symbol [ Graphics %tmp.982 560 32 40 ];
+        %tmp.982 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.983 560 41 60 ];
+        %tmp.983 = getv %tmp.982 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.959 %tmp.960(%tmp.965, %tmp.972, %tmp.974, %tmp.981, %tmp.983);
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_535_31_562_24_stop:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_517_24_562_24_if_end:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_515_53_563_20_stop:
+        goto @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_515_20_573_20_if_end;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_515_20_573_20_if_else_false:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_563_27_573_20_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 565 24 ]
+        %tmp.984 = lgetv %dc;
+        symbol [ dc %tmp.984 565 24 26 ];
+        symbol [ drawText %tmp.985 565 27 35 ];
+        %tmp.985 = getv function %tmp.984 :drawText;
+        %tmp.986 = lgetv %dc;
+        symbol [ dc %tmp.986 566 28 30 ];
+        symbol [ getWidth %tmp.987 566 31 39 ];
+        %tmp.987 = getv function %tmp.986 :getWidth;
+        %tmp.988 = invoke %tmp.986 %tmp.987();
+        %tmp.989 = 2;
+        %tmp.990 = div %tmp.988 %tmp.989;
+        %tmp.991 = lgetv %dc;
+        symbol [ dc %tmp.991 567 28 30 ];
+        symbol [ getHeight %tmp.992 567 31 40 ];
+        %tmp.992 = getv function %tmp.991 :getHeight;
+        %tmp.993 = invoke %tmp.991 %tmp.992();
+        %tmp.994 = 2;
+        %tmp.995 = div %tmp.993 %tmp.994;
+        %tmp.996 = lgetv %dc;
+        symbol [ dc %tmp.996 568 32 34 ];
+        symbol [ getFontHeight %tmp.997 568 35 48 ];
+        %tmp.997 = getv function %tmp.996 :getFontHeight;
+        symbol [ Graphics %tmp.998 568 49 57 ];
+        %tmp.998 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.999 568 58 68 ];
+        %tmp.999 = getv %tmp.998 :FONT_SMALL;
+        %tmp.1000 = invoke %tmp.996 %tmp.997(%tmp.999);
+        %tmp.1001 = 2;
+        %tmp.1002 = div %tmp.1000 %tmp.1001;
+        %tmp.1003 = sub %tmp.995 %tmp.1002;
+        symbol [ Graphics %tmp.1004 569 28 36 ];
+        %tmp.1004 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.1005 569 37 47 ];
+        %tmp.1005 = getv %tmp.1004 :FONT_SMALL;
+        %tmp.1006 = "Nepodařilo se\nnačíst data.";
+        symbol [ Graphics %tmp.1007 571 28 36 ];
+        %tmp.1007 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.1008 571 37 56 ];
+        %tmp.1008 = getv %tmp.1007 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.984 %tmp.985(%tmp.990, %tmp.1003, %tmp.1005, %tmp.1006, %tmp.1008);
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_563_27_573_20_stop:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_515_20_573_20_if_end:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 574 20 ]
+        goto break @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_261_12_595_12_switchStmtEnd;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_575_16_584_25_switchCase:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 576 20 ]
+        %tmp.1009 = lgetv %dc;
+        symbol [ dc %tmp.1009 576 20 22 ];
+        symbol [ drawText %tmp.1010 576 23 31 ];
+        %tmp.1010 = getv function %tmp.1009 :drawText;
+        %tmp.1011 = lgetv %dc;
+        symbol [ dc %tmp.1011 577 24 26 ];
+        symbol [ getWidth %tmp.1012 577 27 35 ];
+        %tmp.1012 = getv function %tmp.1011 :getWidth;
+        %tmp.1013 = invoke %tmp.1011 %tmp.1012();
+        %tmp.1014 = 2;
+        %tmp.1015 = div %tmp.1013 %tmp.1014;
+        %tmp.1016 = lgetv %dc;
+        symbol [ dc %tmp.1016 578 24 26 ];
+        symbol [ getHeight %tmp.1017 578 27 36 ];
+        %tmp.1017 = getv function %tmp.1016 :getHeight;
+        %tmp.1018 = invoke %tmp.1016 %tmp.1017();
+        %tmp.1019 = 2;
+        %tmp.1020 = div %tmp.1018 %tmp.1019;
+        %tmp.1021 = lgetv %dc;
+        symbol [ dc %tmp.1021 579 28 30 ];
+        symbol [ getFontHeight %tmp.1022 579 31 44 ];
+        %tmp.1022 = getv function %tmp.1021 :getFontHeight;
+        symbol [ Graphics %tmp.1023 579 45 53 ];
+        %tmp.1023 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.1024 579 54 64 ];
+        %tmp.1024 = getv %tmp.1023 :FONT_SMALL;
+        %tmp.1025 = invoke %tmp.1021 %tmp.1022(%tmp.1024);
+        %tmp.1026 = sub %tmp.1020 %tmp.1025;
+        symbol [ Graphics %tmp.1027 580 24 32 ];
+        %tmp.1027 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.1028 580 33 43 ];
+        %tmp.1028 = getv %tmp.1027 :FONT_SMALL;
+        %tmp.1029 = "Dnes už nejsou\nžádné hodiny.";
+        symbol [ Graphics %tmp.1030 582 24 32 ];
+        %tmp.1030 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.1031 582 33 52 ];
+        %tmp.1031 = getv %tmp.1030 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.1009 %tmp.1010(%tmp.1015, %tmp.1026, %tmp.1028, %tmp.1029, %tmp.1031);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 584 20 ]
+        goto break @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_261_12_595_12_switchStmtEnd;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_585_16_594_25_switchCase:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_261_12_595_12_defaultCodeBegin:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 586 20 ]
+        %tmp.1032 = lgetv %dc;
+        symbol [ dc %tmp.1032 586 20 22 ];
+        symbol [ drawText %tmp.1033 586 23 31 ];
+        %tmp.1033 = getv function %tmp.1032 :drawText;
+        %tmp.1034 = lgetv %dc;
+        symbol [ dc %tmp.1034 587 24 26 ];
+        symbol [ getWidth %tmp.1035 587 27 35 ];
+        %tmp.1035 = getv function %tmp.1034 :getWidth;
+        %tmp.1036 = invoke %tmp.1034 %tmp.1035();
+        %tmp.1037 = 2;
+        %tmp.1038 = div %tmp.1036 %tmp.1037;
+        %tmp.1039 = lgetv %dc;
+        symbol [ dc %tmp.1039 588 24 26 ];
+        symbol [ getHeight %tmp.1040 588 27 36 ];
+        %tmp.1040 = getv function %tmp.1039 :getHeight;
+        %tmp.1041 = invoke %tmp.1039 %tmp.1040();
+        %tmp.1042 = 2;
+        %tmp.1043 = div %tmp.1041 %tmp.1042;
+        %tmp.1044 = lgetv %dc;
+        symbol [ dc %tmp.1044 589 28 30 ];
+        symbol [ getFontHeight %tmp.1045 589 31 44 ];
+        %tmp.1045 = getv function %tmp.1044 :getFontHeight;
+        symbol [ Graphics %tmp.1046 589 45 53 ];
+        %tmp.1046 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.1047 589 54 64 ];
+        %tmp.1047 = getv %tmp.1046 :FONT_SMALL;
+        %tmp.1048 = invoke %tmp.1044 %tmp.1045(%tmp.1047);
+        %tmp.1049 = sub %tmp.1043 %tmp.1048;
+        symbol [ Graphics %tmp.1050 590 24 32 ];
+        %tmp.1050 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.1051 590 33 43 ];
+        %tmp.1051 = getv %tmp.1050 :FONT_SMALL;
+        %tmp.1052 = "Dnes nejsou\nžádné hodiny.";
+        symbol [ Graphics %tmp.1053 592 24 32 ];
+        %tmp.1053 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.1054 592 33 52 ];
+        %tmp.1054 = getv %tmp.1053 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.1032 %tmp.1033(%tmp.1038, %tmp.1049, %tmp.1051, %tmp.1052, %tmp.1054);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 594 20 ]
+        goto break @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_261_12_595_12_switchStmtEnd;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_261_12_595_12_switchStmtEnd:
+        pop;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_260_8_596_8_stop:
+        goto @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_257_8_607_8_if_end;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_257_8_607_8_if_false:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 596 15 ]
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_596_15_607_8_if_stmt:
+        symbol [ loadedData %tmp.1056 597 12 22 ];
+        %tmp.1056 = getv ? :loadedData;
+        %tmp.1057 = false;
+        %tmp.1058 = eq %tmp.1056 %tmp.1057;
+        bf %tmp.1058 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_596_15_607_8_if_end;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_596_15_607_8_if_true:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_599_8_607_8_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc" 600 12 ]
+        %tmp.1059 = lgetv %dc;
+        symbol [ dc %tmp.1059 600 12 14 ];
+        symbol [ drawText %tmp.1060 600 15 23 ];
+        %tmp.1060 = getv function %tmp.1059 :drawText;
+        %tmp.1061 = lgetv %dc;
+        symbol [ dc %tmp.1061 601 16 18 ];
+        symbol [ getWidth %tmp.1062 601 19 27 ];
+        %tmp.1062 = getv function %tmp.1061 :getWidth;
+        %tmp.1063 = invoke %tmp.1061 %tmp.1062();
+        %tmp.1064 = 2;
+        %tmp.1065 = div %tmp.1063 %tmp.1064;
+        %tmp.1066 = lgetv %dc;
+        symbol [ dc %tmp.1066 602 16 18 ];
+        symbol [ getHeight %tmp.1067 602 19 28 ];
+        %tmp.1067 = getv function %tmp.1066 :getHeight;
+        %tmp.1068 = invoke %tmp.1066 %tmp.1067();
+        %tmp.1069 = 2;
+        %tmp.1070 = div %tmp.1068 %tmp.1069;
+        %tmp.1071 = lgetv %dc;
+        symbol [ dc %tmp.1071 602 37 39 ];
+        symbol [ getFontHeight %tmp.1072 602 40 53 ];
+        %tmp.1072 = getv function %tmp.1071 :getFontHeight;
+        symbol [ Graphics %tmp.1073 602 54 62 ];
+        %tmp.1073 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.1074 602 63 73 ];
+        %tmp.1074 = getv %tmp.1073 :FONT_SMALL;
+        %tmp.1075 = invoke %tmp.1071 %tmp.1072(%tmp.1074);
+        %tmp.1076 = sub %tmp.1070 %tmp.1075;
+        symbol [ Graphics %tmp.1077 603 16 24 ];
+        %tmp.1077 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.1078 603 25 35 ];
+        %tmp.1078 = getv %tmp.1077 :FONT_SMALL;
+        %tmp.1079 = "Otevřete aplikaci\na načtěte data.";
+        symbol [ Graphics %tmp.1080 605 16 24 ];
+        %tmp.1080 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.1081 605 25 44 ];
+        %tmp.1081 = getv %tmp.1080 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.1059 %tmp.1060(%tmp.1065, %tmp.1076, %tmp.1078, %tmp.1079, %tmp.1081);
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_599_8_607_8_stop:
+        goto @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_596_15_607_8_if_end;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_596_15_607_8_if_end:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_257_8_607_8_if_end:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinGlanceView_mc_215_26_608_4_stop:
+    }
+}
+[ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlanceView.mc"; @line = 1; ]
+<init> {
+}

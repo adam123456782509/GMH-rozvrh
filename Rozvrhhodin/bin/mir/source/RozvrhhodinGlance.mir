@@ -1,0 +1,33 @@
+[ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlance.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Graphics,1,14,22]; ]
+import Toybox.Graphics;
+[ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlance.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [WatchUi,2,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlance.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [Communications,3,14,28]; ]
+import Toybox.Communications;
+[ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlance.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [System,4,14,20]; ]
+import Toybox.System;
+[ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlance.mc"; @line = 5; @symbol_importdef<0> = [Toybox,5,7,13]; @symbol_importdef<1> = [Lang,5,14,18]; ]
+import Toybox.Lang;
+[ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlance.mc"; @line = 6; @symbol_importdef<0> = [Toybox,6,7,13]; @symbol_importdef<1> = [PersistedContent,6,14,30]; ]
+import Toybox.PersistedContent;
+[ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlance.mc"; @line = 7; @symbol_importdef<0> = [Toybox,7,7,13]; @symbol_importdef<1> = [Time,7,14,18]; ]
+import Toybox.Time;
+[ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlance.mc"; @line = 10; @symbol_classdef = [RozvrhhodinGlance,10,6,23]; @symbol_extends<0> = [WatchUi,10,32,39]; @symbol_extends<1> = [GlanceView,10,40,50]; ]
+class RozvrhhodinGlance extends WatchUi.GlanceView {
+    [ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlance.mc"; @line = 10; ]
+    <init> {
+    }
+    [ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlance.mc"; @line = 10; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlance.mc"; @line = 13; @symbol_functiondef = [onStart,13,13,20]; @symbol_param<0> = [state,13,21,26]; @symbol_param<0>_type<0> = [Dictionary,13,30,40]; ]
+    function onStart(state as Dictionary or Null) as Void {
+    }
+    [ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlance.mc"; @line = 17; @symbol_functiondef = [onStop,17,13,19]; @symbol_param<0> = [state,17,20,25]; @symbol_param<0>_type<0> = [Dictionary,17,29,39]; ]
+    function onStop(state as Dictionary or Null) as Void {
+    }
+}
+[ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinGlance.mc"; @line = 1; ]
+<init> {
+}

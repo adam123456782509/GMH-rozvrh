@@ -1,0 +1,9 @@
+<drawables xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
+    <bitmap id="BakalariLogo" filename="../images/favicon-32x32.png" dithering="none" />
+    <bitmap id="Confirm" filename="../images/confirm.png" dithering="none" />
+    <bitmap id="Space" filename="../images/space.png" dithering="none" />
+    <bitmap id="Backspace" filename="../images/backspace.png" dithering="none" />
+    <bitmap id="KeyboardMode" filename="../images/keyboardMode.png" dithering="none" />
+    <bitmap id="Cancel" filename="../images/cancel.png" dithering="none" />
+    <bitmap id="settings" filename="../images/settings.png" dithering="none" />
+</drawables>
