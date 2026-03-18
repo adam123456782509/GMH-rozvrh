@@ -47,9 +47,9 @@ class RozvrhhodinLoading extends WatchUi.View {
 
 class RozvrhhodinLoadingInput extends WatchUi.BehaviorDelegate {
     var url_permanent =
-        "https://.../"; //změnit URL na oficiální AŽ bude možné
+        "https://..../";
     var url_actual =
-        "https://.../";
+        "https://..../";
     var key = "";
 
     var url_permanent_full;
@@ -81,23 +81,23 @@ class RozvrhhodinLoadingInput extends WatchUi.BehaviorDelegate {
             key = app.getProperty("API_KEY");
             Teacher = app.getProperty("Teacher");
 
+            makeRequest();
             timer = new Timer.Timer();
             timer.start(method(:timerCallback), 3000, false); //timeout na 3s
-            makeRequest();
         }
     }
 
     function makeRequest() as Void {
         //zjistí momentální den pro případ aktuálního rozvrhu a funkce pro získání dat z webového API
 
-        if (Teacher != true) {
+        if (Teacher == true) {
             url_permanent_full =
                 url_permanent +
                 "student/" +
                 key +
                 "?API_KEY=XXXX"; //TODO: zašifrovat API klíč a URL?
             url_actual_full =
-                url_actual + "student/" + key + "?API_KEY=XXX";
+                url_actual + "student/" + key + "?API_KEY=XXXX";
         } else {
             url_permanent_full =
                 url_permanent +
@@ -108,26 +108,13 @@ class RozvrhhodinLoadingInput extends WatchUi.BehaviorDelegate {
                 url_actual + "teacher/" + key + "?API_KEY=XXXX";
         }
 
-        if (app.getProperty("dateOfdata") != null) {
-            if (
-                app.getProperty("dateOfdata") ==
-                Time.Gregorian.info(
-                    Time.now(),
-                    Time.FORMAT_SHORT
-                ).day_of_week.toNumber() -
-                    2
-            ) //pokud naposledy uložený den je dnes tak nastaví url na aktuální rozvrh/aktualizuje data
-            {
-                url = url_actual_full;
-                app.setProperty("timetableIsPermanent", false);
-            } else {
-                //jinak dá url na stálý a načte stálý u celého týdne
-                url = url_permanent_full;
-                app.setProperty("timetableIsPermanent", true);
-            }
-        } else {
+        if(app.getProperty("loadPermanent") == true){//pokud byl nastaven parametr pro načítaní stálého rozvrhu (jenom po stisku tlačítka v nastavení) tak se načte stálý rozvrh, jinak aktuální, po nastavení url resetuje parametr na false
             url = url_permanent_full;
             app.setProperty("timetableIsPermanent", true);
+        }
+        else{
+            url = url_actual_full;
+            app.setProperty("timetableIsPermanent", false);
         }
 
         var params = {};
@@ -153,6 +140,7 @@ class RozvrhhodinLoadingInput extends WatchUi.BehaviorDelegate {
                 Time.FORMAT_SHORT
             ).day_of_week.toNumber() - 2
         ); //uloží den kdy byla data stažena pro případné další použití
+
         Communications.makeWebRequest(url, params, options, responseCallback); //udělá request
     }
 
@@ -163,10 +151,12 @@ class RozvrhhodinLoadingInput extends WatchUi.BehaviorDelegate {
         if (responseCode == 200) {
             app.setProperty("DownloadedContent", data); //nastaví odpověď API jako downloadedContent a s tím se pracuje dále
             app.setProperty("failedRequest", false);
+            app.setProperty("loadPermanent", false);
         } else {
             //pokud se request nezdaří zobrazí ho na obrazovce a načte data z paměti
             app.setProperty("DownloadedContent", responseCode);
             app.setProperty("failedRequest", true);
+            app.setProperty("loadPermanent", false);
         }
     }
 
@@ -183,6 +173,11 @@ class RozvrhhodinLoadingInput extends WatchUi.BehaviorDelegate {
             keyEvent.getKey() == 5
         ) //použité tlačítko zpět -> říct systému že má vypnout aplikaci
         {
+            WatchUi.switchToView(
+            new RozvrhhodinView(),
+            new RozvrhhodinInput(),
+            WatchUi.SLIDE_LEFT
+        );
             return false;
         } else {
             //ostatní -> systém nereaguje (např. nejde otervřít menu s aktivitami atd.)

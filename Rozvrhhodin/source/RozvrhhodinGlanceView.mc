@@ -48,12 +48,15 @@ class RozvrhhodinGlanceView extends WatchUi.GlanceView {
 
     var loadedData;
 
+    var triedPermanentTimtable;
+
     function initialize() {
         //načtení glance a id aplikace
         GlanceView.initialize();
 
         app = Toybox.Application.getApp();
         loadDataCheck();
+        triedPermanentTimtable = false;
     }
 
     function loadDataCheck() as Void {
@@ -210,6 +213,10 @@ class RozvrhhodinGlanceView extends WatchUi.GlanceView {
             FridayExtractedTeacher = app.getProperty("FrExTeach");
             FridayExtractedRoom = app.getProperty("FrExRoom");
         }
+
+        //WednesdayExtractedRoom = [null,"132","224","221","223",null,"123","224","TV2",null];
+        //WednesdayExtractedSubject = [null, "CEJ","MAf","ANJ","DEJ",null,"RUJ","CHE","TEV",null];
+        //WednesdayExtractedTeacher = [null,"Bř","Ro","Pt","Mz",null,"Ša","Pe","Ry",null];
     }
 
     function onUpdate(dc) {
@@ -252,6 +259,7 @@ class RozvrhhodinGlanceView extends WatchUi.GlanceView {
             ongoingHour = 0; //aby ongoingHour nebyl null
             date = 10; //nemožná hodnota normálně z důvodu odlišení od soboty a neděle použita po konci všech hodin
         }
+        
 
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT); //nastavení barvy textu a pozadí textu
         if (
@@ -261,7 +269,7 @@ class RozvrhhodinGlanceView extends WatchUi.GlanceView {
             switch (date) {
                 case 0: //pokud je pondělí
                     if (MondayExtractedRoom != null) {
-                        //pokud pondělí není null (může nastat pouze při chybě requestu)
+                        //pokud pondělí není null (může nastat pouze při chybě requestu) nebo request ještě nebyl proveden
                         if (
                             MondayExtractedRoom[ongoingHour.toNumber()] == null
                         ) {
@@ -280,6 +288,13 @@ class RozvrhhodinGlanceView extends WatchUi.GlanceView {
                                 classTimes[ongoingHour.toNumber()],
                                 Graphics.TEXT_JUSTIFY_CENTER
                             );
+                            if(Toybox.Application.getApp().getProperty("MoExRoomPerm") != null and Toybox.Application.getApp().getProperty("MoExTeachPerm") != null and Toybox.Application.getApp().getProperty("MoExSubjPerm"))
+                            {
+                            if(MondayExtractedRoom[ongoingHour.toNumber()] != Toybox.Application.getApp().getProperty("MoExRoomPerm")[ongoingHour.toNumber()] or MondayExtractedTeacher[ongoingHour.toNumber()] != Toybox.Application.getApp().getProperty("MoExTeachPerm")[ongoingHour.toNumber()] or MondayExtractedSubject[ongoingHour.toNumber()] != Toybox.Application.getApp().getProperty("MoExSubjPerm")[ongoingHour.toNumber()])
+                            {
+                                drawPinkCircle(dc);
+                            }
+                            }
                         } else {
                             //jinak se zobrazí informace o hodině
                             dc.drawText(
@@ -307,17 +322,32 @@ class RozvrhhodinGlanceView extends WatchUi.GlanceView {
                                 classTimes[ongoingHour.toNumber()],
                                 Graphics.TEXT_JUSTIFY_CENTER
                             );
+
+                            if(Toybox.Application.getApp().getProperty("MoExRoomPerm") != null and Toybox.Application.getApp().getProperty("MoExTeachPerm") != null and Toybox.Application.getApp().getProperty("MoExSubjPerm"))
+                            {
+                            if(MondayExtractedRoom[ongoingHour.toNumber()] != Toybox.Application.getApp().getProperty("MoExRoomPerm")[ongoingHour.toNumber()] or MondayExtractedTeacher[ongoingHour.toNumber()] != Toybox.Application.getApp().getProperty("MoExTeachPerm")[ongoingHour.toNumber()] or MondayExtractedSubject[ongoingHour.toNumber()] != Toybox.Application.getApp().getProperty("MoExSubjPerm")[ongoingHour.toNumber()])
+                            {
+                                drawPinkCircle(dc);
+                            }
+                            }
                         }
                     } else {
-                        //pokud je pondělí null (může nastat pouze při chybě requestu) zobrazí se hláška že se data nepodařilo načíst
+                        //pokud je pondělí null (může nastat pouze při chybě requestu) zobrazí se hláška že se data nepodařilo načíst nebo request ještě nebyl proveden
+
+                        if(triedPermanentTimtable == false)
+                        {
+                            MondayExtractedRoom = Toybox.Application.getApp().getProperty("MoExRoomPerm");
+                            MondayExtractedSubject = Toybox.Application.getApp().getProperty("MoExSubjPerm");
+                            MondayExtractedTeacher = Toybox.Application.getApp().getProperty("MoExTeachPerm");
+                        }else{
                         dc.drawText(
                             dc.getWidth() / 2,
-                            dc.getHeight() / 2 -
-                                dc.getFontHeight(Graphics.FONT_SMALL) / 2,
+                            dc.getHeight() / 2 - dc.getFontHeight(Graphics.FONT_SMALL),
                             Graphics.FONT_SMALL,
                             "Nepodařilo se\nnačíst data.",
                             Graphics.TEXT_JUSTIFY_CENTER
                         );
+                        }
                     }
                     break;
                 case 1: //pokud je úterý
@@ -341,6 +371,13 @@ class RozvrhhodinGlanceView extends WatchUi.GlanceView {
                                 classTimes[ongoingHour.toNumber()],
                                 Graphics.TEXT_JUSTIFY_CENTER
                             );
+                            if(Toybox.Application.getApp().getProperty("TuExRoomPerm") != null and Toybox.Application.getApp().getProperty("TuExTeachPerm") != null and Toybox.Application.getApp().getProperty("TuExSubjPerm") != null)
+                            {
+                            if(TuesdayExtractedRoom[ongoingHour.toNumber()] != Toybox.Application.getApp().getProperty("TuExRoomPerm")[ongoingHour.toNumber()] or TuesdayExtractedTeacher[ongoingHour.toNumber()] != Toybox.Application.getApp().getProperty("TuExTeachPerm")[ongoingHour.toNumber()] or TuesdayExtractedSubject[ongoingHour.toNumber()] != Toybox.Application.getApp().getProperty("TuExSubjPerm")[ongoingHour.toNumber()])
+                            {
+                                drawPinkCircle(dc);
+                            }
+                            }
                         } else {
                             //jinak se zobrazí informace o hodině
                             dc.drawText(
@@ -370,17 +407,32 @@ class RozvrhhodinGlanceView extends WatchUi.GlanceView {
                                 classTimes[ongoingHour.toNumber()],
                                 Graphics.TEXT_JUSTIFY_CENTER
                             );
+
+                            if(Toybox.Application.getApp().getProperty("TuExRoomPerm") != null and Toybox.Application.getApp().getProperty("TuExTeachPerm") != null and Toybox.Application.getApp().getProperty("TuExSubjPerm") != null)
+                            {
+                            if(TuesdayExtractedRoom[ongoingHour.toNumber()] != Toybox.Application.getApp().getProperty("TuExRoomPerm")[ongoingHour.toNumber()] or TuesdayExtractedTeacher[ongoingHour.toNumber()] != Toybox.Application.getApp().getProperty("TuExTeachPerm")[ongoingHour.toNumber()] or TuesdayExtractedSubject[ongoingHour.toNumber()] != Toybox.Application.getApp().getProperty("TuExSubjPerm")[ongoingHour.toNumber()])
+                            {
+                                drawPinkCircle(dc);
+                            }
+                            }
                         }
                     } else {
-                        //pokud je úterý null (může nastat pouze při chybě requestu) zobrazí se hláška že se data nepodařilo načíst
+                        //pokud je úterý null (může nastat pouze při chybě requestu) zobrazí se hláška že se data nepodařilo načíst nebo request ještě nebyl proveden
+                        if(triedPermanentTimtable == false)
+                        {
+                            TuesdayExtractedRoom = Toybox.Application.getApp().getProperty("TuExRoomPerm");
+                            TuesdayExtractedSubject = Toybox.Application.getApp().getProperty("TuExSubjPerm");
+                            TuesdayExtractedTeacher =Toybox.Application.getApp().getProperty("TuExTeachPerm");
+                        } else {
                         dc.drawText(
                             dc.getWidth() / 2,
                             dc.getHeight() / 2 -
-                                dc.getFontHeight(Graphics.FONT_SMALL) / 2,
+                                dc.getFontHeight(Graphics.FONT_SMALL),
                             Graphics.FONT_SMALL,
                             "Nepodařilo se\nnačíst data.",
                             Graphics.TEXT_JUSTIFY_CENTER
                         );
+                        }
                     }
                     break;
                 case 2: //pokud je středa
@@ -405,6 +457,13 @@ class RozvrhhodinGlanceView extends WatchUi.GlanceView {
                                 classTimes[ongoingHour.toNumber()],
                                 Graphics.TEXT_JUSTIFY_CENTER
                             );
+                            if(Toybox.Application.getApp().getProperty("WeExRoomPerm") != null and Toybox.Application.getApp().getProperty("WeExTeachPerm") != null and Toybox.Application.getApp().getProperty("WeExSubjPerm") != null)
+                            {
+                            if(WednesdayExtractedRoom[ongoingHour.toNumber()] != Toybox.Application.getApp().getProperty("WeExRoomPerm")[ongoingHour.toNumber()] or WednesdayExtractedTeacher[ongoingHour.toNumber()] != Toybox.Application.getApp().getProperty("WeExTeachPerm")[ongoingHour.toNumber()] or WednesdayExtractedSubject[ongoingHour.toNumber()] != Toybox.Application.getApp().getProperty("WeExSubjPerm")[ongoingHour.toNumber()])
+                            {
+                                drawPinkCircle(dc);
+                            }
+                            }
                         } else {
                             //jinak se zobrazí informace o hodině
                             dc.drawText(
@@ -434,17 +493,32 @@ class RozvrhhodinGlanceView extends WatchUi.GlanceView {
                                 classTimes[ongoingHour.toNumber()],
                                 Graphics.TEXT_JUSTIFY_CENTER
                             );
+
+                            if(Toybox.Application.getApp().getProperty("WeExRoomPerm") != null and Toybox.Application.getApp().getProperty("WeExTeachPerm") != null and Toybox.Application.getApp().getProperty("WeExSubjPerm") != null)
+                            {
+                            if(WednesdayExtractedRoom[ongoingHour.toNumber()] != Toybox.Application.getApp().getProperty("WeExRoomPerm")[ongoingHour.toNumber()] or WednesdayExtractedTeacher[ongoingHour.toNumber()] != Toybox.Application.getApp().getProperty("WeExTeachPerm")[ongoingHour.toNumber()] or WednesdayExtractedSubject[ongoingHour.toNumber()] != Toybox.Application.getApp().getProperty("WeExSubjPerm")[ongoingHour.toNumber()])
+                            {
+                                drawPinkCircle(dc);
+                            }
+                            }
                         }
                     } else {
-                        //pokud je středa null (může nastat pouze při chybě requestu) zobrazí se hláška že se data nepodařilo načíst
+                        //pokud je středa null (může nastat pouze při chybě requestu) zobrazí se hláška že se data nepodařilo načístnebo request ještě nebyl proveden
+                        if(triedPermanentTimtable == false)
+                        {
+                            WednesdayExtractedRoom = Toybox.Application.getApp().getProperty("WeExRoomPerm");
+                            WednesdayExtractedSubject = Toybox.Application.getApp().getProperty("WeExSubjPerm");
+                            WednesdayExtractedTeacher =Toybox.Application.getApp().getProperty("WeExTeachPerm");
+                        } else {
                         dc.drawText(
                             dc.getWidth() / 2,
                             dc.getHeight() / 2 -
-                                dc.getFontHeight(Graphics.FONT_SMALL) / 2,
+                                dc.getFontHeight(Graphics.FONT_SMALL),
                             Graphics.FONT_SMALL,
                             "Nepodařilo se\nnačíst data.",
                             Graphics.TEXT_JUSTIFY_CENTER
                         );
+                        }
                     }
                     break;
                 case 3: //pokud je čtvrtek
@@ -469,6 +543,15 @@ class RozvrhhodinGlanceView extends WatchUi.GlanceView {
                                 classTimes[ongoingHour.toNumber()],
                                 Graphics.TEXT_JUSTIFY_CENTER
                             );
+                            if(Toybox.Application.getApp().getProperty("ThExRoomPerm") != null and Toybox.Application.getApp().getProperty("ThExTeachPerm") != null and Toybox.Application.getApp().getProperty("ThExSubjPerm") != null){
+
+                            
+                            if(ThursdayExtractedRoom[ongoingHour.toNumber()] != Toybox.Application.getApp().getProperty("ThExRoomPerm")[ongoingHour.toNumber()] or ThursdayExtractedTeacher[ongoingHour.toNumber()] != Toybox.Application.getApp().getProperty("ThExTeachPerm")[ongoingHour.toNumber()] or ThursdayExtractedSubject[ongoingHour.toNumber()] != Toybox.Application.getApp().getProperty("ThExSubjPerm")[ongoingHour.toNumber()])
+                            {
+                                drawPinkCircle(dc);
+                            }
+                            }
+                            
                         } else {
                             //jinak se zobrazí informace o hodině
                             dc.drawText(
@@ -498,17 +581,33 @@ class RozvrhhodinGlanceView extends WatchUi.GlanceView {
                                 classTimes[ongoingHour.toNumber()],
                                 Graphics.TEXT_JUSTIFY_CENTER
                             );
+
+                            if(Toybox.Application.getApp().getProperty("ThExRoomPerm") != null and Toybox.Application.getApp().getProperty("ThExTeachPerm") != null and Toybox.Application.getApp().getProperty("ThExSubjPerm") != null){
+
+                            
+                            if(ThursdayExtractedRoom[ongoingHour.toNumber()] != Toybox.Application.getApp().getProperty("ThExRoomPerm")[ongoingHour.toNumber()] or ThursdayExtractedTeacher[ongoingHour.toNumber()] != Toybox.Application.getApp().getProperty("ThExTeachPerm")[ongoingHour.toNumber()] or ThursdayExtractedSubject[ongoingHour.toNumber()] != Toybox.Application.getApp().getProperty("ThExSubjPerm")[ongoingHour.toNumber()])
+                            {
+                                drawPinkCircle(dc);
+                            }
+                            }
                         }
                     } else {
-                        //pokud je čtvrtek null (může nastat pouze při chybě requestu) zobrazí se hláška že se data nepodařilo načíst
+                        if(triedPermanentTimtable == false)
+                        {
+                            ThursdayExtractedRoom = Toybox.Application.getApp().getProperty("ThExRoomPerm");
+                            ThursdayExtractedSubject = Toybox.Application.getApp().getProperty("ThExSubjPerm");
+                            ThursdayExtractedTeacher =Toybox.Application.getApp().getProperty("ThExTeachPerm");
+                        } else {
+                        //pokud je čtvrtek null (může nastat pouze při chybě requestu) zobrazí se hláška že se data nepodařilo načíst nebo request ještě nebyl proveden
                         dc.drawText(
                             dc.getWidth() / 2,
                             dc.getHeight() / 2 -
-                                dc.getFontHeight(Graphics.FONT_SMALL) / 2,
+                                dc.getFontHeight(Graphics.FONT_SMALL),
                             Graphics.FONT_SMALL,
                             "Nepodařilo se\nnačíst data.",
                             Graphics.TEXT_JUSTIFY_CENTER
                         );
+                        }
                     }
                     break;
                 case 4: //pokud je pátek
@@ -532,6 +631,14 @@ class RozvrhhodinGlanceView extends WatchUi.GlanceView {
                                 classTimes[ongoingHour.toNumber()],
                                 Graphics.TEXT_JUSTIFY_CENTER
                             );
+                            if(Toybox.Application.getApp().getProperty("FrExRoomPerm") != null and Toybox.Application.getApp().getProperty("FrExTeachPerm") != null and Toybox.Application.getApp().getProperty("FrExSubjPerm") != null){
+
+                            
+                            if(FridayExtractedRoom[ongoingHour.toNumber()] != Toybox.Application.getApp().getProperty("FrExRoomPerm")[ongoingHour.toNumber()] or FridayExtractedTeacher[ongoingHour.toNumber()] != Toybox.Application.getApp().getProperty("FrExTeachPerm")[ongoingHour.toNumber()] or FridayExtractedSubject[ongoingHour.toNumber()] != Toybox.Application.getApp().getProperty("FrExSubjPerm")[ongoingHour.toNumber()])
+                            {
+                                drawPinkCircle(dc);
+                            }
+                            }
                         } else {
                             //jinak se zobrazí informace o hodině
                             dc.drawText(
@@ -559,17 +666,33 @@ class RozvrhhodinGlanceView extends WatchUi.GlanceView {
                                 classTimes[ongoingHour.toNumber()],
                                 Graphics.TEXT_JUSTIFY_CENTER
                             );
+
+                            if(Toybox.Application.getApp().getProperty("FrExRoomPerm") != null and Toybox.Application.getApp().getProperty("FrExTeachPerm") != null and Toybox.Application.getApp().getProperty("FrExSubjPerm") != null){
+
+                            
+                            if(FridayExtractedRoom[ongoingHour.toNumber()] != Toybox.Application.getApp().getProperty("FrExRoomPerm")[ongoingHour.toNumber()] or FridayExtractedTeacher[ongoingHour.toNumber()] != Toybox.Application.getApp().getProperty("FrExTeachPerm")[ongoingHour.toNumber()] or FridayExtractedSubject[ongoingHour.toNumber()] != Toybox.Application.getApp().getProperty("FrExSubjPerm")[ongoingHour.toNumber()])
+                            {
+                                drawPinkCircle(dc);
+                            }
+                            }
                         }
                     } else {
-                        //pokud je pátek null (může nastat pouze při chybě requestu) zobrazí se hláška že se data nepodařilo načíst
+                        //pokud je pátek null (může nastat pouze při chybě requestu) zobrazí se hláška že se data nepodařilo načíst nebo request ještě nebyl proveden
+                        if(triedPermanentTimtable == false)
+                        {
+                            FridayExtractedRoom = Toybox.Application.getApp().getProperty("FrExRoomPerm");
+                            FridayExtractedSubject = Toybox.Application.getApp().getProperty("FrExSubjPerm");
+                            FridayExtractedTeacher = Toybox.Application.getApp().getProperty("FrExTeachPerm");
+                        } else {
                         dc.drawText(
                             dc.getWidth() / 2,
                             dc.getHeight() / 2 -
-                                dc.getFontHeight(Graphics.FONT_SMALL) / 2,
+                                dc.getFontHeight(Graphics.FONT_SMALL),
                             Graphics.FONT_SMALL,
                             "Nepodařilo se\nnačíst data.",
                             Graphics.TEXT_JUSTIFY_CENTER
                         );
+                        }
                     }
                     break;
                 case 10: //pokud je po poslední hodině
@@ -605,5 +728,14 @@ class RozvrhhodinGlanceView extends WatchUi.GlanceView {
                 Graphics.TEXT_JUSTIFY_CENTER
             );
         }
+    }
+
+    function drawPinkCircle(dc as Dc)
+    {
+        dc.setColor(Graphics.COLOR_PINK, Graphics.COLOR_TRANSPARENT);
+        dc.drawCircle((dc.getWidth() * 34)/100,(dc.getHeight() * 5) / 100 + dc.getFontHeight(Graphics.FONT_SMALL) /2,5);
+        dc.fillCircle((dc.getWidth() * 34)/100,(dc.getHeight() * 5) / 100 + dc.getFontHeight(Graphics.FONT_SMALL) /2,5);
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+
     }
 }

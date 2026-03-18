@@ -10,15 +10,8 @@ import Toybox.Application;
 import Toybox.Timer;
 
 class RozvrhhodinView extends WatchUi.View {
-    var url_permanent =
-        "https://.../";
-    var url_actual =
-        "https://.../";
-    var key = "";
 
-    var url_permanent_full;
-    var url_actual_full;
-    var url = "";
+    var key = "";
 
     var failedRequest = false;
 
@@ -58,6 +51,7 @@ class RozvrhhodinView extends WatchUi.View {
     var ongoingHour;
 
     var settingsIco;
+    var logo;
 
     var pageIndex = 0; //index posunutí zobrazení hodiny
 
@@ -108,6 +102,8 @@ class RozvrhhodinView extends WatchUi.View {
                 Time.now(),
                 Time.FORMAT_SHORT
             ).day_of_week.toNumber() - 2; // 0 = pondělí ... 5 = sobota ... 6 = neděle (odčítání -2 docíli aby 0 = pondělí)
+
+        timetableIsPermanent = app.getProperty("timetableIsPermanent");
 
         for (var i = 0; i < classes.size(); i++) {
             if (timetableIsPermanent == true) {
@@ -638,6 +634,7 @@ class RozvrhhodinView extends WatchUi.View {
         settingsIco =
             WatchUi.loadResource(Rez.Drawables.settings) as
             Graphics.BitmapResource;
+        logo = WatchUi.loadResource(Rez.Drawables.Logo) as Graphics.BitmapResource;
     }
 
     // Called when this View is brought to the foreground. Restore
@@ -646,8 +643,7 @@ class RozvrhhodinView extends WatchUi.View {
     function onShow() as Void {
         app.setProperty("pageIndex", 0);
         failedRequest = false;
-
-        //loadDataFromMemory(); //načte data a udělá request, pokud request selže tak se použijí načtená data z paměti
+        
         makeRequest();
     }
 
@@ -659,6 +655,8 @@ class RozvrhhodinView extends WatchUi.View {
         View.onUpdate(dc); //tento řádek je podivný, calluje tuto funkci ale zároveň když je první nikdy se nazacyklí, je v základním projektu automaticky a v glanech tvoří černý obdélník z neznámého důvodu
 
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+
+        dc.drawBitmap2(dc.getWidth()/2 - logo.getWidth()/2, 5, logo, {:bitmapwidth => 48, :bitmapheight => 48});
 
         time = System.getClockTime().hour * 60 + System.getClockTime().min; //aktuální čas v minutách od půlnoci
 
@@ -706,9 +704,9 @@ class RozvrhhodinView extends WatchUi.View {
             app.setProperty("pageIndex", pageIndex);
         }
         dc.drawBitmap(
-            (dc.getWidth() / (100).toFloat()) * 90.5 -
+            (dc.getWidth() / (100).toFloat()) * 86 -
                 settingsIco.getWidth() / 2,
-            (dc.getHeight() / (100).toFloat()) * 27.5 -
+            (dc.getHeight() / (100).toFloat()) * 25.25 -
                 settingsIco.getWidth() / 2,
             settingsIco
         );
@@ -748,7 +746,7 @@ class RozvrhhodinView extends WatchUi.View {
                 }
             } else {
                 switch (
-                    date //podle dne vybereme hodnotu kterou vyrendrujeme poté index podle ongoingHour
+                    date //podle dne vybereme hodnotu kterou vyrenderujeme poté index podle ongoingHour
                 ) {
                     case 0: //pondělí
                         if (
@@ -1122,7 +1120,6 @@ class RozvrhhodinInput extends WatchUi.BehaviorDelegate {
         ) //použité tlačítko zpět -> říct systému že má vypnout aplikaci
         {
             System.exit();
-            return true;
         } else if (keyEvent.getKey() == 4) {
             //horní pravé tlačítko otevírá menu/nastavení
             openSettings();
@@ -1173,10 +1170,11 @@ class RozvrhhodinInput extends WatchUi.BehaviorDelegate {
     }
 
     function openSettings() {
-        WatchUi.switchToView(
-            new RozvrhhodinSettings(),
-            new RozvrhhodinSettingsInput(),
+            WatchUi.switchToView(
+            new RozvrhhodinSettingsButton(),
+            new RozvrhhodinSettingsButtonBehaviorDelagate(),
             WatchUi.SLIDE_LEFT
         );
+        
     }
 }
