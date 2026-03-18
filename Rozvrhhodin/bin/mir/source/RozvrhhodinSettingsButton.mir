@@ -1,0 +1,404 @@
+[ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinSettingsButton.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Application,1,14,25]; ]
+import Toybox.Application;
+[ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinSettingsButton.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Lang,2,14,18]; ]
+import Toybox.Lang;
+[ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinSettingsButton.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [WatchUi,3,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinSettingsButton.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [Graphics,4,14,22]; ]
+import Toybox.Graphics;
+[ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinSettingsButton.mc"; @line = 6; @position = 4; @symbol_vardef = [menu,6,4,8]; ]
+var menu;
+[ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinSettingsButton.mc"; @line = 7; @symbol_classdef = [RozvrhhodinSettingsButton,7,6,31]; @symbol_extends<0> = [WatchUi,7,40,47]; @symbol_extends<1> = [View,7,48,52]; ]
+class RozvrhhodinSettingsButton extends WatchUi.View {
+    [ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinSettingsButton.mc"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinSettingsButton.mc"; @line = 7; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinSettingsButton.mc"; @line = 9; @symbol_functiondef = [initialize,9,13,23]; ]
+    function initialize() as Void {
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_9_26_51_4_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinSettingsButton.mc" 10 8 ]
+        symbol [ WatchUi %tmp.3 10 19 26 ];
+        %tmp.3 = getm $.Toybox.WatchUi;
+        symbol [ Menu2 %tmp.4 10 27 32 ];
+        %tmp.4 = getv function ? %tmp.3 :Menu2;
+        %tmp.5 = newd 1;
+        %tmp.7 = const :title;
+        symbol [ title %tmp.7 10 35 40 const ];
+        %tmp.8 = "Nastavení";
+        %tmp.9 = dup %tmp.5;
+        %tmp.10 = aputv %tmp.9 %tmp.7 %tmp.8;
+        %tmp.1 = newc %tmp.4 (%tmp.10);
+        symbol [ menu ? 10 8 12 ];
+        putv self :menu %tmp.1;
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinSettingsButton.mc" 13 8 ]
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_13_8_15_8_if_stmt:
+        symbol [ Toybox %tmp.12 13 11 17 ];
+        %tmp.12 = getv ? :Toybox;
+        symbol [ Application %tmp.13 13 18 29 ];
+        %tmp.13 = getv %tmp.12 :Application;
+        symbol [ getApp %tmp.14 13 30 36 ];
+        %tmp.14 = getv function %tmp.13 :getApp;
+        %tmp.15 = invoke %tmp.13 %tmp.14();
+        symbol [ getProperty %tmp.16 13 39 50 ];
+        %tmp.16 = getv function %tmp.15 :getProperty;
+        %tmp.17 = "Teacher";
+        %tmp.18 = invoke %tmp.15 %tmp.16(%tmp.17);
+        %tmp.19 = null;
+        %tmp.20 = eq %tmp.18 %tmp.19;
+        bf %tmp.20 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_13_8_15_8_if_end;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_13_8_15_8_if_true:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_13_70_15_8_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinSettingsButton.mc" 14 12 ]
+        symbol [ Toybox %tmp.22 14 12 18 ];
+        %tmp.22 = getv ? :Toybox;
+        symbol [ Application %tmp.23 14 19 30 ];
+        %tmp.23 = getv %tmp.22 :Application;
+        symbol [ getApp %tmp.24 14 31 37 ];
+        %tmp.24 = getv function %tmp.23 :getApp;
+        %tmp.25 = invoke %tmp.23 %tmp.24();
+        symbol [ setProperty %tmp.26 14 40 51 ];
+        %tmp.26 = getv function %tmp.25 :setProperty;
+        %tmp.27 = "Teacher";
+        %tmp.28 = true;
+        invoke %tmp.25 %tmp.26(%tmp.27, %tmp.28);
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_13_70_15_8_stop:
+        goto @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_13_8_15_8_if_end;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_13_8_15_8_if_end:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinSettingsButton.mc" 17 8 ]
+        symbol [ menu %tmp.30 17 8 12 ];
+        %tmp.30 = getv ? :menu;
+        symbol [ addItem %tmp.31 17 13 20 ];
+        %tmp.31 = getv function %tmp.30 :addItem;
+        symbol [ ToggleMenuItem %tmp.35 18 16 30 ];
+        %tmp.35 = getv ? :ToggleMenuItem;
+        %tmp.36 = "Typ uživatele";
+        %tmp.37 = "žák";
+        %tmp.38 = "toggle";
+        symbol [ Toybox %tmp.40 22 16 22 ];
+        %tmp.40 = getv ? :Toybox;
+        symbol [ Application %tmp.41 22 23 34 ];
+        %tmp.41 = getv %tmp.40 :Application;
+        symbol [ getApp %tmp.42 22 35 41 ];
+        %tmp.42 = getv function %tmp.41 :getApp;
+        %tmp.43 = invoke %tmp.41 %tmp.42();
+        symbol [ getProperty %tmp.44 22 44 55 ];
+        %tmp.44 = getv function %tmp.43 :getProperty;
+        %tmp.45 = "Teacher";
+        %tmp.46 = invoke %tmp.43 %tmp.44(%tmp.45);
+        %tmp.47 = newd 0;
+        %tmp.32 = newc %tmp.35 (%tmp.36, %tmp.37, %tmp.38, %tmp.46, %tmp.47);
+        invoke %tmp.30 %tmp.31(%tmp.32);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinSettingsButton.mc" 26 8 ]
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_26_8_32_8_if_stmt:
+        symbol [ Toybox %tmp.49 26 11 17 ];
+        %tmp.49 = getv ? :Toybox;
+        symbol [ Application %tmp.50 26 18 29 ];
+        %tmp.50 = getv %tmp.49 :Application;
+        symbol [ getApp %tmp.51 26 30 36 ];
+        %tmp.51 = getv function %tmp.50 :getApp;
+        %tmp.52 = invoke %tmp.50 %tmp.51();
+        symbol [ getProperty %tmp.53 26 39 50 ];
+        %tmp.53 = getv function %tmp.52 :getProperty;
+        %tmp.54 = "Teacher";
+        %tmp.55 = invoke %tmp.52 %tmp.53(%tmp.54);
+        %tmp.56 = true;
+        %tmp.57 = eq %tmp.55 %tmp.56;
+        bf %tmp.57 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_26_8_32_8_if_else_false;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_26_8_32_8_if_true:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_26_70_28_8_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinSettingsButton.mc" 27 12 ]
+        symbol [ menu %tmp.59 27 12 16 ];
+        %tmp.59 = getv ? :menu;
+        symbol [ getItem %tmp.60 27 17 24 ];
+        %tmp.60 = getv function %tmp.59 :getItem;
+        %tmp.61 = 0;
+        %tmp.62 = invoke %tmp.59 %tmp.60(%tmp.61);
+        symbol [ setSubLabel %tmp.63 27 28 39 ];
+        %tmp.63 = getv function %tmp.62 :setSubLabel;
+        %tmp.64 = "žák";
+        invoke %tmp.62 %tmp.63(%tmp.64);
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_26_70_28_8_stop:
+        goto @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_26_8_32_8_if_end;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_26_8_32_8_if_else_false:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_30_8_32_8_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinSettingsButton.mc" 31 12 ]
+        symbol [ menu %tmp.66 31 12 16 ];
+        %tmp.66 = getv ? :menu;
+        symbol [ getItem %tmp.67 31 17 24 ];
+        %tmp.67 = getv function %tmp.66 :getItem;
+        %tmp.68 = 0;
+        %tmp.69 = invoke %tmp.66 %tmp.67(%tmp.68);
+        symbol [ setSubLabel %tmp.70 31 28 39 ];
+        %tmp.70 = getv function %tmp.69 :setSubLabel;
+        %tmp.71 = "učitel";
+        invoke %tmp.69 %tmp.70(%tmp.71);
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_30_8_32_8_stop:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_26_8_32_8_if_end:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinSettingsButton.mc" 34 8 ]
+        symbol [ menu %tmp.73 34 8 12 ];
+        %tmp.73 = getv ? :menu;
+        symbol [ addItem %tmp.74 34 13 20 ];
+        %tmp.74 = getv function %tmp.73 :addItem;
+        symbol [ MenuItem %tmp.78 35 16 24 ];
+        %tmp.78 = getv ? :MenuItem;
+        %tmp.79 = "Můj API klíč";
+        %tmp.80 = "Úprava klíče uživatele";
+        %tmp.81 = "API";
+        %tmp.82 = newd 0;
+        %tmp.75 = newc %tmp.78 (%tmp.79, %tmp.80, %tmp.81, %tmp.82);
+        invoke %tmp.73 %tmp.74(%tmp.75);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinSettingsButton.mc" 43 8 ]
+        symbol [ menu %tmp.84 43 8 12 ];
+        %tmp.84 = getv ? :menu;
+        symbol [ addItem %tmp.85 43 13 20 ];
+        %tmp.85 = getv function %tmp.84 :addItem;
+        symbol [ MenuItem %tmp.89 44 16 24 ];
+        %tmp.89 = getv ? :MenuItem;
+        %tmp.90 = "Načíst stálý rozvrh";
+        %tmp.91 = "Refresh stálého rozvrhu";
+        %tmp.92 = "LOAD";
+        %tmp.93 = newd 0;
+        %tmp.86 = newc %tmp.89 (%tmp.90, %tmp.91, %tmp.92, %tmp.93);
+        invoke %tmp.84 %tmp.85(%tmp.86);
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_9_26_51_4_stop:
+    }
+    [ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinSettingsButton.mc"; @line = 54; @symbol_functiondef = [onShow,54,13,19]; ]
+    function onShow() as Void {
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_54_30_56_4_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinSettingsButton.mc" 55 8 ]
+        symbol [ WatchUi %tmp.1 55 8 15 ];
+        %tmp.1 = getm $.Toybox.WatchUi;
+        symbol [ switchToView %tmp.2 55 16 28 ];
+        %tmp.2 = getv function %tmp.1 :switchToView;
+        symbol [ menu %tmp.4 55 29 33 ];
+        %tmp.4 = getv ? :menu;
+        symbol [ RozvrhhodinSettingsButtonBehaviorDelagate %tmp.8 55 39 80 ];
+        %tmp.8 = getv ? :RozvrhhodinSettingsButtonBehaviorDelagate;
+        %tmp.5 = newc %tmp.8 ();
+        symbol [ WatchUi %tmp.9 55 84 91 ];
+        %tmp.9 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_IMMEDIATE %tmp.10 55 92 107 ];
+        %tmp.10 = getv %tmp.9 :SLIDE_IMMEDIATE;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.5, %tmp.10);
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_54_30_56_4_stop:
+    }
+}
+[ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinSettingsButton.mc"; @line = 59; @symbol_classdef = [RozvrhhodinSettingsButtonBehaviorDelagate,59,6,47]; @symbol_extends<0> = [Menu2InputDelegate,59,56,74]; ]
+class RozvrhhodinSettingsButtonBehaviorDelagate extends Menu2InputDelegate {
+    [ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinSettingsButton.mc"; @line = 59; ]
+    <init> {
+    }
+    [ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinSettingsButton.mc"; @line = 59; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinSettingsButton.mc"; @line = 60; @symbol_functiondef = [onSelect,60,13,21]; @symbol_param<0> = [item,60,22,26]; @symbol_param<0>_type<0> = [MenuItem,60,30,38]; ]
+    function onSelect(item as MenuItem) {
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_60_40_92_4_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinSettingsButton.mc" 62 8 ]
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_62_8_91_8_if_stmt:
+        %tmp.1 = lgetv %item;
+        symbol [ item %tmp.1 62 11 15 ];
+        symbol [ getId %tmp.2 62 16 21 ];
+        %tmp.2 = getv function %tmp.1 :getId;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        symbol [ equals %tmp.4 62 24 30 ];
+        %tmp.4 = getv function %tmp.3 :equals;
+        %tmp.5 = "toggle";
+        %tmp.6 = invoke %tmp.3 %tmp.4(%tmp.5);
+        bf %tmp.6 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_62_8_91_8_if_false;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_62_8_91_8_if_true:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_62_41_73_8_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinSettingsButton.mc" 63 12 ]
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_63_12_69_12_if_stmt:
+        symbol [ menu %tmp.8 63 15 19 ];
+        %tmp.8 = getv ? :menu;
+        symbol [ getItem %tmp.9 63 20 27 ];
+        %tmp.9 = getv function %tmp.8 :getItem;
+        %tmp.10 = 0;
+        %tmp.11 = invoke %tmp.8 %tmp.9(%tmp.10);
+        symbol [ isEnabled %tmp.12 63 31 40 ];
+        %tmp.12 = getv function %tmp.11 :isEnabled;
+        %tmp.13 = invoke %tmp.11 %tmp.12();
+        %tmp.14 = true;
+        %tmp.15 = eq %tmp.13 %tmp.14;
+        bf %tmp.15 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_63_12_69_12_if_else_false;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_63_12_69_12_if_true:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_63_51_65_12_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinSettingsButton.mc" 64 16 ]
+        symbol [ menu %tmp.17 64 16 20 ];
+        %tmp.17 = getv ? :menu;
+        symbol [ getItem %tmp.18 64 21 28 ];
+        %tmp.18 = getv function %tmp.17 :getItem;
+        %tmp.19 = 0;
+        %tmp.20 = invoke %tmp.17 %tmp.18(%tmp.19);
+        symbol [ setSubLabel %tmp.21 64 32 43 ];
+        %tmp.21 = getv function %tmp.20 :setSubLabel;
+        %tmp.22 = "žák";
+        invoke %tmp.20 %tmp.21(%tmp.22);
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_63_51_65_12_stop:
+        goto @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_63_12_69_12_if_end;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_63_12_69_12_if_else_false:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_67_12_69_12_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinSettingsButton.mc" 68 12 ]
+        symbol [ menu %tmp.24 68 12 16 ];
+        %tmp.24 = getv ? :menu;
+        symbol [ getItem %tmp.25 68 17 24 ];
+        %tmp.25 = getv function %tmp.24 :getItem;
+        %tmp.26 = 0;
+        %tmp.27 = invoke %tmp.24 %tmp.25(%tmp.26);
+        symbol [ setSubLabel %tmp.28 68 28 39 ];
+        %tmp.28 = getv function %tmp.27 :setSubLabel;
+        %tmp.29 = "učitel";
+        invoke %tmp.27 %tmp.28(%tmp.29);
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_67_12_69_12_stop:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_63_12_69_12_if_end:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinSettingsButton.mc" 70 12 ]
+        symbol [ menu %tmp.31 70 12 16 ];
+        %tmp.31 = getv ? :menu;
+        symbol [ updateItem %tmp.32 70 17 27 ];
+        %tmp.32 = getv function %tmp.31 :updateItem;
+        symbol [ menu %tmp.34 70 28 32 ];
+        %tmp.34 = getv ? :menu;
+        symbol [ getItem %tmp.35 70 33 40 ];
+        %tmp.35 = getv function %tmp.34 :getItem;
+        %tmp.36 = 0;
+        %tmp.37 = invoke %tmp.34 %tmp.35(%tmp.36);
+        %tmp.38 = 0;
+        invoke %tmp.31 %tmp.32(%tmp.37, %tmp.38);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinSettingsButton.mc" 71 12 ]
+        symbol [ Toybox %tmp.40 71 12 18 ];
+        %tmp.40 = getv ? :Toybox;
+        symbol [ Application %tmp.41 71 19 30 ];
+        %tmp.41 = getv %tmp.40 :Application;
+        symbol [ getApp %tmp.42 71 31 37 ];
+        %tmp.42 = getv function %tmp.41 :getApp;
+        %tmp.43 = invoke %tmp.41 %tmp.42();
+        symbol [ setProperty %tmp.44 71 40 51 ];
+        %tmp.44 = getv function %tmp.43 :setProperty;
+        %tmp.45 = "Teacher";
+        symbol [ menu %tmp.47 71 63 67 ];
+        %tmp.47 = getv ? :menu;
+        symbol [ getItem %tmp.48 71 68 75 ];
+        %tmp.48 = getv function %tmp.47 :getItem;
+        %tmp.49 = 0;
+        %tmp.50 = invoke %tmp.47 %tmp.48(%tmp.49);
+        symbol [ isEnabled %tmp.51 71 79 88 ];
+        %tmp.51 = getv function %tmp.50 :isEnabled;
+        %tmp.52 = invoke %tmp.50 %tmp.51();
+        invoke %tmp.43 %tmp.44(%tmp.45, %tmp.52);
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_62_41_73_8_stop:
+        goto @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_62_8_91_8_if_end;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_62_8_91_8_if_false:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinSettingsButton.mc" 74 13 ]
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_74_13_91_8_if_stmt:
+        %tmp.53 = lgetv %item;
+        symbol [ item %tmp.53 74 16 20 ];
+        symbol [ getId %tmp.54 74 21 26 ];
+        %tmp.54 = getv function %tmp.53 :getId;
+        %tmp.55 = invoke %tmp.53 %tmp.54();
+        symbol [ equals %tmp.56 74 29 35 ];
+        %tmp.56 = getv function %tmp.55 :equals;
+        %tmp.57 = "API";
+        %tmp.58 = invoke %tmp.55 %tmp.56(%tmp.57);
+        bf %tmp.58 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_74_13_91_8_if_false;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_74_13_91_8_if_true:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_74_43_82_8_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinSettingsButton.mc" 76 12 ]
+        symbol [ WatchUi %tmp.59 76 12 19 ];
+        %tmp.59 = getm $.Toybox.WatchUi;
+        symbol [ switchToView %tmp.60 76 20 32 ];
+        %tmp.60 = getv function %tmp.59 :switchToView;
+        symbol [ RozvrhhodinKeyboard %tmp.64 77 20 39 ];
+        %tmp.64 = getv ? :RozvrhhodinKeyboard;
+        %tmp.61 = newc %tmp.64 ();
+        symbol [ RozvrhhodinKeyboardDelegate %tmp.68 78 20 47 ];
+        %tmp.68 = getv ? :RozvrhhodinKeyboardDelegate;
+        %tmp.65 = newc %tmp.68 ();
+        symbol [ WatchUi %tmp.69 79 16 23 ];
+        %tmp.69 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_LEFT %tmp.70 79 24 34 ];
+        %tmp.70 = getv %tmp.69 :SLIDE_LEFT;
+        invoke %tmp.59 %tmp.60(%tmp.61, %tmp.65, %tmp.70);
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_74_43_82_8_stop:
+        goto @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_74_13_91_8_if_end;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_74_13_91_8_if_false:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinSettingsButton.mc" 84 13 ]
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_84_13_91_8_if_stmt:
+        %tmp.71 = lgetv %item;
+        symbol [ item %tmp.71 84 16 20 ];
+        symbol [ getId %tmp.72 84 21 26 ];
+        %tmp.72 = getv function %tmp.71 :getId;
+        %tmp.73 = invoke %tmp.71 %tmp.72();
+        symbol [ equals %tmp.74 84 29 35 ];
+        %tmp.74 = getv function %tmp.73 :equals;
+        %tmp.75 = "LOAD";
+        %tmp.76 = invoke %tmp.73 %tmp.74(%tmp.75);
+        bf %tmp.76 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_84_13_91_8_if_end;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_84_13_91_8_if_true:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_84_44_91_8_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinSettingsButton.mc" 85 12 ]
+        symbol [ Toybox %tmp.78 85 12 18 ];
+        %tmp.78 = getv ? :Toybox;
+        symbol [ Application %tmp.79 85 19 30 ];
+        %tmp.79 = getv %tmp.78 :Application;
+        symbol [ getApp %tmp.80 85 31 37 ];
+        %tmp.80 = getv function %tmp.79 :getApp;
+        %tmp.81 = invoke %tmp.79 %tmp.80();
+        symbol [ setProperty %tmp.82 85 40 51 ];
+        %tmp.82 = getv function %tmp.81 :setProperty;
+        %tmp.83 = "loadPermanent";
+        %tmp.84 = true;
+        invoke %tmp.81 %tmp.82(%tmp.83, %tmp.84);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinSettingsButton.mc" 86 12 ]
+        symbol [ WatchUi %tmp.85 86 12 19 ];
+        %tmp.85 = getm $.Toybox.WatchUi;
+        symbol [ switchToView %tmp.86 86 20 32 ];
+        %tmp.86 = getv function %tmp.85 :switchToView;
+        symbol [ RozvrhhodinLoading %tmp.90 87 20 38 ];
+        %tmp.90 = getv ? :RozvrhhodinLoading;
+        %tmp.87 = newc %tmp.90 ();
+        symbol [ RozvrhhodinLoadingInput %tmp.94 88 20 43 ];
+        %tmp.94 = getv ? :RozvrhhodinLoadingInput;
+        %tmp.91 = newc %tmp.94 ();
+        symbol [ WatchUi %tmp.95 89 16 23 ];
+        %tmp.95 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_IMMEDIATE %tmp.96 89 24 39 ];
+        %tmp.96 = getv %tmp.95 :SLIDE_IMMEDIATE;
+        invoke %tmp.85 %tmp.86(%tmp.87, %tmp.91, %tmp.96);
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_84_44_91_8_stop:
+        goto @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_84_13_91_8_if_end;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_84_13_91_8_if_end:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_74_13_91_8_if_end:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_62_8_91_8_if_end:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_60_40_92_4_stop:
+    }
+    [ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinSettingsButton.mc"; @line = 94; @symbol_functiondef = [onBack,94,13,19]; ]
+    function onBack() {
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_94_21_102_4_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinSettingsButton.mc" 96 12 ]
+        symbol [ WatchUi %tmp.1 96 12 19 ];
+        %tmp.1 = getm $.Toybox.WatchUi;
+        symbol [ switchToView %tmp.2 96 20 32 ];
+        %tmp.2 = getv function %tmp.1 :switchToView;
+        symbol [ RozvrhhodinView %tmp.6 97 20 35 ];
+        %tmp.6 = getv ? :RozvrhhodinView;
+        %tmp.3 = newc %tmp.6 ();
+        symbol [ RozvrhhodinInput %tmp.10 98 20 36 ];
+        %tmp.10 = getv ? :RozvrhhodinInput;
+        %tmp.7 = newc %tmp.10 ();
+        symbol [ WatchUi %tmp.11 99 16 23 ];
+        %tmp.11 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_RIGHT %tmp.12 99 24 35 ];
+        %tmp.12 = getv %tmp.11 :SLIDE_RIGHT;
+        invoke %tmp.1 %tmp.2(%tmp.3, %tmp.7, %tmp.12);
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinSettingsButton_mc_94_21_102_4_stop:
+    }
+}
+[ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinSettingsButton.mc"; @line = 1; ]
+<init> {
+}

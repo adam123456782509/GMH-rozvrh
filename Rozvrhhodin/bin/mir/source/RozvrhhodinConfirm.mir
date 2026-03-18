@@ -326,172 +326,204 @@ C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfir
     }
     [ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinConfirm.mc"; @line = 76; @symbol_functiondef = [onTap,76,13,18]; @symbol_param<0> = [evt,76,19,22]; @symbol_return<0> = [Boolean,76,27,34]; ]
     function onTap(evt) as Boolean {
-C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_76_35_118_4_start:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_76_35_116_4_start:
 [ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinConfirm.mc" 78 8 ]
-        symbol [ Toybox %tmp.2 79 12 18 ];
+        symbol [ Toybox %tmp.2 78 24 30 ];
         %tmp.2 = getv ? :Toybox;
-        symbol [ Application %tmp.3 79 19 30 ];
+        symbol [ Application %tmp.3 78 31 42 ];
         %tmp.3 = getv %tmp.2 :Application;
-        symbol [ getApp %tmp.4 79 31 37 ];
+        symbol [ getApp %tmp.4 78 43 49 ];
         %tmp.4 = getv function %tmp.3 :getApp;
         %tmp.5 = invoke %tmp.3 %tmp.4();
-        symbol [ getProperty %tmp.6 79 40 51 ];
+        symbol [ getProperty %tmp.6 78 52 63 ];
         %tmp.6 = getv function %tmp.5 :getProperty;
         %tmp.7 = "displayHeight";
         %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
         symbol [ displayHeight ? 78 8 21 ];
         putv self :displayHeight %tmp.8;
-[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinConfirm.mc" 80 8 ]
-        symbol [ Toybox %tmp.10 80 23 29 ];
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinConfirm.mc" 79 8 ]
+        symbol [ Toybox %tmp.10 79 23 29 ];
         %tmp.10 = getv ? :Toybox;
-        symbol [ Application %tmp.11 80 30 41 ];
+        symbol [ Application %tmp.11 79 30 41 ];
         %tmp.11 = getv %tmp.10 :Application;
-        symbol [ getApp %tmp.12 80 42 48 ];
+        symbol [ getApp %tmp.12 79 42 48 ];
         %tmp.12 = getv function %tmp.11 :getApp;
         %tmp.13 = invoke %tmp.11 %tmp.12();
-        symbol [ getProperty %tmp.14 80 51 62 ];
+        symbol [ getProperty %tmp.14 79 51 62 ];
         %tmp.14 = getv function %tmp.13 :getProperty;
         %tmp.15 = "displayWidth";
         %tmp.16 = invoke %tmp.13 %tmp.14(%tmp.15);
-        symbol [ displayWidth ? 80 8 20 ];
+        symbol [ displayWidth ? 79 8 20 ];
         putv self :displayWidth %tmp.16;
-[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinConfirm.mc" 82 8 ]
-        [ "C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_76_35_118_4_start" "C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_76_35_118_4_stop" ]
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinConfirm.mc" 81 8 ]
+        [ "C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_76_35_116_4_start" "C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_76_35_116_4_stop" ]
         %xy.1 = local;
-        symbol [ xy %xy.1 82 12 14 ];
+        symbol [ xy %xy.1 81 12 14 ];
         %tmp.17 = lgetv %evt;
-        symbol [ evt %tmp.17 82 17 20 ];
-        symbol [ getCoordinates %tmp.18 82 21 35 ];
+        symbol [ evt %tmp.17 81 17 20 ];
+        symbol [ getCoordinates %tmp.18 81 21 35 ];
         %tmp.18 = getv function %tmp.17 :getCoordinates;
         %tmp.19 = invoke %tmp.17 %tmp.18();
         lputv %xy.1 %tmp.19;
-        symbol [ xy %xy.1 82 12 14 ];
-[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinConfirm.mc" 84 8 ]
-C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_84_8_116_8_if_stmt:
+        symbol [ xy %xy.1 81 12 14 ];
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinConfirm.mc" 83 8 ]
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_83_8_114_8_if_stmt:
         %tmp.20 = lgetv %xy.1;
-        symbol [ xy %tmp.20 85 12 14 ];
+        symbol [ xy %tmp.20 84 12 14 ];
         %tmp.21 = 1;
         %tmp.22 = agetv %tmp.20 %tmp.21;
-        symbol [ displayHeight %tmp.24 86 12 25 ];
+        symbol [ displayHeight %tmp.24 85 12 25 ];
         %tmp.24 = getv ? :displayHeight;
         %tmp.25 = 0.5;
         %tmp.26 = mul %tmp.24 %tmp.25;
         %tmp.27 = gt %tmp.22 %tmp.26;
-        bf %tmp.27 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_84_8_116_8_if_end;
-C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_84_8_116_8_if_true:
-C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_88_8_116_8_start:
-[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinConfirm.mc" 89 12 ]
-C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_89_12_115_12_if_stmt:
+        bf %tmp.27 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_83_8_114_8_if_end;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_83_8_114_8_if_true:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_87_8_114_8_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinConfirm.mc" 88 12 ]
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_88_12_113_12_if_stmt:
         %tmp.28 = lgetv %xy.1;
-        symbol [ xy %tmp.28 89 16 18 ];
+        symbol [ xy %tmp.28 88 16 18 ];
         %tmp.29 = 0;
         %tmp.30 = agetv %tmp.28 %tmp.29;
-        symbol [ displayWidth %tmp.32 89 24 36 ];
+        symbol [ displayWidth %tmp.32 88 24 36 ];
         %tmp.32 = getv ? :displayWidth;
         %tmp.33 = 2;
         %tmp.34 = div %tmp.32 %tmp.33;
         %tmp.35 = gt %tmp.30 %tmp.34;
-        bf %tmp.35 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_89_12_115_12_if_else_false;
-C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_89_12_115_12_if_true:
-C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_90_12_107_12_start:
-[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinConfirm.mc" 91 16 ]
-C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_91_16_106_16_if_stmt:
-        symbol [ Toybox %tmp.37 92 20 26 ];
+        bf %tmp.35 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_88_12_113_12_if_else_false;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_88_12_113_12_if_true:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_89_12_106_12_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinConfirm.mc" 90 16 ]
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_90_16_105_16_if_stmt:
+        symbol [ Toybox %tmp.37 91 20 26 ];
         %tmp.37 = getv ? :Toybox;
-        symbol [ Application %tmp.38 92 27 38 ];
+        symbol [ Application %tmp.38 91 27 38 ];
         %tmp.38 = getv %tmp.37 :Application;
-        symbol [ getApp %tmp.39 92 39 45 ];
+        symbol [ getApp %tmp.39 91 39 45 ];
         %tmp.39 = getv function %tmp.38 :getApp;
         %tmp.40 = invoke %tmp.38 %tmp.39();
-        symbol [ getProperty %tmp.41 92 48 59 ];
+        symbol [ getProperty %tmp.41 91 48 59 ];
         %tmp.41 = getv function %tmp.40 :getProperty;
         %tmp.42 = "Teacher";
         %tmp.43 = invoke %tmp.40 %tmp.41(%tmp.42);
         %tmp.44 = null;
         %tmp.45 = ne %tmp.43 %tmp.44;
-        bf %tmp.45 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_91_16_106_16_if_else_false;
-C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_91_16_106_16_if_true:
-C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_94_16_100_16_start:
-[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinConfirm.mc" 95 20 ]
-        symbol [ WatchUi %tmp.46 95 20 27 ];
+        bf %tmp.45 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_90_16_105_16_if_else_false;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_90_16_105_16_if_true:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_93_16_99_16_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinConfirm.mc" 94 20 ]
+        symbol [ WatchUi %tmp.46 94 20 27 ];
         %tmp.46 = getm $.Toybox.WatchUi;
-        symbol [ switchToView %tmp.47 95 28 40 ];
+        symbol [ switchToView %tmp.47 94 28 40 ];
         %tmp.47 = getv function %tmp.46 :switchToView;
-        symbol [ RozvrhhodinLoading %tmp.51 96 28 46 ];
+        symbol [ RozvrhhodinLoading %tmp.51 95 28 46 ];
         %tmp.51 = getv ? :RozvrhhodinLoading;
         %tmp.48 = newc %tmp.51 ();
-        symbol [ RozvrhhodinLoadingInput %tmp.55 97 28 51 ];
+        symbol [ RozvrhhodinLoadingInput %tmp.55 96 28 51 ];
         %tmp.55 = getv ? :RozvrhhodinLoadingInput;
         %tmp.52 = newc %tmp.55 ();
-        symbol [ WatchUi %tmp.56 98 24 31 ];
+        symbol [ WatchUi %tmp.56 97 24 31 ];
         %tmp.56 = getm $.Toybox.WatchUi;
-        symbol [ SLIDE_BLINK %tmp.57 98 32 43 ];
+        symbol [ SLIDE_BLINK %tmp.57 97 32 43 ];
         %tmp.57 = getv %tmp.56 :SLIDE_BLINK;
         invoke %tmp.46 %tmp.47(%tmp.48, %tmp.52, %tmp.57);
-C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_94_16_100_16_stop:
-        goto @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_91_16_106_16_if_end;
-C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_91_16_106_16_if_else_false:
-C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_100_23_106_16_start:
-[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinConfirm.mc" 101 20 ]
-        symbol [ WatchUi %tmp.58 101 20 27 ];
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_93_16_99_16_stop:
+        goto @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_90_16_105_16_if_end;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_90_16_105_16_if_else_false:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_99_23_105_16_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinConfirm.mc" 100 20 ]
+        symbol [ WatchUi %tmp.58 100 20 27 ];
         %tmp.58 = getm $.Toybox.WatchUi;
-        symbol [ switchToView %tmp.59 101 28 40 ];
+        symbol [ switchToView %tmp.59 100 28 40 ];
         %tmp.59 = getv function %tmp.58 :switchToView;
-        symbol [ RozvrhhodinSettings %tmp.63 102 28 47 ];
+        symbol [ RozvrhhodinSettings %tmp.63 101 28 47 ];
         %tmp.63 = getv ? :RozvrhhodinSettings;
         %tmp.60 = newc %tmp.63 ();
-        symbol [ RozvrhhodinSettingsInput %tmp.67 103 28 52 ];
+        symbol [ RozvrhhodinSettingsInput %tmp.67 102 28 52 ];
         %tmp.67 = getv ? :RozvrhhodinSettingsInput;
         %tmp.64 = newc %tmp.67 ();
-        symbol [ WatchUi %tmp.68 104 24 31 ];
+        symbol [ WatchUi %tmp.68 103 24 31 ];
         %tmp.68 = getm $.Toybox.WatchUi;
-        symbol [ SLIDE_RIGHT %tmp.69 104 32 43 ];
+        symbol [ SLIDE_RIGHT %tmp.69 103 32 43 ];
         %tmp.69 = getv %tmp.68 :SLIDE_RIGHT;
         invoke %tmp.58 %tmp.59(%tmp.60, %tmp.64, %tmp.69);
-C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_100_23_106_16_stop:
-C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_91_16_106_16_if_end:
-C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_90_12_107_12_stop:
-        goto @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_89_12_115_12_if_end;
-C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_89_12_115_12_if_else_false:
-C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_108_12_115_12_start:
-[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinConfirm.mc" 109 16 ]
-        symbol [ WatchUi %tmp.70 109 16 23 ];
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_99_23_105_16_stop:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_90_16_105_16_if_end:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_89_12_106_12_stop:
+        goto @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_88_12_113_12_if_end;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_88_12_113_12_if_else_false:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_107_12_113_12_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinConfirm.mc" 108 16 ]
+        symbol [ WatchUi %tmp.70 108 16 23 ];
         %tmp.70 = getm $.Toybox.WatchUi;
-        symbol [ switchToView %tmp.71 109 24 36 ];
+        symbol [ switchToView %tmp.71 108 24 36 ];
         %tmp.71 = getv function %tmp.70 :switchToView;
-        symbol [ RozvrhhodinT9Keyboard %tmp.75 110 24 45 ];
+        symbol [ RozvrhhodinT9Keyboard %tmp.75 109 24 45 ];
         %tmp.75 = getv ? :RozvrhhodinT9Keyboard;
         %tmp.72 = newc %tmp.75 ();
-        symbol [ RozvrhhodinT9KeyboardInput %tmp.79 111 24 50 ];
+        symbol [ RozvrhhodinT9KeyboardInput %tmp.79 110 24 50 ];
         %tmp.79 = getv ? :RozvrhhodinT9KeyboardInput;
         %tmp.76 = newc %tmp.79 ();
-        symbol [ WatchUi %tmp.80 112 20 27 ];
+        symbol [ WatchUi %tmp.80 111 20 27 ];
         %tmp.80 = getm $.Toybox.WatchUi;
-        symbol [ SLIDE_LEFT %tmp.81 112 28 38 ];
+        symbol [ SLIDE_LEFT %tmp.81 111 28 38 ];
         %tmp.81 = getv %tmp.80 :SLIDE_LEFT;
         invoke %tmp.70 %tmp.71(%tmp.72, %tmp.76, %tmp.81);
-[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinConfirm.mc" 114 16 ]
-        symbol [ Toybox %tmp.83 114 16 22 ];
-        %tmp.83 = getv ? :Toybox;
-        symbol [ Application %tmp.84 114 23 34 ];
-        %tmp.84 = getv %tmp.83 :Application;
-        symbol [ getApp %tmp.85 114 35 41 ];
-        %tmp.85 = getv function %tmp.84 :getApp;
-        %tmp.86 = invoke %tmp.84 %tmp.85();
-        symbol [ setProperty %tmp.87 114 44 55 ];
-        %tmp.87 = getv function %tmp.86 :setProperty;
-        %tmp.88 = "API_KEY";
-        %tmp.89 = "";
-        invoke %tmp.86 %tmp.87(%tmp.88, %tmp.89);
-C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_108_12_115_12_stop:
-C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_89_12_115_12_if_end:
-C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_88_8_116_8_stop:
-        goto @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_84_8_116_8_if_end;
-C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_84_8_116_8_if_end:
-[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinConfirm.mc" 117 8 ]
-        %tmp.90 = false;
-        ret %tmp.90;
-C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_76_35_118_4_stop:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_107_12_113_12_stop:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_88_12_113_12_if_end:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_87_8_114_8_stop:
+        goto @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_83_8_114_8_if_end;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_83_8_114_8_if_end:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinConfirm.mc" 115 8 ]
+        %tmp.82 = false;
+        ret %tmp.82;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_76_35_116_4_stop:
+    }
+    [ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinConfirm.mc"; @line = 118; @symbol_functiondef = [onKey,118,13,18]; @symbol_param<0> = [keyEvent,118,19,27]; @symbol_param<0>_type<0> = [KeyEvent,118,31,39]; @symbol_return<0> = [Boolean,118,44,51]; ]
+    function onKey(keyEvent as KeyEvent) as Boolean {
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_118_52_132_4_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinConfirm.mc" 119 8 ]
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_119_8_131_8_if_stmt:
+        %tmp.1 = lgetv %keyEvent;
+        symbol [ keyEvent %tmp.1 120 12 20 ];
+        symbol [ getKey %tmp.2 120 21 27 ];
+        %tmp.2 = getv function %tmp.1 :getKey;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        %tmp.4 = 5;
+        %tmp.5 = eq %tmp.3 %tmp.4;
+        bf %tmp.5 @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_119_8_131_8_if_else_false;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_119_8_131_8_if_true:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_122_8_129_8_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinConfirm.mc" 123 12 ]
+        symbol [ WatchUi %tmp.6 123 12 19 ];
+        %tmp.6 = getm $.Toybox.WatchUi;
+        symbol [ switchToView %tmp.7 123 20 32 ];
+        %tmp.7 = getv function %tmp.6 :switchToView;
+        symbol [ RozvrhhodinT9Keyboard %tmp.11 124 20 41 ];
+        %tmp.11 = getv ? :RozvrhhodinT9Keyboard;
+        %tmp.8 = newc %tmp.11 ();
+        symbol [ RozvrhhodinT9KeyboardInput %tmp.15 125 20 46 ];
+        %tmp.15 = getv ? :RozvrhhodinT9KeyboardInput;
+        %tmp.12 = newc %tmp.15 ();
+        symbol [ WatchUi %tmp.16 126 16 23 ];
+        %tmp.16 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_LEFT %tmp.17 126 24 34 ];
+        %tmp.17 = getv %tmp.16 :SLIDE_LEFT;
+        invoke %tmp.6 %tmp.7(%tmp.8, %tmp.12, %tmp.17);
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinConfirm.mc" 128 12 ]
+        %tmp.18 = true;
+        ret %tmp.18;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_122_8_129_8_stop:
+        goto @C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_119_8_131_8_if_end;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_119_8_131_8_if_else_false:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_129_15_131_8_start:
+[ "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinConfirm.mc" 130 12 ]
+        %tmp.19 = false;
+        ret %tmp.19;
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_129_15_131_8_stop:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_119_8_131_8_if_end:
+C__Users_Adam_Desktop_bakalari_Rozvrh_hodin_Rozvrhhodin_source_RozvrhhodinConfirm_mc_118_52_132_4_stop:
     }
 }
 [ @file = "C:\Users\Adam\Desktop\bakalari\Rozvrh hodin\Rozvrhhodin\source\RozvrhhodinConfirm.mc"; @line = 1; ]

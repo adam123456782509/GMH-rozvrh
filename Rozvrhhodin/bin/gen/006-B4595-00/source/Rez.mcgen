@@ -12,7 +12,7 @@ module Rez {
         (:initialized) var KeyboardMode as ResourceId;
         (:initialized) var Cancel as ResourceId;
         (:initialized) var settings as ResourceId;
-        (:initialized) var BakalariLogo as ResourceId;
+        (:initialized) var Logo as ResourceId;
     } // Drawables
 
     module Layouts {

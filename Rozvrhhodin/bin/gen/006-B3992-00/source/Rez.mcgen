@@ -6,17 +6,18 @@ using Toybox.Graphics as Gfx;
 
 module Rez {
     module Drawables {
-        (:initialized) var LauncherIcon as ResourceId;
-        (:initialized) var id_logo as ResourceId;
-        (:initialized) var BakalariLogo as ResourceId;
+        (:initialized) var Confirm as ResourceId;
+        (:initialized) var Space as ResourceId;
+        (:initialized) var Backspace as ResourceId;
+        (:initialized) var KeyboardMode as ResourceId;
+        (:initialized) var Cancel as ResourceId;
+        (:initialized) var settings as ResourceId;
+        (:initialized) var Logo as ResourceId;
     } // Drawables
 
     module Layouts {
         function MainLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-            var rez_cmp_local_bitmap_id_logo = new WatchUi.Bitmap({:identifier=>"id_logo", :rezId=>$.Rez.Drawables.id_logo, :locX=>WatchUi.LAYOUT_HALIGN_CENTER, :locY=>5});
-            rez_cmp_local_bitmap_id_logo.setLocation(((260 - rez_cmp_local_bitmap_id_logo.width) * 0.5), rez_cmp_local_bitmap_id_logo.locY);
-
-            return [rez_cmp_local_bitmap_id_logo] as Array<WatchUi.Drawable>;
+            return [] as Array<WatchUi.Drawable>;
         }
     } // Layouts
 
